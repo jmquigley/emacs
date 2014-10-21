@@ -43,7 +43,6 @@
 
 (defun open-default-buffers ()
 "Opens a list of default buffers common to all windows"
-    (find-file (concat root.dir "Dropbox/Documents/todo-list.org"))
     (bookmark-bmenu-list)
     (open-default-programs))
 
@@ -64,7 +63,7 @@
     (setq previous-window-number "3")
     (fix-horizontal-size 125)
     (other-window 1)
-    (switch-to-buffer "todo-list.org")
+    (switch-to-buffer "*scratch*")
     (other-window 3)
 )
 
@@ -74,12 +73,13 @@
     (open-default-buffers)
 
     (split-window-horizontally)
-    (switch-to-buffer "todo-list.org")
+    (switch-to-buffer "*Buffer List*")
     (fix-horizontal-size 70)
     (split-window-vertically)
     (other-window 1)
-    (switch-to-buffer "*Buffer List*")
+    (switch-to-buffer "*Bookmark List*")
     (other-window 1)
-    (switch-to-buffer "*Bookmark List*"))
+    (switch-to-buffer "*scratch*")
+)
 
 (provide 'windows)
