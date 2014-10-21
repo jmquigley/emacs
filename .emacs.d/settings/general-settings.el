@@ -17,6 +17,7 @@
 ;; Global default variables
 (setq default-major-mode 'text-mode
       inhibit-startup-message t
+      initial-scratch-message nil
       visual-bell t
       vc-follow-symlinks t
       backup-by-copying t
@@ -30,7 +31,6 @@
       auto-revert-interval 30
       display-time-day-and-date t
       display-time-24hr-format t
-      initial-scratch-message nil
       scroll-step 1
       scroll-preserve-screen-position 1
       scroll-conservatively 10000
