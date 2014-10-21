@@ -1,0 +1,38 @@
+#contributor : James Quigley
+#name : notes
+# --
+:tags: ${1:Tags}
+
+${2:$(make-string (string-width yas/text) ?\*)}
+${2:Title}
+${2:$(make-string (string-width yas/text) ?\*)}
+.. todo:: Add an overview section
+$0
+
+
+Topics
+======
+
+Resources
+=========
+.. todo:: Add book, syllabus and completion matrix links
+
+- \`Book\`_
+- Syllabus [1]_
+
+
+Notes
+=====
+
+Title
+-----
+::
+
+ ---------------------------------|----------------------------------------------------------------------------------
+                                  | 
+
+
+References
+==========
+.. [1] http://www.google.com
+.. _Book: http://www.example.com

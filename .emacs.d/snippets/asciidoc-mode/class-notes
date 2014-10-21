@@ -1,0 +1,175 @@
+<<<<<<< HEAD
+#contributor : James Quigley
+#name : class-notes
+# --
+:tags: 
+
+${1:Title}
+${1:$(make-string (string-width text) ?\-)}
+IMPORTANT: Create an overview of the topic
+
+
+Topics
+------
+IMPORTANT: Add topics
+- Topic 1
+- Topic 2
+
+
+Documents
+---------
+IMPORTANT: Add documents
+- link:documents/document.doc[Document]
+- http://www.example.com[Example]
+
+
+Notes
+-----
+Title
+~~~~~
+[width="80%", cols="33,66"]
+|===============================================================================================================================
+|                                      | 
+
+
+|===============================================================================================================================
+
+
+Quiz
+----
+IMPORTANT: Add quiz questions
+
+// TopicName Chapter 04 -- Security Architecture and Design
+// CategoryName CISSP
+// CategoryDescription CISSP Study Guide
+// Subject Security Architecture and Design (Quiz)
+// SubjectDescription End of chapter quiz questions
+// Tags cissp
+// OutputDirectory C:/Users/jmquigley/Dropbox/School/Classes/UIS-CSC438-Information_Security_Capstone/vocab
+// ImageDirectory C:/Users/jmquigley/Dropbox/School/Classes/UIS-CSC438-Information_Security_Capstone/images
+// Filename CSC438-Module04-Quiz.csv
+
+[quanda]
+Question::
+    Answer
+
+Question::
+    Answer
+
+// Quiz End
+
+
+Terminology
+-----------
+IMPORTANT: Add definitions
+
+// TopicName {Name}
+// CategoryName {Name}
+// CategoryDescription {Description}
+// Subject {Subject}
+// SubjectDescription {Subject Description}
+// Tags {Tags}
+// OutputDirectory {Directory}
+// ImageDirectory {Directory}
+// Filename {Name}
+
+[glossary]
+term::
+    definition
+term::
+    definition
+
+// Terminology End
+
+
+References
+----------
+
+=======
+#contributor : James Quigley
+#name : class-notes
+# --
+:tags: 
+
+${1:Title}
+${1:$(make-string (string-width text) ?\-)}
+IMPORTANT: Create an overview of the topic
+
+
+Topics
+------
+IMPORTANT: Add topics
+- Topic 1
+- Topic 2
+
+
+Documents
+---------
+IMPORTANT: Add documents
+- link:documents/document.doc[Document]
+- http://www.example.com[Example]
+
+
+Notes
+-----
+Title
+~~~~~
+[width="80%", cols="33,66"]
+|===============================================================================================================================
+|                                      | 
+
+
+|===============================================================================================================================
+
+
+Quiz
+----
+IMPORTANT: Add quiz questions
+
+// TopicName Chapter 04 -- Security Architecture and Design
+// CategoryName CISSP
+// CategoryDescription CISSP Study Guide
+// Subject Security Architecture and Design (Quiz)
+// SubjectDescription End of chapter quiz questions
+// Tags cissp
+// OutputDirectory C:/Users/jmquigley/Dropbox/School/Classes/UIS-CSC438-Information_Security_Capstone/vocab
+// ImageDirectory C:/Users/jmquigley/Dropbox/School/Classes/UIS-CSC438-Information_Security_Capstone/images
+// Filename CSC438-Module04-Quiz.csv
+
+[quanda]
+Question::
+    Answer
+
+Question::
+    Answer
+
+// Quiz End
+
+
+Terminology
+-----------
+IMPORTANT: Add definitions
+
+// TopicName {Name}
+// CategoryName {Name}
+// CategoryDescription {Description}
+// Subject {Subject}
+// SubjectDescription {Subject Description}
+// Tags {Tags}
+// OutputDirectory {Directory}
+// ImageDirectory {Directory}
+// Filename {Name}
+
+[glossary]
+term::
+    definition
+term::
+    definition
+
+// Terminology End
+
+
+References
+----------
+
+>>>>>>> 3db99ec0720a1aeeb258d44561073b997c069da4

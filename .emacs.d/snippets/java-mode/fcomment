@@ -1,0 +1,12 @@
+# name: create java function comment
+# key: fcomment
+# group: java
+# contributor: jmq
+# --
+/**
+  * {Description}
+  * @param {name} {description}
+  * @return {description}
+  * @throws {exception}
+  * @since 1.6
+  */$0

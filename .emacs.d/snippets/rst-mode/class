@@ -1,0 +1,36 @@
+#contributor : James Quigley
+#name : class
+# --
+:tags: ${1:Tags} 
+
+${2:$(make-string (string-width yas/text) ?\*)}
+${2:Title}
+${2:$(make-string (string-width yas/text) ?\*)}
+.. todo:: Add an overview section
+$0
+
+
+Resources
+=========
+.. todo:: Add book, syllabus and completion matrix links
+
+- \`Book\`_
+- Syllabus
+
+
+Lessons/Week
+============
+.. todo: Add toctree and links to other rst documents
+
+
+Assignments
+===========
+
+
+Announcements
+=============
+
+
+References
+==========
+.. _Book: http://www.example.com

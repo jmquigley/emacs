@@ -17,24 +17,31 @@
 (setq
  my-packages '(auctex
                auto-complete
-               color-theme-solarized
+               autopair
+			   bookmark+
+			   color-theme-solarized
+               dictionary
                expand-region
                flycheck
+			   git-blame
                google-c-style
                groovy-emacs-mode
                haml-mode
+			   hl-line+
+			   jedi
+			   js2-mode
+               line-num
+			   lorem-ipsum
                magit
                markdown-mode
                matlab-mode
+			   php-mode
                pydoc-info
-               jedi
-               autopair
-               bookmark+
-               hl-line+
-               line-num
                pymacs
-               dictionary
+			   python-mode
+               redo+			   
                rst-mode
+			   ruby-mode
                smart-operator
                tidy
                virtualenvwrapper

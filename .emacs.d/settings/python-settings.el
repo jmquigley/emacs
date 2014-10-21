@@ -1,0 +1,23 @@
+(require 'python-environment)
+(require 'jedi)
+
+(when (featurep 'python) (unload-feature 'python t))
+(setq py-install-directory (concat plugin-path "python-mode/"))
+(setq-default py-indent-offset 4)
+(setq-default py-start-run-py-shell t)
+(setq-default pdb-path "pdb")
+(add-to-list 'load-path (concat plugin-path "python-mode/"))
+(require 'python-mode)
+(autoload 'python-mode "python-mode" "Python Mode." t)
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+
+(add-hook 'python-mode-hook 'jedi:ac-setup)
+(add-hook 'python-mode-hook '(lambda()
+    (message "Loading python mode customizations")
+    (development-minor-mode-hooks)
+    (auto-complete-mode 0)
+    (define-key python-mode-map (kbd "\C-c \\") 'py-indent-region)
+    (define-key python-mode-map (kbd "\C-j") 'join-line)
+))
+
+(provide 'python-settings)

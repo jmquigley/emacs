@@ -1,0 +1,38 @@
+#contributor : James Quigley
+#name : class
+# --
+Title: ${1:Title}
+Subject: ${2:Subject}
+Tags: ${3:Tags}
+
+$1
+${1:$(make-string (string-width yas/text) ?\=)}
+
+TODO: Add an overview section
+$0
+
+Resources
+---------
+TODO: Add book, syllabus and completion matrix links
+
+- [Document](documents/syllabus.txt)
+- [Example](http://www.example.com[Example])
+- [Google][1]
+
+
+Lessons/Week
+------------
+TODO: Add toctree and links to other rst documents
+
+
+Assignments
+-----------
+
+
+Announcements
+-------------
+
+
+References
+----------
+[1]: http://www.google.com "Google Search Site"

@@ -1,0 +1,73 @@
+<<<<<<< HEAD
+#contributor : James Quigley
+#name : class
+# --
+:tags: 
+
+${1:Title}
+${1:$(make-string (string-width text) ?\=)}
+IMPORTANT: Add an overview section
+
+
+Resources
+---------
+IMPORTANT: Add book, syllabus and completion matrix links
+
+- link:documents/syllabus[Document]
+- http://www.example.com[Example]
+
+
+Lessons/Week
+------------
+IMPORTANT: Add toctree and links to other rst documents
+
+
+Assignments
+-----------
+
+
+Announcements
+-------------
+
+
+References
+----------
+
+
+=======
+#contributor : James Quigley
+#name : class
+# --
+:tags: 
+
+${1:Title}
+${1:$(make-string (string-width text) ?\=)}
+IMPORTANT: Add an overview section
+
+
+Resources
+---------
+IMPORTANT: Add book, syllabus and completion matrix links
+
+- link:documents/syllabus[Document]
+- http://www.example.com[Example]
+
+
+Lessons/Week
+------------
+IMPORTANT: Add toctree and links to other rst documents
+
+
+Assignments
+-----------
+
+
+Announcements
+-------------
+
+
+References
+----------
+
+
+>>>>>>> 3db99ec0720a1aeeb258d44561073b997c069da4
