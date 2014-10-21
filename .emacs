@@ -32,6 +32,7 @@
 (require 'cperl-settings)
 (require 'cmode-settings)
 (require 'ruby-settings)
+(require 'java-settings)
 (require 'groovy-settings)
 (require 'lisp-settings)
 (require 'makefile-settings)

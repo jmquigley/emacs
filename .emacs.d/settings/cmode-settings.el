@@ -10,4 +10,10 @@
     (setq indent-tabs-mode t)
 ))
 
+(add-hook 'c++-mode-hook '(lambda()
+))
+
+(add-hook 'objc-mode-hook '(lambda()
+))
+
 (provide 'cmode-settings)
