@@ -26,7 +26,6 @@
                yasnippet
                autopair
                bookmark+
-               dictionary
                hl-line+
                line-num
                pymacs
