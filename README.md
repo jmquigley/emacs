@@ -31,6 +31,7 @@ This setup uses the following Emacs packages:
 - redo+
 - rst-mode
 - ruby-mode
+- slime
 - smart-operator
 - tidy
 - virtualenvwrapper

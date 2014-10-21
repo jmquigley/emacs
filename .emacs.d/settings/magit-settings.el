@@ -1,5 +1,6 @@
 (require 'magit)
 (setq magit-repo-dirs `(,(concat root.dir "workspace/environment")
+                        ,(concat root.dir "workspace/emacs")
                         ,(concat root.dir "workspace/mycoredump")
                         ,(concat root.dir "workspace/scriblet")
                         ,(concat root.dir "workspace/geeknote")

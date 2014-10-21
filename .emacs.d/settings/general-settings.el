@@ -44,7 +44,6 @@
       tramp-default-method "ssh"
       linum-format "%4d\u2502"
       show-paren-delay 0
-      inferior-lisp-program "/usr/bin/clisp"
       dired-directory root.dir
       virtualenv-workon "scriblet"
       virtualenv-default-directory "~/virtualenvs/scriblet"

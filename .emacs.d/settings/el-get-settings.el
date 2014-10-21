@@ -18,31 +18,32 @@
  my-packages '(auctex
                auto-complete
                autopair
-			   bookmark+
-			   color-theme-solarized
+               bookmark+
+               color-theme-solarized
                dictionary
                expand-region
                flycheck
-			   git-blame
+               git-blame
                google-c-style
                groovy-emacs-mode
                haml-mode
-			   hl-line+
-			   jedi
-			   js2-mode
+               hl-line+
+               jedi
+               js2-mode
                line-num
-			   lorem-ipsum
+               lorem-ipsum
                magit
                markdown-mode
                matlab-mode
-			   php-mode
+               php-mode
                pydoc-info
                pymacs
-			   python-mode
+               python-mode
                redo+			   
                rst-mode
-			   ruby-mode
+               ruby-mode
                smart-operator
+               slime
                tidy
                virtualenvwrapper
                window-number
