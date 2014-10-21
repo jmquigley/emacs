@@ -1,4 +1,4 @@
-(require 'php-mode)
+;;(require 'php-mode)
 
 (add-hook 'php-mode-hook '(lambda()
     (development-minor-mode-hooks)

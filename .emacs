@@ -39,7 +39,6 @@
 (require 'php-settings)
 (require 'js-settings)
 (require 'html-settings)
-(require 'slime-settings)
 
 (load 
     (setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))

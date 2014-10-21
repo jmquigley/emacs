@@ -43,7 +43,6 @@
                rst-mode
                ruby-mode
                smart-operator
-               slime
                tidy
                virtualenvwrapper
                window-number
