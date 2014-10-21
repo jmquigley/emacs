@@ -29,6 +29,7 @@
                hl-line+
                line-num
                pymacs
+               dictionary
                ))
 
 ; first enable shallow clone, so we don't need to clone the entire
