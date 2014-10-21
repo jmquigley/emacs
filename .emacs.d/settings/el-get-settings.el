@@ -18,18 +18,29 @@
  my-packages '(auctex
                auto-complete
                color-theme-solarized
+               expand-region
+               flycheck
+               google-c-style
+               groovy-emacs-mode
+               haml-mode
                magit
                markdown-mode
                matlab-mode
                pydoc-info
                jedi
-               yasnippet
                autopair
                bookmark+
                hl-line+
                line-num
                pymacs
                dictionary
+               rst-mode
+               smart-operator
+               tidy
+               virtualenvwrapper
+               window-number
+               yaml-mode
+               yasnippet
                ))
 
 ; first enable shallow clone, so we don't need to clone the entire
