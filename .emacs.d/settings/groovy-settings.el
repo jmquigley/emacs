@@ -1,6 +1,3 @@
-(require 'groovy-mode)
-(require 'grails-mode)
-
 (autoload 'groovy-mode "groovy-mode" "Mode for editing groovy source files" t)
 (autoload 'grails-mode "grails-mode"
     "Minor mode for editing groovy source files in a grails project" t)

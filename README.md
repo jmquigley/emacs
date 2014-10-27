@@ -1,6 +1,11 @@
 Emacs
 =====
-My Emacs configuration.  This is a reorganization of my current setup.  It was inspired by [jhamrick's layout](https://github.com/jhamrick/emacs).  It has a nice, organized layout.  This setup also uses [el-get](https://github.com/dimitri/el-get) to manage the packages and their dependencies.  The environment must be configured to use this tool (such as version control command line tools like git, mercurial, bazaar, etc).  
+My Emacs configuration.  This is a reorganization of my current setup.  It was inspired by [jhamrick's layout](https://github.com/jhamrick/emacs).  It has a nice, organized layout.  This setup also uses [el-get](https://github.com/dimitri/el-get) to manage the packages and their dependencies.  The environment must be configured to use this tool.  The following tools must be installed in your environment:
+
+- texlive
+- git
+- hg
+- bz
 
 This setup uses the following Emacs packages:
 
