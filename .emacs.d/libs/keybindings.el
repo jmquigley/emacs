@@ -155,7 +155,7 @@
 ))
 
 ;;External macros
-(global-set-key (kbd "C-c v") '(lambda() (interactive)
-    (run-python-script "~/Dropbox/Workspace/mycoredump/bin/build_vocab")))
+(global-set-key (kbd "C-c n") '(lambda() (interactive)
+    (run-python-script "~/bin/cornell.py")))
 
 (provide 'keybindings)

@@ -213,7 +213,7 @@ executed.  The current buffer is passed as the only parameter to the script."
     (interactive)
     (save-buffer)
     (compile (concat
-       script " '" (buffer-file-name) "'")))
+       script " --filename " (buffer-file-name))))
 
 (defun build-references()
 "Executes a shell script to build the bibtex references"
