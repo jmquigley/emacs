@@ -43,6 +43,7 @@
                rst-mode
                ruby-mode
                smart-operator
+               smooth-scrolling
                tidy
                virtualenvwrapper
                window-number

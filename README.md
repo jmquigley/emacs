@@ -38,6 +38,7 @@ This setup uses the following Emacs packages:
 - ruby-mode
 - slime
 - smart-operator
+- smooth-scrolling
 - tidy
 - virtualenvwrapper
 - window-number

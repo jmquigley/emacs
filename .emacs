@@ -11,6 +11,7 @@
 
 (require 'el-get-settings)
 (require 'general-settings)
+(require 'smooth-scroll-settings)
 (require 'yasnippet-settings)
 (require 'abbrev-settings)
 (require 'magit-settings)

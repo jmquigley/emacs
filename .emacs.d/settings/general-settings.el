@@ -33,8 +33,6 @@
       display-time-day-and-date t
       display-time-24hr-format t
       scroll-step 1
-      scroll-preserve-screen-position 1
-      scroll-conservatively 10000
       compilation-scroll-output t
       pop-up-windows nil
       require-final-newline nil
