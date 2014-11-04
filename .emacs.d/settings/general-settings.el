@@ -29,7 +29,6 @@
       kept-new-versions 6
       kept-old-versions 2
       version-control t
-      auto-revert-interval 30
       display-time-day-and-date t
       display-time-24hr-format t
       scroll-step 1
@@ -89,7 +88,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Automatically tails *.log files in a buffer
-(add-to-list 'auto-mode-alist '("\\.log\\'" . auto-revert-mode))
+(add-to-list 'auto-mode-alist '("\\.log\\'" . auto-revert-tail-mode))
 
 ;; Minor mode hooks that can be added to any major modes
 (defun minor-mode-hooks ()
