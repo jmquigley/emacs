@@ -74,7 +74,7 @@
 
     (split-window-horizontally)
     (switch-to-buffer "*Buffer List*")
-    (fix-horizontal-size 70)
+    (fix-horizontal-size 90)
     (split-window-vertically)
     (other-window 1)
     (switch-to-buffer "*Bookmark List*")
