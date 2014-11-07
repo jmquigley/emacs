@@ -77,9 +77,9 @@
     (fix-horizontal-size 90)
     (split-window-vertically)
     (other-window 1)
-    (switch-to-buffer "*Bookmark List*")
+    (switch-to-buffer "*ssh:list*")
     (other-window 1)
-    (switch-to-buffer "*scratch*")
+    (switch-to-buffer "*Bookmark List*")
 )
 
 (provide 'windows)
