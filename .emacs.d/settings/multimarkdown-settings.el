@@ -1,4 +1,5 @@
 (require 'mmd-mode)
+(require 'centered-cursor-mode)
 
 (setq markdown-enable-math t
       markdown-enable-itex t
@@ -12,6 +13,7 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . mmd-mode))
 (add-hook 'mmd-mode-hook '(lambda()
     (minor-mode-hooks)
+    (centered-cursor-mode)
 ))
 
 (provide 'multimarkdown-settings)

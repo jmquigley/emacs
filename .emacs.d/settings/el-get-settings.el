@@ -19,6 +19,7 @@
                auto-complete
                autopair
                bookmark+
+               centered-cursor-mode
                color-theme-solarized
                dictionary
                expand-region

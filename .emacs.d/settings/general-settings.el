@@ -74,6 +74,10 @@
 (require 'redo+)
 (require 'tidy)
 
+;; turn on the mouse wheel mode
+(require 'mwheel)
+(mouse-wheel-mode t)
+
 ;; turn off the menu, toolbar, scrollbar and tool tips
 (when (or window-system (and (>= emacs-major-version 23) (daemonp)))
     (if (fboundp 'tool-bar-mode)
