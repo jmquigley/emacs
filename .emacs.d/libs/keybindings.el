@@ -75,9 +75,9 @@
         (define-key input-decode-map "\M-[1;2B" [(meta resize-down)])
         (global-set-key [(meta resize-down)] 'enlarge-window)
 
-        (define-key input-decode-map "\M-[1;9a" [(meta backward-paragraph)])
+        (define-key input-decode-map "\M-[1;9A" [(meta backward-paragraph)])
         (global-set-key [(meta backward-paragraph)] 'backward-paragraph)
-        (define-key input-decode-map "\M-[1;9b" [(meta forward-paragraph)])
+        (define-key input-decode-map "\M-[1;9B" [(meta forward-paragraph)])
         (global-set-key [(meta forward-paragraph)] 'forward-paragraph)
         (define-key input-decode-map "\M-[1;9C" [(meta forward-word)])
         (global-set-key [(meta forward-word)] 'forward-word)
@@ -85,14 +85,14 @@
         (global-set-key [(meta backward-word)] 'backward-word)
 
         ;; change buffers
-        (define-key input-decode-map "\M-[a" [(meta previous-buffer)])
+        (define-key input-decode-map "\M-[A" [(meta previous-buffer)])
         (global-set-key [(meta previous-buffer)] 'previous-buffer)
-        (define-key input-decode-map "\M-[b" [(meta next-buffer)])
+        (define-key input-decode-map "\M-[B" [(meta next-buffer)])
         (global-set-key [(meta next-buffer)] 'next-buffer)
 
-        (define-key input-decode-map "\M-[c" [(meta scroll-down)])
+        (define-key input-decode-map "\M-[C" [(meta scroll-down)])
         (global-set-key [(meta scroll-down)] 'scroll-down-command)
-        (define-key input-decode-map "\M-[d" [(meta scroll-up)])
+        (define-key input-decode-map "\M-[D" [(meta scroll-up)])
         (global-set-key [(meta scroll-up)] 'scroll-up-command)
 
         ;; alt-F5
