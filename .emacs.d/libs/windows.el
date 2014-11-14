@@ -64,8 +64,7 @@
     (fix-horizontal-size 125)
     (other-window 1)
     (switch-to-buffer "*scratch*")
-    (other-window 3)
-)
+    (other-window 3))
 
 (defun setup-editing-windows()
 "Editor function to setup quick editing session for the laptop"
@@ -79,7 +78,13 @@
     (other-window 1)
     (switch-to-buffer "*ssh:list*")
     (other-window 1)
-    (switch-to-buffer "*Bookmark List*")
-)
+    (switch-to-buffer "*Bookmark List*"))
+
+(defun setup-simple-windows()
+  "Editor function to setup a single window interface.  It opens up
+   the buffer and bookmarks for use, but only shows the bookmarks"
+    (interactive)
+    (open-default-buffers)
+    (switch-to-buffer "*Bookmark List*"))
 
 (provide 'windows)

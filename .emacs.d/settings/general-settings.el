@@ -101,7 +101,6 @@ in some of the major modes that I use"
     (setq-default fill-column 80)
     (delete-selection-mode 1)
     (visual-line-mode 1)
-    (wiki-mode 1)
     (hl-line-mode 1)
     (abbrev-mode 1)
     (add-keywords))
