@@ -109,7 +109,7 @@ in some of the major modes that I use"
 "Minor mode values that are related to development modes"
     (minor-mode-hooks)
     (linum-mode 1)
-)
+    (show-paren-mode t))
 
 (add-hook 'dired-mode-hook '(lambda() (hl-line-mode t)))
 (add-hook 'text-mode-hook 'minor-mode-hooks)
@@ -121,9 +121,6 @@ in some of the major modes that I use"
 (require 'window-number)
 (column-number-mode t)
 (window-number-mode 1)
-
-;; Mode to show matching parens by highlighting
-(show-paren-mode t)
 
 ;; autopair mode
 (require 'autopair)
