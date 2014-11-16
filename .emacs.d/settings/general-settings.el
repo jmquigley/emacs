@@ -65,7 +65,7 @@
 (require 'theme)
 (require 'ssh-terminals)
 (require 'search)
-(require 'keybindings)
+(require 'move-text)
 
 (require 'autopair)
 (require 'dictionary)
@@ -73,6 +73,8 @@
 (require 'git-blame)
 (require 'redo+)
 (require 'tidy)
+
+(require 'keybindings)
 
 ;; turn on the mouse wheel mode
 (require 'mwheel)

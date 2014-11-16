@@ -36,6 +36,7 @@
                magit
                markdown-mode
                matlab-mode
+               move-text
                php-mode
                pydoc-info
                pymacs

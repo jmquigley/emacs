@@ -30,6 +30,7 @@ This setup uses the following Emacs packages:
 - [magit](http://magit.github.io/)
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/)
 - [matlab-mode](http://www.emacswiki.org/MatlabMode)
+- [move-text](http://www.emacswiki.org/emacs/move-text.el)
 - [php-mode](http://www.emacswiki.org/PhpMode)
 - [pymacs](https://github.com/pinard/Pymacs)
 - [python-mode](https://launchpad.net/python-mode)
