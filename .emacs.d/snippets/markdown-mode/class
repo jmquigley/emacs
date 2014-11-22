@@ -12,28 +12,21 @@ TODO: Add book, syllabus and completion matrix links
 
 - [Document](documents/syllabus.txt)
 - [Example](http://www.example.com[Example])
-- [Google][1]
+- [Google][]
 
-
-Lessons/Week
-============
 
 Module 01
----------
+=========
 
 ### Topics
 
 ### Resources
 
-
-Assignments
-===========
+### Assignments
 
 
 Announcements
 =============
 
 
-References
-==========
-[1]: http://www.google.com "Google Search Site"
+[Google]: http://www.google.com "Google Search Site"
