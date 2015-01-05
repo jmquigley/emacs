@@ -26,7 +26,7 @@
 (global-set-key (kbd "<select>") 'move-end-of-line)
 (global-set-key (kbd "C-x w") 'fix-horizontal-size)
 (global-set-key (kbd "C-c s") 'isearch-forward-at-point)
-(global-set-key (kbd "C-c l") 'goto-line)
+(global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "C-c c") 'yas/expand)
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
 (global-set-key (kbd "M-?") 'recenter-top-bottom)
