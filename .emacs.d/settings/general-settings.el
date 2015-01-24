@@ -45,7 +45,7 @@
       dired-directory root.dir
       virtualenv-workon "scriblet"
       virtualenv-default-directory "~/virtualenvs/scriblet"
-      initial-frame-alist '((font . "Consolas-10")
+      initial-frame-alist '((font . "Consolas-8")
                             (width . 135) 
                             (height . 65)
                             (top . 30)
