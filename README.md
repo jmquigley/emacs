@@ -1,8 +1,11 @@
 Emacs
 =====
-My Emacs configuration.  This is a reorganization of my current setup.  It was inspired by [jhamrick's layout](https://github.com/jhamrick/emacs).  It has a nice, organized layout.  This setup also uses [el-get](https://github.com/dimitri/el-get) to manage the packages and their dependencies.  The environment must be configured to use this tool.  The following tools must be installed in your environment:
+My Emacs configuration.  This is a reorganization of my current setup.  It was inspired by [jhamrick's layout](https://github.com/jhamrick/emacs).  It has a nice, organized layout.  This setup also uses [el-get](https://github.com/dimitri/el-get) to manage the packages and their dependencies.  The environment must be configured to use this tool.  The following tools must be installed in your environment (assuming [linux mint](http://www.linuxmint.com/) distribution):
 
+- build-essential
+- autoconf
 - [texlive](https://www.tug.org/texlive/)
+- [texinfo](http://www.gnu.org/software/texinfo/)
 - [git](http://git-scm.com/)
 - [hg (Mercurial SCM)](http://mercurial.selenic.com/)
 - [bz (Bazaar SCM)](http://bazaar.canonical.com/en/)
