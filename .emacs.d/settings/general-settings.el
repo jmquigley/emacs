@@ -43,8 +43,8 @@
       linum-format "%4d\u2502"
       show-paren-delay 0
       dired-directory root.dir
-      virtualenv-workon "scriblet"
-      virtualenv-default-directory "~/virtualenvs/scriblet"
+      virtualenv-workon "py27"
+      virtualenv-default-directory "~/virtualenvs/py27"
       initial-frame-alist '((font . "Consolas-8")
                             (width . 135) 
                             (height . 65)

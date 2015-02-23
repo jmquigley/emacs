@@ -57,7 +57,7 @@
 ; history of every project
 (setq el-get-git-shallow-clone t)
 
-; then intsall!
+; then install!
 (el-get 'sync my-packages)
 
 (provide 'el-get-settings)
