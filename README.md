@@ -9,6 +9,7 @@ My Emacs configuration.  This is a reorganization of my current setup.  It was i
 - [git](http://git-scm.com/)
 - [hg (Mercurial SCM)](http://mercurial.selenic.com/)
 - [bz (Bazaar SCM)](http://bazaar.canonical.com/en/)
+- [cvs](http://en.wikipedia.org/wiki/Concurrent_Versions_System)
 
 This setup uses the following Emacs packages:
 

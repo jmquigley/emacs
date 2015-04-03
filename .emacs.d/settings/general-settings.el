@@ -19,6 +19,8 @@
       inhibit-startup-message t
       initial-scratch-message nil
       ;;initial-buffer-choice "*scratch*"
+      magit-auto-revert-mode nil
+      magit-last-seen-setup-instructions "1.4.0"
       visual-bell t
       vc-follow-symlinks t
       backup-by-copying t
