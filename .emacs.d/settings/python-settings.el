@@ -10,6 +10,8 @@
 (require 'python-mode)
 (autoload 'python-mode "python-mode" "Python Mode." t)
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+(add-to-list 'auto-mode-alist '("SConstruct" . python-mode))
+(add-to-list 'auto-mode-alist '("SConscript" . python-mode))
 
 (add-hook 'python-mode-hook 'jedi:ac-setup)
 (add-hook 'python-mode-hook '(lambda()
