@@ -51,8 +51,8 @@ normal return."
 (defvar mmd-mode-map
        (let ((map (make-sparse-keymap))
              (menu-map (make-sparse-keymap "mmd")))
-             ;;(define-key map (kbd "RET") 'mmd-return)
-             ;;(define-key map (kbd "M-RET") 'mmd-alt-return)
+             (define-key map (kbd "RET") 'mmd-return)
+             (define-key map (kbd "M-RET") 'mmd-alt-return)
           map)
        "Keymap for editing mmd files.")
 
@@ -117,11 +117,11 @@ normal return."
 (defvar mmd-math 'mmd-math-face)
 (defconst mmd-math-re "\\(\\\\\\{1,2\\}\\)\\[\\(.\\|\n\\)*?\\1]")
 
-(defface mmd-divider-face '((t (:foreground "#870000")))
-"Face for horizontal line dividers"
+(defface mmd-table-face '((t (:foreground "#878700")))
+"Face for simple markdown extra tables"
 :group 'mmd-faces)
-(defvar mmd-divider 'mmd-divider-face)
-(defconst mmd-divider-re "\\(\\* \\)\\{2,\\}\\*\\|\\*\\{3\\}\n\\|^-\\{3\\}\n\\|\\(- \\)\\{2,\\}-")
+(defvar mmd-table 'mmd-table-face)
+(defconst mmd-table-re "\|.*\|")
 
 (defface mmd-admonition-face 
     '((t (:foreground "#af0000" :background "white")))
@@ -142,7 +142,7 @@ normal return."
 (defvar mmd-font-lock-keywords
     (list
        `(,mmd-math-re . mmd-math)
-       `(,mmd-divider-re . mmd-divider)
+       `(,mmd-table-re . mmd-table)
        `(,mmd-list-re . mmd-list)
        `(,mmd-functions-re . font-lock-function-name-face)
        `(,mmd-operators-re . font-lock-builtin-face)
