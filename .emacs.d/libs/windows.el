@@ -56,7 +56,7 @@
     (fix-horizontal-size 70)
     (split-window-vertically)
     (other-window 1)
-    (switch-to-buffer "*ssh:list*")
+    (switch-to-buffer "*Messages*")
     (other-window 1)
     (switch-to-buffer "*Bookmark List*")
     (split-window-horizontally)
@@ -76,7 +76,7 @@
     (fix-horizontal-size 90)
     (split-window-vertically)
     (other-window 1)
-    (switch-to-buffer "*ssh:list*")
+    (switch-to-buffer "*Messages*")
     (other-window 1)
     (switch-to-buffer "*Bookmark List*"))
 
