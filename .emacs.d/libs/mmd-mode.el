@@ -93,7 +93,7 @@ normal return."
     (set-face-foreground 'markdown-footnote-face "goldenrod")
 
     (set-face-foreground 'markdown-math-face "#d787d7")
-
+    
     (set-face-foreground 'markdown-language-keyword-face
         (face-attribute 'font-lock-keyword-face :foreground))
 
@@ -104,6 +104,12 @@ normal return."
 (defgroup mmd-faces nil
   "Multimarkup mode highlighting group"
   :group 'mmd)
+
+(defface mmd-html-face '((t (:foreground "#87afff")))
+"Face for select html tags that are embedded into markdown"
+:group 'mmd-faces)
+(defvar mmd-html 'mmd-html-face)
+(defconst mmd-html-re "<img .*/>")
 
 (defface mmd-list-face '((t (:foreground "#af8700")))
 "Face for selecting the start of a list of elements"
@@ -141,6 +147,7 @@ normal return."
 
 (defvar mmd-font-lock-keywords
     (list
+       `(,mmd-html-re . mmd-html)
        `(,mmd-math-re . mmd-math)
        `(,mmd-table-re . mmd-table)
        `(,mmd-list-re . mmd-list)
