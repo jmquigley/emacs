@@ -12,6 +12,7 @@
 
   ("school"         . "jmquigley@school.local")
   ("uis"            . "jquig3@uisacad5.uis.edu")
+  ("opsys"          . "jmquigley@192.168.1.15")
 )
 
 "The list of all current ssh terminals that I can log into.  The first column
