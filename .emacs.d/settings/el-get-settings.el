@@ -25,6 +25,7 @@
                expand-region
                flycheck
                git-blame
+               ggtags
                google-c-style
                groovy-emacs-mode
                haml-mode

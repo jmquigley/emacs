@@ -24,6 +24,7 @@ This setup uses the following Emacs packages:
 - [expand-region](https://github.com/magnars/expand-region.el)
 - [flycheck](https://flycheck.readthedocs.org/en/latest/)
 - git-blame
+- [ggtags](https://github.com/leoliu/ggtags)
 - [google-c-style](https://google-styleguide.googlecode.com/svn/trunk/google-c-style.el)
 - [haml-mode](https://github.com/nex3/haml-mode)
 - [hl-line+](http://www.emacswiki.org/hl-line+.el)
