@@ -42,6 +42,7 @@
           "find * <X> -type f <F> -exec grep <C> -nH -e <R> {} +"
       transient-mark-mode t
       tramp-default-method "ssh"
+      tramp-use-ssh-controlmaster-options nil
       linum-format "%4d\u2502"
       show-paren-delay 0
       dired-directory root.dir
