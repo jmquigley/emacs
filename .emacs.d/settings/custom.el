@@ -6,7 +6,7 @@
  ;; If there is more than one, they won't work right.
  '(bmkp-last-as-first-bookmark-file "~/bookmarks")
  '(column-number-mode t)
- '(compile-command "cmake CMakeLists.txt ")
+ '(compile-command "cmake CMakeLists.txt && make all && make test ")
  '(display-time-mode t)
  '(org-file-apps
    (quote
