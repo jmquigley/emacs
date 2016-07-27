@@ -1,6 +1,16 @@
 Emacs
 =====
-My Emacs configuration.  This is a reorganization of my current setup.  It was inspired by [jhamrick's layout](https://github.com/jhamrick/emacs).  It has a nice, organized layout.  This setup also uses [el-get](https://github.com/dimitri/el-get) to manage the packages and their dependencies.  The environment must be configured to use this tool.  The following tools must be installed in your environment (assuming [linux mint](http://www.linuxmint.com/) distribution):
+My Emacs configuration.  This is a reorganization of my current setup.  It was inspired by [jhamrick's layout](https://github.com/jhamrick/emacs).  It has a nice, organized layout.  This setup also uses [el-get](https://github.com/dimitri/el-get) to manage the packages and their dependencies.  The environment must be configured to use this tool.  The following tools must be installed in your environment.  This now assumes that one is using OSX with [homebrew](http://brew.sh/) installed.
+
+- `brew install emacs --with-cocoa --with-gnutls`
+- `brew install autoconf`
+- `brew install git`
+- `brew install hg`
+- `brew install bz`
+- `brew install cvs`
+- `brew cask install mactex` (note that texbin should be in your path)
+
+If using Linux, then the following packages would be required:
 
 - build-essential
 - autoconf
@@ -11,6 +21,8 @@ My Emacs configuration.  This is a reorganization of my current setup.  It was i
 - [bz (Bazaar SCM)](http://bazaar.canonical.com/en/)
 - [cvs](http://en.wikipedia.org/wiki/Concurrent_Versions_System)
 
+All of these source control tools are needed because different emacs packages require different tools to download their libraries through el-get.
+
 This setup uses the following Emacs packages:
 
 - [auctex](http://www.gnu.org/software/auctex/)
@@ -18,6 +30,7 @@ This setup uses the following Emacs packages:
 - [autopair](http://www.emacswiki.org/emacs/AutoPairs)
 - [bookmark+](http://www.emacswiki.org/BookmarkPlus)
 - [centered-cursor-mode](http://www.emacswiki.org/emacs/centered-cursor-mode.el)
+- [cmake-mode](https://cmake.org/Wiki/CMake/Editors/Emacs)
 - [color-theme-solarized](https://github.com/sellout/emacs-color-theme-solarized)
 - [dictionary](https://github.com/myrkr/dictionary-el)
 - [el-get](https://github.com/dimitri/el-get)

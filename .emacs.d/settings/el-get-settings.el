@@ -20,6 +20,7 @@
                autopair
                bookmark+
                centered-cursor-mode
+               cmake-mode
                color-theme-solarized
                dictionary
                expand-region

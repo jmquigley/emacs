@@ -40,6 +40,7 @@
 (require 'php-settings)
 (require 'js-settings)
 (require 'html-settings)
+(require 'cmake-mode-settings)
 
 (load 
     (setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
