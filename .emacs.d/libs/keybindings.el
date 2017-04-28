@@ -122,7 +122,7 @@
         (global-set-key (kbd "M-<up>") 'backward-paragraph)
         (global-set-key (kbd "M-<right>") 'forward-word)
         (global-set-key (kbd "M-<left>") 'backward-word)
-        (global-set-key (kbd "C-<down>") 'scroll-up-command)   
+        (global-set-key (kbd "C-<down>") 'scroll-up-command)
         (global-set-key (kbd "C-<up>") 'scroll-down-command)
 
         (global-set-key (kbd "C-<right>") 'next-buffer)
@@ -147,8 +147,8 @@
     )
 )
 
-(add-hook 'markdown-mode-hook 
-    '(lambda () 
+(add-hook 'markdown-mode-hook
+    '(lambda ()
        (local-unset-key (kbd "M-["))
        (local-unset-key (kbd "M-]"))
        (local-unset-key (kbd "M-<right>"))

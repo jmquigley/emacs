@@ -5,18 +5,18 @@ My Emacs configuration.  This is a reorganization of my current setup.  It was i
 - `brew install emacs --with-cocoa --with-gnutls`
 - `brew install autoconf`
 - `brew install git`
+- `brew install subversion`
 - `brew install hg`
 - `brew install bz`
 - `brew install cvs`
-- `brew cask install mactex` (note that texbin should be in your path)
 
 If using Linux, then the following packages would be required:
 
 - build-essential
 - autoconf
-- [texlive](https://www.tug.org/texlive/)
 - [texinfo](http://www.gnu.org/software/texinfo/)
 - [git](http://git-scm.com/)
+- [subversion](https://subversion.apache.org/)
 - [hg (Mercurial SCM)](http://mercurial.selenic.com/)
 - [bz (Bazaar SCM)](http://bazaar.canonical.com/en/)
 - [cvs](http://en.wikipedia.org/wiki/Concurrent_Versions_System)
@@ -35,7 +35,7 @@ This setup uses the following Emacs packages:
 - [el-get](https://github.com/dimitri/el-get)
 - [expand-region](https://github.com/magnars/expand-region.el)
 - [flycheck](https://flycheck.readthedocs.org/en/latest/)
-- git-blame
+- [git-blamed](https://melpa.org/#/git-blamed)
 - [ggtags](https://github.com/leoliu/ggtags)
 - [google-c-style](https://google-styleguide.googlecode.com/svn/trunk/google-c-style.el)
 - [haml-mode](https://github.com/nex3/haml-mode)

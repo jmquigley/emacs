@@ -73,7 +73,7 @@
 (require 'autopair)
 (require 'dictionary)
 (require 'expand-region)
-(require 'git-blame)
+;;(require 'git-blamed)
 (require 'redo+)
 (require 'tidy)
 
