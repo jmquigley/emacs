@@ -19,7 +19,6 @@
 (require 'org-mode-settings)
 (require 'yaml-settings)
 (require 'haml-settings)
-(require 'auctex-settings)
 (require 'ido-settings)
 (require 'asciidoc-settings)
 (require 'multimarkdown-settings)
@@ -42,6 +41,6 @@
 (require 'html-settings)
 (require 'cmake-mode-settings)
 
-(load 
+(load
     (setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
     'noerror)

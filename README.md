@@ -25,7 +25,6 @@ All of these source control tools are needed because different emacs packages re
 
 This setup uses the following Emacs packages:
 
-- [auctex](http://www.gnu.org/software/auctex/)
 - [auto-complete](http://www.emacswiki.org/emacs/AutoComplete)
 - [autopair](http://www.emacswiki.org/emacs/AutoPairs)
 - [bookmark+](http://www.emacswiki.org/BookmarkPlus)
@@ -47,7 +46,6 @@ This setup uses the following Emacs packages:
 - [lorem-ipsum](http://www.emacswiki.org/emacs/lorem-ipsum.el)
 - [magit](http://magit.github.io/)
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/)
-- [matlab-mode](http://www.emacswiki.org/MatlabMode)
 - [move-text](http://www.emacswiki.org/emacs/move-text.el)
 - [php-mode](http://www.emacswiki.org/PhpMode)
 - [pymacs](https://github.com/pinard/Pymacs)

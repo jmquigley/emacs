@@ -38,7 +38,7 @@
       pop-up-windows nil
       require-final-newline nil
       frame-title-format '((:eval default-directory))
-      grep-find-template 
+      grep-find-template
           "find * <X> -type f <F> -exec grep <C> -nH -e <R> {} +"
       transient-mark-mode t
       tramp-default-method "ssh"
@@ -49,7 +49,7 @@
       virtualenv-workon "py27"
       virtualenv-default-directory "~/virtualenvs/py27"
       initial-frame-alist '((font . "Consolas-8")
-                            (width . 135) 
+                            (width . 135)
                             (height . 65)
                             (top . 30)
                             (left . 300)
@@ -91,7 +91,7 @@
         (scroll-bar-mode -1))
     (tooltip-mode 0))
 
-(if (not window-system) 
+(if (not window-system)
     (menu-bar-mode -1))
 
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -109,7 +109,7 @@ in some of the major modes that I use"
     (hl-line-mode 1)
     (abbrev-mode 1)
     (add-keywords))
-	
+
 (defun development-minor-mode-hooks ()
 "Minor mode values that are related to development modes"
     (minor-mode-hooks)
@@ -138,7 +138,7 @@ refresh the list manually.  This ensures that files are added to the list
 as they are opened."
     (interactive)
     (or
-       (when (setq buffer (get-buffer-window "*Buffer List*")) 
+       (when (setq buffer (get-buffer-window "*Buffer List*"))
            (with-selected-window buffer
                (revert-buffer)))
        (when (setq buffer (get-buffer "*Buffer List*"))

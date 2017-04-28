@@ -1,9 +1,9 @@
 ;; asciidoc-mode.el -- A customized asciidoc mode
 ;;
-;; jmq@mycoredump.com @ 02/13/2013
+;; jmq @ 02/13/2013
 ;;
 ;; To use this mode, first add it to your load path in .emacs:
-;; 
+;;
 ;; -  (add-to-list 'load-path "{code location}")
 ;;
 ;; Once this is in your load path add a require statement to source it
@@ -24,11 +24,11 @@
 (defconst asciidoc-options "--backend=html")
 
 (defun asciidoc-compile-file ()
-"Takes the current buffer, saves it and generates the asciidoc file 
+"Takes the current buffer, saves it and generates the asciidoc file
 associated with it and attempts to open it within the current browser."
     (interactive)
     (save-buffer)
-    (compile (concat 
+    (compile (concat
         "asciidoc " asciidoc-options " '" (buffer-file-name) "'")))
 
 (defun asciidoc-indent-line ()
@@ -52,7 +52,7 @@ the table row.  If not in a cornell table, then just return the newline"
         (insert "\n")
         (if (string-match "^| .*|" current-line)
             (progn
-                (setq str (replace-regexp-in-string "[^ |]" " " 
+                (setq str (replace-regexp-in-string "[^ |]" " "
                               (match-string 0 current-line)))
                 (insert (concat str " "))))))
 
@@ -84,7 +84,7 @@ normal return."
 "Major mode for modifying Asciidoc markup files.
 
 \\{asciidoc-mode-map}"
-    (set-syntax-table asciidoc-mode-syntax-table) 
+    (set-syntax-table asciidoc-mode-syntax-table)
     (set (make-local-variable 'indent-line-function) 'asciidoc-indent-line)
     (set (make-local-variable 'indent-region-function) 'asciidoc-indent-region)
     (setq jit-lock-contextually t)
@@ -162,7 +162,7 @@ normal return."
 :group 'asciidoc-faces)
 (defvar asciidoc-italic 'asciidoc-italic-face)
 (defconst asciidoc-italic-re "_.+?_[ \.\?!]")
- 
+
 (defface asciidoc-mono-face '((t (:foreground "#8a8a8a")))
 "Face for selecting mono text"
 :group 'asciidoc-faces)
@@ -196,17 +196,17 @@ normal return."
 (defvar asciidoc-code 'asciidoc-code-face)
 (defconst asciidoc-code-re "^\n\\([ ]*----+?---$\\)[^\t]*?\\(^\\1\\)$")
 
-(defface asciidoc-admonition-face 
+(defface asciidoc-admonition-face
     '((t (:foreground "#af0000" :background "white")))
 "Face for admonition notes"
 :group 'asciidoc-faces)
 (defvar asciidoc-admonition 'asciidoc-admonition-face)
-(defconst asciidoc-admonition-re 
+(defconst asciidoc-admonition-re
     "NOTE:\\|TIP:\\|IMPORTANT:\\|CAUTION:\\|WARNING:")
 
 (defvar asciidoc-keywords
-    '("\\<ifdef\\>::" "\\<ifndef\\>::" "\\<endif\\>::" "\\<ifeval\\>::" 
-      "\\<include\\>::" "\\<include1\\>::" "\\<sys\\>::" "\\<eval\\>::" 
+    '("\\<ifdef\\>::" "\\<ifndef\\>::" "\\<endif\\>::" "\\<ifeval\\>::"
+      "\\<include\\>::" "\\<include1\\>::" "\\<sys\\>::" "\\<eval\\>::"
       "\\<template\\>::" "\\<system\\>::"))
 (defconst asciidoc-keywords-re (mapconcat 'identity asciidoc-keywords "\\|"))
 
@@ -225,7 +225,7 @@ normal return."
        `(,asciidoc-comment-re . asciidoc-comment)
        `(,asciidoc-code-re . asciidoc-code)
        `(,asciidoc-list-re . asciidoc-list)
-       `(,asciidoc-h0-re . asciidoc-h0)	
+       `(,asciidoc-h0-re . asciidoc-h0)
        `(,asciidoc-h1-re . asciidoc-h1)
        `(,asciidoc-h2-re . asciidoc-h2)
        `(,asciidoc-h3-re . asciidoc-h3)
@@ -256,5 +256,5 @@ normal return."
                (setq found-point (re-search-forward "^\n" nil t 2))
                (if found-point
                    (setq font-lock-end found-point))))))
-				
+
 (provide 'asciidoc-mode)

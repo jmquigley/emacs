@@ -10,9 +10,7 @@
   ("term" . "terminal")
   ("terminal" . "terminal")
 
-  ("school"         . "jmquigley@school.local")
-  ("uis"            . "jquig3@uisacad5.uis.edu")
-  ("opsys"          . "jmquigley@192.168.1.15")
+  ("opsys"          . "jmquigley@192.168.1.42")
 )
 
 "The list of all current ssh terminals that I can log into.  The first column

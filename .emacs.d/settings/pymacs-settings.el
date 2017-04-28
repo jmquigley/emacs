@@ -6,5 +6,5 @@
 (autoload 'pymacs-autoload "pymacs")
 (eval-after-load "pymacs"
     '(add-to-list 'pymacs-load-path (concat plugin-path "pymacs/")))
-	
+
 (provide 'pymacs-settings)

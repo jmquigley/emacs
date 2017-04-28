@@ -1,7 +1,5 @@
 ;; wiki-mode.el -- Wiki operations for restructured text
 ;;
-;; Copyright (C) 2013, MyCoreDump
-;;
 ;; A specialized minor mode that works with restructured text and sphinx.  It
 ;; make the restructured text documents that are part of the sphinx system
 ;; into a wiki within emacs.  Each of the links in a sphinx document can be
@@ -10,7 +8,7 @@
 ;; to files that cannot be opened via emacs.  Certain types of files, like
 ;;  .rst files, are opened within an emacs buffer.
 ;;
-;; Environment variables that can be used to define the location of 
+;; Environment variables that can be used to define the location of
 ;; external applications that will be used by the script to open
 ;; files.
 ;;
@@ -75,7 +73,7 @@ will open the file in a buffer within this program."
 
 ;;;###autoload
 (define-minor-mode wiki-mode
-"Toggles the use of the wiki mode.  The wiki mode turns a buffer into a 
+"Toggles the use of the wiki mode.  The wiki mode turns a buffer into a
 wikified page allowing the user to follow links to other buffers, files,
 and links."
 :init-value nil
@@ -89,7 +87,7 @@ and attempts to open it in the proper program related to that
 reference"
     (interactive)
     (let (str pos (reference (wiki-mode-get-reference-at-point)))
-        (cond ((setq str (wiki-mode-get-local-link reference)) 
+        (cond ((setq str (wiki-mode-get-local-link reference))
                (wiki-mode-parse-local-link str))
 
               ((setq pos (wiki-mode-get-local-reference reference))
@@ -150,7 +148,7 @@ to the document or site."
 (defun wiki-mode-get-local-reference (search)
 "Searches the current buffer for a restructured text footnote reference
 definition.  If it is found, the definition is returned.  If not, nil
-is returned.  It searches for a string in the format:  
+is returned.  It searches for a string in the format:
 .. [{reference}] {link}"
     (message "searching for local reference: %s" search)
     (wiki-mode-search-position (concat "\\.\\. \\[" search "\\] .*"))
@@ -161,7 +159,7 @@ is returned.  It searches for a string in the format:
     (message "parsing local file: %s" link)
 
     (let* (filename application extension done
-        (app (wiki-mode-get-application-from-file link)) 
+        (app (wiki-mode-get-application-from-file link))
         (application (cdr app))
         (extension (car app)))
 
@@ -184,10 +182,10 @@ a toc element.  The second is a reference between < and >"
         (setq filename link))
 
         (setq filename (replace-regexp-in-string "\\.\\. image:: " "" filename))
-        (setq filename (replace-regexp-in-string "^<" "" 
+        (setq filename (replace-regexp-in-string "^<" ""
         (replace-regexp-in-string ">$" "" filename)))
 
-        (if (not (file-name-extension filename)) 
+        (if (not (file-name-extension filename))
             (dolist (app wiki-mode-applications)
                 (setq str (format "%s%s" filename (car app)))
                 (if (file-exists-p str) (setq filename str))))
@@ -228,12 +226,12 @@ found it will return nil."
 
 (defun wiki-mode-execute-file (filename application)
 "This function takes a FILENAME string and attempts to open it via
-the shell command.  It uses the extension on the FILENAME to 
+the shell command.  It uses the extension on the FILENAME to
 determine what program it will use to open it.  It also passes a
 parameter that contains the extension and the program that is used to
  open it."
     (let (cmd
-         (extension (car application)) 
+         (extension (car application))
          (program (cdr application)))
         (message "opening \'%s\' with \'%s\'" filename program)
         (cond ((string= program "emacs") (find-file filename))
@@ -263,7 +261,7 @@ changes back to the buffer that called the command."
 
 (defun wiki-mode-get-reference-at-point (&optional current-point)
 "Looks for the start and end of a wiki type reference.  It returns
-a string that represents the reference" 
+a string that represents the reference"
     (or current-point (setq current-point (point)))
     (goto-char current-point)
     (save-excursion
@@ -335,8 +333,8 @@ are returned in a buffer.  That buffer can then be followed"
 
 (defun wiki-mode-build-search ()
 "Builds a reusable find string for keyword searches"
-    (let (cmd first done type exclusion (join "")) 
- 
+    (let (cmd first done type exclusion (join ""))
+
         (setq cmd "find * \\(")
         (dolist (exclusion wiki-mode-search-exclude)
              (if first (setq join " -o"))
@@ -354,7 +352,7 @@ are returned in a buffer.  That buffer can then be followed"
 )
 
 (defun wiki-mode-show-applications ()
-"Prints out the current list of all applications and their program 
+"Prints out the current list of all applications and their program
 associations."
     (interactive)
     (dolist (app wiki-mode-applications)

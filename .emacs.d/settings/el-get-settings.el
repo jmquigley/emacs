@@ -15,8 +15,7 @@
 ;; packages to install
 ;; use 'el-get-list-packages' to see the list of available packages
 (setq
- my-packages '(auctex
-               auto-complete
+ my-packages '(auto-complete
                autopair
                bookmark+
                centered-cursor-mode
@@ -37,13 +36,12 @@
                lorem-ipsum
                magit
                markdown-mode
-               matlab-mode
                move-text
                php-mode
                pydoc-info
                pymacs
                python-mode
-               redo+			   
+               redo+
                rst-mode
                ruby-mode
                smart-operator

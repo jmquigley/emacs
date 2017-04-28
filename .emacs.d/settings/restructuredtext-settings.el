@@ -4,10 +4,10 @@
     (minor-mode-hooks)
 ))
 (eval-after-load "rst"
-  '(progn 
+  '(progn
      (define-key rst-mode-map (kbd "<M-RET>")
        (lambda ()
          (interactive)
          (rst-insert-list)))))
-		 
+
 (provide 'restructuredtext-settings)

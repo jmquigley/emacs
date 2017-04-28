@@ -1,5 +1,5 @@
 (require 'yasnippet)
-(setq yas-snippet-dirs (list (concat emacs.dir "snippets") 
+(setq yas-snippet-dirs (list (concat emacs.dir "snippets")
                              (concat plugin-path "yasnippet/snippets")))
 
 (setq yas/trigger-key (kbd "C-c c"))
@@ -11,5 +11,5 @@
 
 (defun yas/org-very-safe-expand ()
     (let ((yas/fallback-behavior 'return-nil)) (yas/expand)))
-	
+
 (provide 'yasnippet-settings)

@@ -1,8 +1,6 @@
 ;; cornell.el -- cornell notes table expansion
 ;;
-;; Copyright (C) 2013, MyCoreDump
-;;
-;; A specialied library that is used to convert betwen a cornell table in 
+;; A specialied library that is used to convert betwen a cornell table in
 ;; restructured text mode and an org mode table.
 ;;
 ;; James Quigley
@@ -14,7 +12,7 @@
 (with-no-warnings (require 'cl))
 
 (defun cornell-remove-spaceholders ()
-"Searches the document to remove the space holder values in the table 
+"Searches the document to remove the space holder values in the table
 structures.  The space holder value is based on the orgmode character
 '_' which represents a space value in org tables.
 
@@ -32,14 +30,14 @@ This is a PERMANENT change when executed.  It cannot be undone."
 "Inserts a guideline divider for writing notes"
     (interactive)
     (let ((divider "|"))
-        (loop repeat (+ (string-to-number cornell-question-width) 
-                        (string-to-number cornell-answer-width) 6) 
+        (loop repeat (+ (string-to-number cornell-question-width)
+                        (string-to-number cornell-answer-width) 6)
             do (setq divider (concat divider "=")))
         divider))
 
 (defconst cornell-asciidoc-header (cornell-divider))
 (defconst cornell-asciidoc-header-re "|==+")
-(defconst cornell-org-header (concat "| <" cornell-question-width "> | " 
+(defconst cornell-org-header (concat "| <" cornell-question-width "> | "
                                        "<" cornell-answer-width "> |"))
 (defconst cornell-org-header-re "| *<[0-9][0-9]>.+<[0-9][0-9]>.*")
 
@@ -57,10 +55,10 @@ This is a PERMANENT change when executed.  It cannot be undone."
         (local-replace-string " +|$" "")
         (local-replace-string cornell-org-header-re cornell-asciidoc-header)))
 
-(defun cornell-convert-org-to-rst () 
-"Searches the current document for org mode table dividers and converts 
+(defun cornell-convert-org-to-rst ()
+"Searches the current document for org mode table dividers and converts
 them to rst mode dividers"
-    (interactive) 
+    (interactive)
     (local-replace-string "|--" "+--")
     (local-replace-string "--|$" "--+")
 )
