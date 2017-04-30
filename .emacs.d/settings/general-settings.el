@@ -10,6 +10,8 @@
 (prefer-coding-system 'utf-8-unix)
 (set-default default-buffer-file-coding-system 'utf-8-unix)
 (setq-default indent-tabs-mode t)
+(setq-default tab-width 4)
+(setq tab-stop-list (number-sequence 4 200 4))
 
 ;; Global default variables
 (setq default-major-mode 'text-mode
@@ -37,13 +39,13 @@
       frame-title-format '((:eval default-directory))
       grep-find-template
           "find * <X> -type f <F> -exec grep <C> -nH -e <R> {} +"
-      tab-width 4
       transient-mark-mode t
       tramp-default-method "ssh"
       tramp-use-ssh-controlmaster-options nil
       linum-format "%4d\u2502"
       show-paren-delay 0
       dired-directory root.dir
+      tab-stop-list (number-sequence 4 200 4)
       virtualenv-workon "py27"
       virtualenv-default-directory "~/virtualenvs/py27"
       initial-frame-alist '((font . "Consolas-8")
@@ -110,7 +112,6 @@ in some of the major modes that I use"
 
 (defun development-minor-mode-hooks ()
 "Minor mode values that are related to development modes"
-    (whitespace-mode t)
     (minor-mode-hooks)
     (linum-mode 1)
     (show-paren-mode t))
@@ -145,6 +146,8 @@ as they are opened."
                (revert-buffer)))))
 
 (add-hook 'find-file-hook 'update-buffer-list)
+(add-hook 'after-save-hook 'update-buffer-list)
+;; (add-hook 'post-command-hook 'update-buffer-list)
 
 ;; Enable the n00b disabled items
 (put 'upcase-region 'disabled nil)

@@ -245,4 +245,34 @@ Asciidoc is the main mode, but org is used to edit tables."
        (format "open -a /Applications/Marked.app %s"
            (shell-quote-argument (buffer-file-name)))))
 
+(defun indent-region-custom(numSpaces)
+  (progn
+    (setq regionStart (line-beginning-position))
+    (setq regionEnd (line-end-position))
+    (when (use-region-p)
+      (setq regionStart (region-beginning))
+      (setq regionEnd (region-end)))
+
+    (save-excursion
+      (goto-char regionStart)
+      (setq start (line-beginning-position))
+      (goto-char regionEnd)
+      (setq end (line-end-position))
+
+      (indent-rigidly start end numSpaces)
+      (setq deactivate-mark nil))))
+
+(defun untab-region (N)
+  (interactive "p")
+  (indent-region-custom -4))
+
+(defun tab-region (N)
+  (interactive "p")
+  (if (active-minibuffer-window)
+    (minibuffer-complete)
+
+  (if (use-region-p)
+      (indent-region-custom 4)
+    (insert "\t"))))
+
 (provide 'development)

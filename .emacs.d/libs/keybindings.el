@@ -20,6 +20,7 @@
 (global-set-key (kbd "<f11>") 'eval-region)
 (global-set-key (kbd "<f12>") 'repeat)
 
+(global-set-key (kbd "C-c d") 'duplicate-line)
 (global-set-key (kbd "C-c j") 'join-line)
 (global-set-key (kbd "C-x C-k") 'kill-compilation)
 (global-set-key (kbd "C-c C-k") 'kill-region)
@@ -27,7 +28,7 @@
 (global-set-key (kbd "C-x w") 'fix-horizontal-size)
 (global-set-key (kbd "C-c s") 'isearch-forward-at-point)
 (global-set-key (kbd "C-c l") 'org-store-link)
-(global-set-key (kbd "C-c c") 'yas/expand)
+(global-set-key (kbd "C-c c") 'yas-expand)
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
 (global-set-key (kbd "M-?") 'recenter-top-bottom)
 (global-set-key (kbd "C-^") 'completion-accept)
@@ -59,6 +60,9 @@
 (global-set-key (kbd "C-<f1>") 'show-file-name)
 (global-set-key (kbd "C-c b") 'show-file-name)
 (global-set-key (kbd "C-c m") 'markdown-preview-file)
+(global-set-key (kbd "C-c w") 'whitespace-mode)
+(global-set-key (kbd "<backtab>") 'untab-region)
+(global-set-key (kbd "<tab>") 'tab-region)
 
 ;; Window configurations
 (global-set-key (kbd "M-1") 'setup-development-windows)
