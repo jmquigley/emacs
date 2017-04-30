@@ -1,4 +1,4 @@
-;; This is a list of commands that are used to setup the windows in a 
+;; This is a list of commands that are used to setup the windows in a
 ;; development environment
 
 (require 'development)
@@ -38,7 +38,6 @@
 (defun open-default-programs ()
 "Opens a list of default programs/buffers that are common to all sessions"
     (cd root.dir)
-    (ssh-list)
     (list-buffers))
 
 (defun open-default-buffers ()
@@ -56,17 +55,14 @@
     (fix-horizontal-size 70)
     (split-window-vertically)
     (other-window 1)
-    (switch-to-buffer "*ssh:list*")
+    (switch-to-buffer "*Messages*")
     (other-window 1)
     (switch-to-buffer "*Bookmark List*")
     (split-window-horizontally)
     (setq previous-window-number "3")
-    (fix-horizontal-size 125)
+    (fix-horizontal-size 105)
     (other-window 1)
-    (split-window-vertically)
     (switch-to-buffer "*scratch*")
-    (other-window 1)
-    (switch-to-buffer "*Messages*")
     (other-window 3))
 
 (defun setup-editing-windows()

@@ -4,15 +4,12 @@
 
 (setq default-directory root.dir)
 
-;; no tabs by default. modes that really need tabs should enable
-;; indent-tabs-mode explicitly. makefile-mode already does that
-(setq-default indent-tabs-mode nil)
-
 ;; Set the default line endings to use unix
 (set-default buffer-file-coding-system 'utf-8-unix)
 (set-default-coding-systems 'utf-8-unix)
 (prefer-coding-system 'utf-8-unix)
 (set-default default-buffer-file-coding-system 'utf-8-unix)
+(setq-default indent-tabs-mode t)
 
 ;; Global default variables
 (setq default-major-mode 'text-mode
@@ -40,6 +37,7 @@
       frame-title-format '((:eval default-directory))
       grep-find-template
           "find * <X> -type f <F> -exec grep <C> -nH -e <R> {} +"
+      tab-width 4
       transient-mark-mode t
       tramp-default-method "ssh"
       tramp-use-ssh-controlmaster-options nil
@@ -73,7 +71,7 @@
 (require 'autopair)
 (require 'dictionary)
 (require 'expand-region)
-;;(require 'git-blamed)
+(require 'git-blamed)
 (require 'redo+)
 (require 'tidy)
 
@@ -112,6 +110,7 @@ in some of the major modes that I use"
 
 (defun development-minor-mode-hooks ()
 "Minor mode values that are related to development modes"
+    (whitespace-mode t)
     (minor-mode-hooks)
     (linum-mode 1)
     (show-paren-mode t))

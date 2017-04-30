@@ -29,6 +29,16 @@ move forward one position"
     (push-mark (point) t t)
     (end-of-line))
 
+(defun duplicate-line()
+    (interactive)
+    (move-beginning-of-line 1)
+    (kill-line)
+    (yank)
+    (open-line 1)
+    (next-line 1)
+    (yank)
+)
+
 (defun exchange-point-an-mark-no-transient ()
 "Performs the code to exchange the point and mark, but ensures that the
 transient mark mode is not enabled when it does"
@@ -112,8 +122,8 @@ This is stored in ssh-terminals.el.  This is a global list of all sessions."
     (let* ((server (cdr (assoc location ssh-terminal-locations))))
 
        (if (or (string= location "")
-               (string= location "local") 
-               (string= location "terminal") 
+               (string= location "local")
+               (string= location "terminal")
                (string= location "term"))
              (open-terminal server)
          (if (and (boundp 'server) server)
@@ -231,8 +241,8 @@ Asciidoc is the main mode, but org is used to edit tables."
 (defun markdown-preview-file ()
 "run Marked on the current file and revert the buffer"
     (interactive)
-    (shell-command 
-       (format "open -a /Applications/Marked.app %s" 
+    (shell-command
+       (format "open -a /Applications/Marked.app %s"
            (shell-quote-argument (buffer-file-name)))))
 
 (provide 'development)

@@ -1,6 +1,5 @@
 (require 'yasnippet)
-(setq yas-snippet-dirs (list (concat emacs.dir "snippets")
-                             (concat plugin-path "yasnippet/snippets")))
+(setq yas-snippet-dirs (list (concat emacs.dir "snippets")))
 
 (setq yas/trigger-key (kbd "C-c c"))
 (setq yas/indent-line 'fixed)
