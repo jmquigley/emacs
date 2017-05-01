@@ -9,6 +9,9 @@
 (set-default-coding-systems 'utf-8-unix)
 (prefer-coding-system 'utf-8-unix)
 (set-default default-buffer-file-coding-system 'utf-8-unix)
+(set-terminal-coding-system 'utf-8-unix)
+(set-keyboard-coding-system 'utf-8-unix)
+
 (setq-default indent-tabs-mode t)
 (setq-default tab-width 4)
 (setq tab-stop-list (number-sequence 4 200 4))
@@ -17,7 +20,7 @@
 (setq default-major-mode 'text-mode
       inhibit-startup-message t
       initial-scratch-message nil
-      ;;initial-buffer-choice "*scratch*"
+      initial-buffer-choice t
       magit-auto-revert-mode nil
       magit-last-seen-setup-instructions "1.4.0"
       visual-bell t
@@ -130,24 +133,6 @@ in some of the major modes that I use"
 ;; autopair mode
 (require 'autopair)
 (autopair-global-mode)
-
-(defun update-buffer-list ()
-"When a file is opened this function is called to update the current buffer
-list by calling the revert function.  If this is not called you have to
-refresh the list manually.  This ensures that files are added to the list
-as they are opened."
-    (interactive)
-    (or
-       (when (setq buffer (get-buffer-window "*Buffer List*"))
-           (with-selected-window buffer
-               (revert-buffer)))
-       (when (setq buffer (get-buffer "*Buffer List*"))
-           (with-current-buffer buffer
-               (revert-buffer)))))
-
-(add-hook 'find-file-hook 'update-buffer-list)
-(add-hook 'after-save-hook 'update-buffer-list)
-;; (add-hook 'post-command-hook 'update-buffer-list)
 
 ;; Enable the n00b disabled items
 (put 'upcase-region 'disabled nil)

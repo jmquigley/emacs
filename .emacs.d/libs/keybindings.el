@@ -28,7 +28,6 @@
 (global-set-key (kbd "C-x w") 'fix-horizontal-size)
 (global-set-key (kbd "C-c s") 'isearch-forward-at-point)
 (global-set-key (kbd "C-c l") 'org-store-link)
-(global-set-key (kbd "C-c c") 'yas-expand)
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
 (global-set-key (kbd "M-?") 'recenter-top-bottom)
 (global-set-key (kbd "C-^") 'completion-accept)
@@ -63,6 +62,8 @@
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 (global-set-key (kbd "<backtab>") 'untab-region)
 (global-set-key (kbd "<tab>") 'tab-region)
+
+(global-set-key (kbd "C-c c") 'yas-expand)
 
 ;; Window configurations
 (global-set-key (kbd "M-1") 'setup-development-windows)
@@ -160,9 +161,5 @@
        (local-unset-key (kbd "M-<up>"))
        (local-unset-key (kbd "M-<down>"))
 ))
-
-;;External macros
-(global-set-key (kbd "C-c n") '(lambda() (interactive)
-    (run-python-script "~/bin/cornell.py")))
 
 (provide 'keybindings)

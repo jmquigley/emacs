@@ -17,7 +17,7 @@
 	cmake-mode
 	color-theme-solarized
 	dictionary
-	; elpy
+    electric-spacing
 	expand-region
 	flycheck
 	ggtags
@@ -40,11 +40,12 @@
 	redo+
     rjsx-mode
 	ruby-mode
-	smart-operator
+    slime
 	smooth-scrolling
 	tidy
 	tern
-	typescript
+    tern-auto-complete
+	typescript-mode
 	virtualenvwrapper
 	window-number
 	ws-butler
@@ -53,7 +54,6 @@
 	))
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("elpy" . "http://jorgenschaefer.github.io/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 
@@ -98,6 +98,7 @@
 (require 'html-settings)
 (require 'cmake-mode-settings)
 (require 'whitespace-settings)
+(require 'buffer-settings)
 
 (load-theme 'monokai t)
 

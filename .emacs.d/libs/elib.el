@@ -91,4 +91,19 @@ a replacement string"
 (defun include-elget-plugin (plugin)
   (add-to-list 'load-path (make-elget-path plugin)))
 
+;;;###autoload
+(defun update-buffer-list ()
+  "When a file is opened this function is called to update the current buffer
+  list by calling the revert function.  If this is not called you have to
+  refresh the list manually.  This ensures that files are added to the list
+  as they are opened."
+      (interactive)
+          (or 
+              (when (setq buffer (get-buffer-window "*Buffer List*"))
+                  (with-selected-window buffer
+                      (revert-buffer)))
+              (when (setq buffer (get-buffer "*Buffer List*"))
+                  (with-current-buffer buffer
+                      (revert-buffer)))))
+
 (provide 'elib)
