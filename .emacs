@@ -38,6 +38,7 @@
 	pydoc-info
 	python-mode
 	redo+
+    rjsx-mode
 	ruby-mode
 	smart-operator
 	smooth-scrolling

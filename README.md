@@ -50,11 +50,10 @@ This setup uses the following Emacs packages:
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/)
 - [move-text](http://www.emacswiki.org/emacs/move-text.el)
 - [php-mode](http://www.emacswiki.org/PhpMode)
-- [pymacs](https://github.com/pinard/Pymacs)
 - [python-mode](https://launchpad.net/python-mode)
 - [redo+](http://www.emacswiki.org/RedoPlus)
+- [rjsx-mode](https://github.com/felipeochoa/rjsx-mode)
 - [rst-mode](http://docutils.sourceforge.net/docs/user/emacs.html)
-- ruby-mode
 - [smart-operator](http://xwl.appspot.com/ref/smart-operator.el)
 - [smooth-scrolling](http://www.emacswiki.org/emacs/SmoothScrolling)
 - [tern](https://melpa.org/#/tern)
