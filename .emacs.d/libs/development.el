@@ -277,6 +277,8 @@ Asciidoc is the main mode, but org is used to edit tables."
     (interactive)
         (let ((buffer (generate-new-buffer "untitled")))
             (set-buffer-major-mode buffer)
-            (display-buffer buffer '(display-buffer-pop-up-frame . nil))))
+            (display-buffer buffer '(display-buffer-same-window . nil))
+            (switch-to-buffer buffer)
+            (set-buffer-modified-p t)))
 
 (provide 'development)

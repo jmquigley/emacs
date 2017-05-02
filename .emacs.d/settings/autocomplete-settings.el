@@ -1,6 +1,6 @@
 (require 'auto-complete-config)
 
-(add-to-list 'ac-dictionary-directories (concat emacs.dir "3rd-party/auto-complete"))
+(add-to-list 'ac-dictionary-directories (concat user-emacs-directory "3rd-party/auto-complete"))
 (ac-config-default)
 
 (dolist (m '(c-mode 

@@ -3,9 +3,8 @@
 (add-to-list 'load-path "~/.emacs.d/3rd-party")
 
 (defvar root.dir (expand-file-name "~/"))
-(defvar emacs.dir (concat root.dir ".emacs.d/"))
-(defvar conf.dir (concat emacs.dir "settings/"))
-(toggle-debug-on-error)
+(defvar conf.dir (concat user-emacs-directory "settings/"))
+;; (toggle-debug-on-error)
 
 (require 'package)
 
@@ -38,6 +37,7 @@
 	pydoc-info
 	python-mode
 	redo+
+    rainbow-delimiters
     rjsx-mode
 	ruby-mode
     slime
@@ -95,6 +95,7 @@
 (require 'makefile-settings)
 (require 'php-settings)
 (require 'js-settings)
+(require 'shell-settings)
 (require 'html-settings)
 (require 'cmake-mode-settings)
 (require 'whitespace-settings)
