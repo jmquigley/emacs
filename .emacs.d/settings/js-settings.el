@@ -14,7 +14,7 @@
     (setq-default js2-basic-offset 4)
     (development-minor-mode-hooks)
     (setq-default indent-tabs-mode t)
-))
+    ))
 
 (add-hook 'rjsx-mode-hook '(lambda()
     (if (bound-and-true-p tern-mode)
@@ -29,10 +29,10 @@
     (development-minor-mode-hooks)
 	(setq-default indent-tabs-mode t)
     (setq tab-width 2)
-))
+    ))
 
-(eval-after-load 'tern '(progn
-    (require 'tern-auto-complete)
-    (tern-ac-setup)))
+;; (eval-after-load 'tern '(progn
+;;     (require 'tern-auto-complete)
+;;     (tern-ac-setup)))
 
 (provide 'js-settings)

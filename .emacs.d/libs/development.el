@@ -272,4 +272,11 @@ Asciidoc is the main mode, but org is used to edit tables."
       (indent-region-custom 4)
     (insert "\t"))))
 
+(defun new-buffer-frame()
+"Create a new frame with a new empty buffer."
+    (interactive)
+        (let ((buffer (generate-new-buffer "untitled")))
+            (set-buffer-major-mode buffer)
+            (display-buffer buffer '(display-buffer-pop-up-frame . nil))))
+
 (provide 'development)
