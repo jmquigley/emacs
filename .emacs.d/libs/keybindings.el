@@ -72,6 +72,28 @@
 (global-set-key (kbd "M-2") 'setup-editing-windows)
 (global-set-key (kbd "M-3") 'setup-simple-windows)
 
+(global-set-key (kbd "M-<delete>") 'whack-whitespace)
+
+(global-set-key (kbd "S-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "S-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-<up>") 'shrink-window)
+(global-set-key (kbd "S-<down>") 'enlarge-window)
+
+(global-set-key (kbd "M-<down>") 'forward-paragraph)
+(global-set-key (kbd "M-<up>") 'backward-paragraph)
+(global-set-key (kbd "M-<right>") 'forward-word)
+(global-set-key (kbd "M-<left>") 'backward-word)
+(global-set-key (kbd "C-<down>") 'scroll-up-command)
+(global-set-key (kbd "C-<up>") 'scroll-down-command)
+
+(global-set-key (kbd "C-<right>") 'next-buffer)
+(global-set-key (kbd "C-<left>") 'previous-buffer)
+
+(global-set-key (kbd "M-<f5>") 'compile)
+(global-set-key (kbd "M-<f6>") 'open-ssh-buffer)
+(global-set-key (kbd "M-<f7>") 'rgrep)
+
+
 (if (and (string= system-type 'darwin) (not window-system))
     (progn
         (global-set-key (kbd "M-DEL") 'whack-whitespace)
@@ -116,28 +138,6 @@
         ;; alt-f7
         (define-key input-decode-map "\M-[24~" [(meta rgrep)])
         (global-set-key [(meta rgrep)] 'rgrep)
-    )
-    (progn
-        (global-set-key (kbd "M-<delete>") 'whack-whitespace)
-
-        (global-set-key (kbd "S-<left>") 'shrink-window-horizontally)
-        (global-set-key (kbd "S-<right>") 'enlarge-window-horizontally)
-        (global-set-key (kbd "S-<up>") 'shrink-window)
-        (global-set-key (kbd "S-<down>") 'enlarge-window)
-
-        (global-set-key (kbd "M-<down>") 'forward-paragraph)
-        (global-set-key (kbd "M-<up>") 'backward-paragraph)
-        (global-set-key (kbd "M-<right>") 'forward-word)
-        (global-set-key (kbd "M-<left>") 'backward-word)
-        (global-set-key (kbd "C-<down>") 'scroll-up-command)
-        (global-set-key (kbd "C-<up>") 'scroll-down-command)
-
-        (global-set-key (kbd "C-<right>") 'next-buffer)
-        (global-set-key (kbd "C-<left>") 'previous-buffer)
-
-        (global-set-key (kbd "M-<f5>") 'compile)
-        (global-set-key (kbd "M-<f6>") 'open-ssh-buffer)
-        (global-set-key (kbd "M-<f7>") 'rgrep)
     )
 )
 
