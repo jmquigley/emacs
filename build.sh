@@ -9,8 +9,6 @@ pushd ${DIR} > /dev/null
 # Copies this package into home.  NO BACKUP
 [ ! -d ~/.emacs.d ] && mkdir ~/.emacs.d
 cp -R .emacs.d/* ~/.emacs.d
-[ -f ~/.emacs ] && rm ~/.emacs
-cp .emacs ~/.
 
 popd > /dev/null
 
