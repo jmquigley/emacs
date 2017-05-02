@@ -64,7 +64,6 @@
 
 (require 'elib)
 (require 'wiki-mode)
-(require 'cornell)
 (require 'asciidoc-mode)
 (require 'mmd-mode)
 (require 'development)

@@ -43,8 +43,7 @@
 (defun open-default-buffers ()
 "Opens a list of default buffers common to all windows"
     (bookmark-bmenu-list)
-    (open-default-programs)
-    (add-hook 'kill-buffer-hook 'update-buffer-list))
+    (open-default-programs))
 
 (defun setup-development-windows ()
 "Development function to quickly configure windows"

@@ -1,9 +1,9 @@
 ;; asciidoc-mode.el -- A customized asciidoc mode
 ;;
-;; jmq @ 02/13/2013
+;; jmquigley@outlook.com @ 02/13/2013
 ;;
 ;; To use this mode, first add it to your load path in .emacs:
-;;
+;; 
 ;; -  (add-to-list 'load-path "{code location}")
 ;;
 ;; Once this is in your load path add a require statement to source it
@@ -24,11 +24,11 @@
 (defconst asciidoc-options "--backend=html")
 
 (defun asciidoc-compile-file ()
-"Takes the current buffer, saves it and generates the asciidoc file
+"Takes the current buffer, saves it and generates the asciidoc file 
 associated with it and attempts to open it within the current browser."
     (interactive)
     (save-buffer)
-    (compile (concat
+    (compile (concat 
         "asciidoc " asciidoc-options " '" (buffer-file-name) "'")))
 
 (defun asciidoc-indent-line ()
@@ -44,30 +44,16 @@ associated with it and attempts to open it within the current browser."
     (interactive))
 
 (defun asciidoc-return ()
-"Intercepts the return key to perform a processing check of your current location.
-If currently in a cornell table, then the return will move to the new line and insert
-the table row.  If not in a cornell table, then just return the newline"
+"Intercepts the return key to perform a processing check of your current location."
     (interactive)
     (let ((current-line (thing-at-point 'line)) str)
-        (insert "\n")
-        (if (string-match "^| .*|" current-line)
-            (progn
-                (setq str (replace-regexp-in-string "[^ |]" " "
-                              (match-string 0 current-line)))
-                (insert (concat str " "))))))
-
-(defun asciidoc-alt-return ()
-"Works like the enter key to break out of a cornell table and perform a
-normal return."
-    (interactive)
-    (insert "\n"))
+        (insert "\n")))
 
 (defvar asciidoc-mode-map
        (let ((map (make-sparse-keymap))
              (menu-map (make-sparse-keymap "Asciidoc")))
          (define-key map (kbd "C-c p") 'asciidoc-compile-file)
          (define-key map (kbd "RET") 'asciidoc-return)
-         (define-key map (kbd "M-RET") 'asciidoc-alt-return)
          (define-key map (kbd "<backtab>") 'asciidoc-backtab)
           map)
        "Keymap for editing asciidoc files.")
@@ -84,7 +70,7 @@ normal return."
 "Major mode for modifying Asciidoc markup files.
 
 \\{asciidoc-mode-map}"
-    (set-syntax-table asciidoc-mode-syntax-table)
+    (set-syntax-table asciidoc-mode-syntax-table) 
     (set (make-local-variable 'indent-line-function) 'asciidoc-indent-line)
     (set (make-local-variable 'indent-region-function) 'asciidoc-indent-region)
     (setq jit-lock-contextually t)
@@ -162,7 +148,7 @@ normal return."
 :group 'asciidoc-faces)
 (defvar asciidoc-italic 'asciidoc-italic-face)
 (defconst asciidoc-italic-re "_.+?_[ \.\?!]")
-
+ 
 (defface asciidoc-mono-face '((t (:foreground "#8a8a8a")))
 "Face for selecting mono text"
 :group 'asciidoc-faces)
@@ -196,17 +182,17 @@ normal return."
 (defvar asciidoc-code 'asciidoc-code-face)
 (defconst asciidoc-code-re "^\n\\([ ]*----+?---$\\)[^\t]*?\\(^\\1\\)$")
 
-(defface asciidoc-admonition-face
+(defface asciidoc-admonition-face 
     '((t (:foreground "#af0000" :background "white")))
 "Face for admonition notes"
 :group 'asciidoc-faces)
 (defvar asciidoc-admonition 'asciidoc-admonition-face)
-(defconst asciidoc-admonition-re
+(defconst asciidoc-admonition-re 
     "NOTE:\\|TIP:\\|IMPORTANT:\\|CAUTION:\\|WARNING:")
 
 (defvar asciidoc-keywords
-    '("\\<ifdef\\>::" "\\<ifndef\\>::" "\\<endif\\>::" "\\<ifeval\\>::"
-      "\\<include\\>::" "\\<include1\\>::" "\\<sys\\>::" "\\<eval\\>::"
+    '("\\<ifdef\\>::" "\\<ifndef\\>::" "\\<endif\\>::" "\\<ifeval\\>::" 
+      "\\<include\\>::" "\\<include1\\>::" "\\<sys\\>::" "\\<eval\\>::" 
       "\\<template\\>::" "\\<system\\>::"))
 (defconst asciidoc-keywords-re (mapconcat 'identity asciidoc-keywords "\\|"))
 
@@ -225,7 +211,7 @@ normal return."
        `(,asciidoc-comment-re . asciidoc-comment)
        `(,asciidoc-code-re . asciidoc-code)
        `(,asciidoc-list-re . asciidoc-list)
-       `(,asciidoc-h0-re . asciidoc-h0)
+       `(,asciidoc-h0-re . asciidoc-h0)	
        `(,asciidoc-h1-re . asciidoc-h1)
        `(,asciidoc-h2-re . asciidoc-h2)
        `(,asciidoc-h3-re . asciidoc-h3)
@@ -256,5 +242,5 @@ normal return."
                (setq found-point (re-search-forward "^\n" nil t 2))
                (if found-point
                    (setq font-lock-end found-point))))))
-
+				
 (provide 'asciidoc-mode)

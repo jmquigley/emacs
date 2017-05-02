@@ -5,7 +5,7 @@
 (defvar root.dir (expand-file-name "~/"))
 (defvar emacs.dir (concat root.dir ".emacs.d/"))
 (defvar conf.dir (concat emacs.dir "settings/"))
-;;(toggle-debug-on-error)
+(toggle-debug-on-error)
 
 (require 'package)
 

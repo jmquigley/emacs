@@ -3,7 +3,6 @@
 
 (require 'term)
 (require 'elib)
-(require 'cornell)
 (require 'window-number)
 (require 'ssh-terminals)
 (with-no-warnings (require 'cl))
@@ -231,12 +230,10 @@ Asciidoc is the main mode, but org is used to edit tables."
         (let* ((mode (buffer-mode (current-buffer))))
             (if (string= mode 'asciidoc-mode)
                 (progn
-                    (org-mode)
-                    (cornell-convert-asciidoc-to-org)))
+                    (org-mode)))
             (if (string= mode 'org-mode)
                 (progn
-                    (asciidoc-mode)
-                    (cornell-convert-org-to-asciidoc))))))
+                    (asciidoc-mode))))))
 
 (defun markdown-preview-file ()
 "run Marked on the current file and revert the buffer"

@@ -30,29 +30,15 @@
 (defconst mmd-options "")
 
 (defun mmd-return ()
-"Intercepts the return key to perform a processing check of your current location.
-If currently in a cornell table, then the return will move to the new line and insert
-the table row.  If not in a cornell table, then just return the newline"
+"Intercepts the return key to perform a processing check of your current location."
     (interactive)
     (let ((current-line (thing-at-point 'line)) str)
-        (insert "\n")
-        (if (string-match "^.*|" current-line)
-            (progn
-                (setq str (replace-regexp-in-string "[^ |]" " " 
-                              (match-string 0 current-line)))
-                (insert (concat str " "))))))
-
-(defun mmd-alt-return ()
-"Works like the enter key to break out of a cornell table and perform a
-normal return."
-    (interactive)
-    (insert "\n"))
+        (insert "\n")))
 
 (defvar mmd-mode-map
        (let ((map (make-sparse-keymap))
              (menu-map (make-sparse-keymap "mmd")))
              (define-key map (kbd "RET") 'mmd-return)
-             (define-key map (kbd "M-RET") 'mmd-alt-return)
           map)
        "Keymap for editing mmd files.")
 
