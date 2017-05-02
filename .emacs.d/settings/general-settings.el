@@ -23,6 +23,7 @@
       initial-buffer-choice t
       magit-auto-revert-mode nil
       magit-last-seen-setup-instructions "1.4.0"
+      tags-table-list '("~/.emacs.d" "~/workspace")
       visual-bell t
       vc-follow-symlinks t
       backup-by-copying t
@@ -79,7 +80,7 @@
 (require 'redo+)
 (require 'tidy)
 
-(require 'keybindings)
+;; (require 'keybindings)
 
 ;; turn on the mouse wheel mode
 (require 'mwheel)

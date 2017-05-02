@@ -42,11 +42,13 @@
 	ruby-mode
     slime
 	smooth-scrolling
+    tide
 	tidy
 	tern
     tern-auto-complete
 	typescript-mode
 	virtualenvwrapper
+    web-mode
 	window-number
 	ws-butler
 	yaml-mode
@@ -101,6 +103,7 @@
 (require 'whitespace-settings)
 (require 'buffer-settings)
 
+(require 'keybindings)
 (load-theme 'monokai t)
 
 (load

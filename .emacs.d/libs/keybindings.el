@@ -1,4 +1,14 @@
 ;; Contains all of my custom key bindings in one place
+;;
+;; To test key mappings use:
+;;
+;;    cat -v
+;;
+;; This will allow one to type keys at the prompt and see what
+;; is emitted.  This is important when debugging different
+;; terminals and key mappings (see below)
+;;
+
 (require 'elib)
 (require 'windows)
 (require 'development)
@@ -67,6 +77,11 @@
 
 (global-set-key (kbd "C-c c") 'yas-expand)
 
+(global-unset-key "\M-.")
+(global-set-key (kbd "M-.") 'xref-find-definitions)
+(global-unset-key "\M-,")
+(global-set-key (kbd "M-,") 'xref-pop-marker-stack)
+
 ;; Window configurations
 (global-set-key (kbd "M-1") 'setup-development-windows)
 (global-set-key (kbd "M-2") 'setup-editing-windows)
@@ -128,15 +143,15 @@
         (global-set-key [(meta scroll-up)] 'scroll-up-command)
 
         ;; alt-F5
-        (define-key input-decode-map "\M-[21~" [(meta compile-code)])
+        (define-key input-decode-map "\M-[15~" [(meta compile-code)])
         (global-set-key [(meta compile-code)] 'compile)
 
         ;; alt-F6
-        (define-key input-decode-map "\M-[23~" [(meta open-ssh-buffer)])
+        (define-key input-decode-map "\M-[17~" [(meta open-ssh-buffer)])
         (global-set-key [(meta open-ssh-buffer)] 'open-ssh-buffer)
 
         ;; alt-f7
-        (define-key input-decode-map "\M-[24~" [(meta rgrep)])
+        (define-key input-decode-map "\M-[18~" [(meta rgrep)])
         (global-set-key [(meta rgrep)] 'rgrep)
     )
 )

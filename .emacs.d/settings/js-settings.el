@@ -1,20 +1,37 @@
 (require 'js2-mode)
 (require 'json-mode)
 (require 'rjsx-mode)
-(require 'tern)
+(require 'web-mode)
+
+(defun setup-tide-mode ()
+    (interactive)
+    (tide-setup)
+    (flycheck-mode +1)
+    (setq flycheck-check-syntax-automatically '(save mode-enabled))
+    (eldoc-mode +1)
+    (tide-hl-identifier-mode +1)
+    (company-mode +1)
+)
 
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.ts$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx$" . rjsx-mode))
-(add-to-list 'auto-mode-alist '("\\.tsx$" . rjsx-mode))
+
+(add-to-list 'auto-mode-alist '("\\.ts$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.tsx$" . web-mode))
+
 (add-to-list 'auto-mode-alist '("\\.json$" . json-mode))
 
 (add-hook 'js2-mode-hook '(lambda()
-    (tern-mode t)
     (setq-default js2-basic-offset 4)
     (development-minor-mode-hooks)
     (setq-default indent-tabs-mode t)
-    ))
+
+    (when (string-equal "ts" (file-name-extension buffer-file-name))
+        (setup-tide-mode))
+
+    (when (string-equal "js" (file-name-extension buffer-file-name))
+        (tern-mode t))
+))
 
 (add-hook 'rjsx-mode-hook '(lambda()
     (if (bound-and-true-p tern-mode)
@@ -24,15 +41,20 @@
         ))
 ))
 
-(add-hook
- 'json-mode-hook '(lambda()
+(add-hook 'json-mode-hook '(lambda()
     (development-minor-mode-hooks)
 	(setq-default indent-tabs-mode t)
     (setq tab-width 2)
-    ))
+))
 
-;; (eval-after-load 'tern '(progn
-;;     (require 'tern-auto-complete)
-;;     (tern-ac-setup)))
+(add-hook 'web-mode-hook '(lambda ()
+    (when (string-equal "tsx" (file-name-extension buffer-file-name))
+        (setup-tide-mode))
+))
+
+(eval-after-load 'tern
+   '(progn
+      (require 'tern-auto-complete)
+      (tern-ac-setup)))
 
 (provide 'js-settings)
