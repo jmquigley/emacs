@@ -35,7 +35,6 @@
 	move-text
 	php-mode
 	pydoc-info
-	python-mode
 	redo+
     rainbow-delimiters
     rjsx-mode

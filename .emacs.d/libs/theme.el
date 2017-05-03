@@ -1,5 +1,5 @@
 ;; This is the custom color theme for the mycoredump project.  This relies on the
-;; color-theme emacs package located here: 
+;; color-theme emacs package located here:
 ;; http://www.emacswiki.org/emacs-en/ColorTheme
 ;;
 ;; The available color values can be seen in emacs with:
@@ -13,6 +13,7 @@
 (require 'markdown-mode)
 (require 'bookmark+)
 (require 'org)
+(require 'whitespace)
 
 (defun common-font-locks()
 "Common color settings for all modes"
@@ -64,6 +65,18 @@
     (set-face-background 'bmkp-light-mark "#626262")
     (set-face-foreground 'bmkp-light-mark "#00005f")
     (set-face-foreground 'bmkp-no-local "#870000")
+
+    ;; Whitespace mode
+    (set-face-attribute 'whitespace-space nil :foreground "firebrick" :background nil)
+    (set-face-attribute 'whitespace-hspace nil :foreground "lightgray" :background "blue")
+    (set-face-attribute 'whitespace-empty nil :foreground "SlateGray1" :background "firebrick")
+    (set-face-attribute 'whitespace-line nil :foreground "black" :background "red")
+    (set-face-attribute 'whitespace-newline nil :foreground "firebrick" :background nil)
+    (set-face-attribute 'whitespace-tab nil :foreground "firebrick" :background nil)
+    (set-face-attribute 'whitespace-indentation nil :foreground "firebrick" :background nil)
+    (set-face-attribute 'whitespace-trailing nil :foreground "firebrick" :background nil)
+    (set-face-attribute 'whitespace-space-after-tab nil :foreground "black" :background "green")
+    (set-face-attribute 'whitespace-space-before-tab nil :foreground "black" :background "DarkOrange")
 )
 
 (common-font-locks)
