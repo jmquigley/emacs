@@ -47,6 +47,7 @@
 (global-set-key (kbd "C-]") '(lambda() (interactive) (find-file (concat user-emacs-directory "init.el"))))
 (global-set-key (kbd "C-c e") 'expand-abbrev)
 (global-set-key (kbd "M-8") 'er/expand-region)
+(global-set-key (kbd "M-\\") 'er/expand-region)
 (global-set-key (kbd "<Scroll_Lock>") 'scroll-lock-mode)
 (global-set-key (kbd "M--") 'undo)
 (global-set-key (kbd "M-=") 'redo)
