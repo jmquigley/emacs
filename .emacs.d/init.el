@@ -15,6 +15,7 @@
 	centered-cursor-mode
 	cmake-mode
 	color-theme-solarized
+    company
 	dictionary
     electric-spacing
 	expand-region
