@@ -27,15 +27,12 @@
     (development-minor-mode-hooks)
     (setq-default indent-tabs-mode t)
 
-    (when (string-equal "ts" (file-name-extension buffer-file-name))
-        (setup-tide-mode))
-
     (when (string-equal "js" (file-name-extension buffer-file-name))
         (tern-mode t))
 ))
 
 (add-hook 'rjsx-mode-hook '(lambda()
-    (development-minor-mode-hooks)                             
+    (development-minor-mode-hooks)
     (if (bound-and-true-p tern-mode)
         (progn
           (message "Removing Tern from RJSX mode")
@@ -50,9 +47,7 @@
 ))
 
 (add-hook 'web-mode-hook '(lambda ()
-    (development-minor-mode-hooks)                            
-    (when (string-equal "tsx" (file-name-extension buffer-file-name))
-        (setup-tide-mode))
+    (development-minor-mode-hooks)
 ))
 
 (eval-after-load 'tern
