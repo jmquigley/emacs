@@ -65,6 +65,7 @@
 (global-set-key (kbd "%") 'goto-match-paren)
 (global-set-key (kbd "\C-c O") 'vi-open-line-above)
 (global-set-key (kbd "\C-c o") 'vi-open-line-below)
+(global-set-key (kbd "\C-c RET") 'vi-open-line-below)
 (global-set-key (kbd "M-RET") 'vi-open-line-below)
 (global-set-key (kbd "C-c x") 'toggle-term-mode)
 (global-set-key (kbd "C-c C-x") 'toggle-term-mode)
