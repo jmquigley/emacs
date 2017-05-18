@@ -6,7 +6,7 @@
     (setq c-basic-offset 4)
     (setq c-indent-level 4)
     (setq c-basic-indent 4)
-    (setq-default indent-tabs-mode nil)
+    (setq indent-tabs-mode nil)
 
     (ggtags-mode 1)
 ))

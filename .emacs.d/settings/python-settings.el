@@ -12,7 +12,7 @@
     (development-minor-mode-hooks)
     (setq python-indent 4)
     (setq python-indent-offset 4)
-    ;;(setq-default indent-tabs-mode nil)
+    (setq indent-tabs-mode nil)
     (auto-complete-mode t)
     ;; (define-key python-mode-map (kbd "\C-c \\") 'py-indent-region)
     ;; (define-key python-mode-map (kbd "\C-j") 'join-line)

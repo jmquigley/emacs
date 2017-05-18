@@ -23,9 +23,9 @@
 (add-to-list 'auto-mode-alist '("\\.json$" . json-mode))
 
 (add-hook 'js2-mode-hook '(lambda()
-    (setq-default js2-basic-offset 4)
+    (setq js2-basic-offset 4)
     (development-minor-mode-hooks)
-    (setq-default indent-tabs-mode t)
+    (setq indent-tabs-mode t)
 
     (when (string-equal "js" (file-name-extension buffer-file-name))
         (tern-mode t))
@@ -42,7 +42,7 @@
 
 (add-hook 'json-mode-hook '(lambda()
     (development-minor-mode-hooks)
-	(setq-default indent-tabs-mode t)
+	(setq indent-tabs-mode t)
     (setq tab-width 2)
 ))
 
