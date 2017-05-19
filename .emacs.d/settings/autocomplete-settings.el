@@ -7,6 +7,7 @@
              c++-mode 
              java-mode
              js2-mode
+             javascript-mode
              rjsx-mode
              python-mode))
 (add-to-list 'ac-modes m))

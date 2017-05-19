@@ -31,6 +31,12 @@
         (tern-mode t))
 ))
 
+(add-hook 'js-mode-hook '(lambda()
+    (development-minor-mode-hooks)
+    (setq indent-tabs-mode t)
+    (tern-mode t)
+))
+
 (add-hook 'rjsx-mode-hook '(lambda()
     (development-minor-mode-hooks)
     (if (bound-and-true-p tern-mode)
