@@ -1,0 +1,7 @@
+# name: create ava test for javascript
+# key: test
+# contributor: jmq
+# --
+test('${1}', t => {
+	$0
+});
