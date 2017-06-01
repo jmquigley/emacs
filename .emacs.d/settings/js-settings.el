@@ -26,24 +26,15 @@
     (setq js2-basic-offset 4)
     (development-minor-mode-hooks)
     (setq indent-tabs-mode t)
-
-    (when (string-equal "js" (file-name-extension buffer-file-name))
-        (tern-mode t))
 ))
 
 (add-hook 'js-mode-hook '(lambda()
     (development-minor-mode-hooks)
     (setq indent-tabs-mode t)
-    (tern-mode t)
 ))
 
 (add-hook 'rjsx-mode-hook '(lambda()
     (development-minor-mode-hooks)
-    (if (bound-and-true-p tern-mode)
-        (progn
-          (message "Removing Tern from RJSX mode")
-          (tern-mode -1)
-        ))
 ))
 
 (add-hook 'json-mode-hook '(lambda()
@@ -55,10 +46,5 @@
 (add-hook 'web-mode-hook '(lambda ()
     (development-minor-mode-hooks)
 ))
-
-(eval-after-load 'tern
-   '(progn
-      (require 'tern-auto-complete)
-      (tern-ac-setup)))
 
 (provide 'js-settings)

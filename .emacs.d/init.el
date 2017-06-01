@@ -45,8 +45,6 @@
 	smooth-scrolling
     tide
 	tidy
-	tern
-    tern-auto-complete
 	typescript-mode
 	virtualenvwrapper
     web-mode
