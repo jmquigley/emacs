@@ -1,0 +1,7 @@
+# name : create a new div element
+# key: div
+# contributor : jmq
+# --
+<div>
+    $0
+</div>
