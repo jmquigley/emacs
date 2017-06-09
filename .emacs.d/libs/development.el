@@ -281,4 +281,11 @@ Asciidoc is the main mode, but org is used to edit tables."
             (switch-to-buffer buffer)
             (set-buffer-modified-p t)))
 
+(defun end-line-semicolon()
+"Moves to the end of the current line, adds a semicolon and a newline"
+    (interactive)
+    (end-of-line)
+    (insert ";\n")
+    (indent-according-to-mode))
+
 (provide 'development)

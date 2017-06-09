@@ -20,7 +20,7 @@
 (global-set-key (kbd "<f1>") 'execute-extended-command)
 (global-set-key (kbd "<f2>") '(lambda() (interactive) (other-window -1)))
 (global-set-key (kbd "<f3>") 'other-window)
-(global-set-key (kbd "<f4>") 'shell-command)
+(global-set-key (kbd "<f4>") '(lambda() (interactive) (term (getenv "SHELL"))))
 (global-set-key (kbd "<f5>") 'recompile)
 (global-set-key (kbd "<f6>") 'open-ssh-term)
 (global-set-key (kbd "<f7>") 'replace-regexp)
@@ -76,6 +76,7 @@
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 (global-set-key (kbd "<backtab>") 'untab-region)
 (global-set-key (kbd "<tab>") 'tab-region)
+(global-set-key (kbd "C-<return>") 'end-line-semicolon)
 
 (global-set-key (kbd "C-c c") 'yas-expand)
 

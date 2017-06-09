@@ -39,8 +39,6 @@
 	redo+
     rainbow-delimiters
     rjsx-mode
-	ruby-mode
-    scss-mode
     slime
 	smooth-scrolling
     tide
