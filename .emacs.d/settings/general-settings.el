@@ -15,6 +15,10 @@
 (setq-default tab-width 4)
 (setq tab-stop-list (number-sequence 4 200 4))
 
+(setq browse-url-generic-program
+    (executable-find (getenv "BROWSER"))
+     browse-url-browser-function 'browse-url-generic)
+
 ;; Global default variables
 (setq default-major-mode 'text-mode
       inhibit-startup-message t
