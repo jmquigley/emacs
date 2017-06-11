@@ -1,6 +1,3 @@
-;; This is the custom color theme for the mycoredump project.  This relies on the
-;; color-theme emacs package located here:
-;; http://www.emacswiki.org/emacs-en/ColorTheme
 ;;
 ;; The available color values can be seen in emacs with:
 ;; M-x list-colors-display
@@ -21,7 +18,7 @@
     ;; default background/foreground
     (set-face-foreground 'default "white")
     (set-face-background 'default "black")
- 
+
     ;; Cursor
     (set-face-background 'cursor "cyan")
 
@@ -40,9 +37,8 @@
     (set-face-foreground 'yas-field-highlight-face "cyan")
 
     ;; Parentheses Highlighter
-    (set-face-background 'show-paren-match-face (face-attribute 'default :background))
-    (set-face-foreground 'show-paren-match-face "#d70000")
-    (set-face-attribute 'show-paren-match-face nil :weight 'extra-bold)
+    (set-face-background 'show-paren-match (face-attribute 'default :background))
+    (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 
     ;; Window numbering
     (set-face-background 'window-number-face nil)
@@ -151,7 +147,7 @@
     (set-face-foreground 'rst-definition "#197b6e") ;; reference
     (set-face-foreground 'rst-reference "#197b6e")
     (set-face-foreground 'rst-directive "#870000")  ;; Sphinx directive
-  
+
     (set-face-foreground 'rst-transition "yellow")  ;; ???
 )
 (add-hook 'rst-mode-hook 'restructuredtext-font-locks)
@@ -187,7 +183,7 @@
 ;;    (set-face-foreground 'markdown-language-keyword-face
 ;;        (face-attribute 'font-lock-keyword-face :foreground))
 ;;
-;;    (set-face-foreground 'markdown-comment-face 
+;;    (set-face-foreground 'markdown-comment-face
 ;;        (face-attribute 'font-lock-comment-face :foreground))
 )
 (add-hook 'markdown-mode-hook 'markdown-mode-font-locks)
