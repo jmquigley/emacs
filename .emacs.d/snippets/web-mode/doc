@@ -21,4 +21,5 @@
  * #### Properties
  * - \`{name}: {datatype}\` - {description}
  *
+ * @module {name}
  */
