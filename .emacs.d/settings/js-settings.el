@@ -1,7 +1,5 @@
 (require 'js2-mode)
-(require 'json-mode)
 (require 'rjsx-mode)
-(require 'web-mode)
 
 (defun setup-tide-mode ()
     (interactive)
@@ -17,15 +15,14 @@
 (add-to-list 'auto-mode-alist '("\\.jsx$" . rjsx-mode))
 
 (add-to-list 'auto-mode-alist '("\\.ts$" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.tsx$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tsx$" . rjsx-mode))
 (add-to-list 'auto-mode-alist '("\\.d\\.ts$" . typescript-mode))
 
-(add-to-list 'auto-mode-alist '("\\.json$" . json-mode))
-
 (add-hook 'js2-mode-hook '(lambda()
-    (setq js2-basic-offset 4)
     (development-minor-mode-hooks)
+    (setq js2-basic-offset 4)
     (setq indent-tabs-mode t)
+    (setq j2-bounce-indent-p t)
 ))
 
 (add-hook 'js-mode-hook '(lambda()
@@ -35,16 +32,7 @@
 
 (add-hook 'rjsx-mode-hook '(lambda()
     (development-minor-mode-hooks)
-))
-
-(add-hook 'json-mode-hook '(lambda()
-    (development-minor-mode-hooks)
-	(setq indent-tabs-mode t)
-    (setq tab-width 2)
-))
-
-(add-hook 'web-mode-hook '(lambda ()
-    (development-minor-mode-hooks)
+    (setq indent-tabs-mode t)
 ))
 
 (provide 'js-settings)
