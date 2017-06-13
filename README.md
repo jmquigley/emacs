@@ -11,7 +11,7 @@ Linux, OSX, or Windows
 
 Installation
 ------------
-To use this clone the repo and run the script `./install.sh` in a Linux or OSX environment.  To use in a Windows environment run the script `install.cmd` (with powershell).  This does **NOT** backup your current `.emacs.d` directory in your home directory.  In my environment I don't modify these files directly so copying them over the top is desirable.
+To use this clone the repo and run the script `./install.sh` in a Linux or OSX environment.  To use in a Windows environment run the script `install.cmd` (with powershell).  This does **NOT** backup your current `.emacs.d` directory in your home directory; it performs a fresh install.
 
 
 Packages

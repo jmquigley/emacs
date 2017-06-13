@@ -60,7 +60,7 @@
     (switch-to-buffer "*Bookmark List*")
     (split-window-horizontally)
     (setq previous-window-number "3")
-    (fix-horizontal-size 105)
+    (fix-horizontal-size 125)
     (other-window 1)
     (switch-to-buffer "*scratch*")
     (other-window 3))

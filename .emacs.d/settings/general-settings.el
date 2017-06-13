@@ -56,7 +56,7 @@
       tab-stop-list (number-sequence 4 200 4)
       virtualenv-workon "py27"
       virtualenv-default-directory "~/virtualenvs/py27"
-      initial-frame-alist '((font . "Consolas-11")
+      initial-frame-alist '((font . "Consolas-8")
                             (width . 135)
                             (height . 65)
                             (top . 30)
@@ -98,8 +98,7 @@
         (scroll-bar-mode -1))
     (tooltip-mode 0))
 
-(if (not window-system)
-    (menu-bar-mode -1))
+(menu-bar-mode -1)
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
