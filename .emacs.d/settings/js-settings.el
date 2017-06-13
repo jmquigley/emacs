@@ -35,4 +35,9 @@
     (setq indent-tabs-mode t)
 ))
 
+(add-hook 'typescript-mode '(lambda()
+    (development-minor-mode-hooks)
+    (setq indent-tabs-mode t)
+))
+
 (provide 'js-settings)
