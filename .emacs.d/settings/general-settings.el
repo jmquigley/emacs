@@ -24,6 +24,7 @@
       inhibit-startup-message t
       initial-scratch-message nil
       initial-buffer-choice t
+      ring-bell-function 'ignore
       magit-auto-revert-mode nil
       magit-last-seen-setup-instructions "1.4.0"
       tags-table-list '("~/.emacs.d" "~/workspace")
@@ -55,7 +56,7 @@
       tab-stop-list (number-sequence 4 200 4)
       virtualenv-workon "py27"
       virtualenv-default-directory "~/virtualenvs/py27"
-      initial-frame-alist '((font . "Consolas-8")
+      initial-frame-alist '((font . "Consolas-11")
                             (width . 135)
                             (height . 65)
                             (top . 30)

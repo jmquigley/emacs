@@ -2,7 +2,20 @@ Emacs
 =====
 My Emacs configuration.  This is a reorganization of my current setup.  It was inspired by [jhamrick's layout](https://github.com/jhamrick/emacs), which has a nice, organized layout.  This setup uses the built in [package](https://www.emacswiki.org/emacs/InstallingPackages) facility.
 
-This setup uses the following Emacs packages:
+
+Requirements
+------------
+Emacs 25.2+
+Linux, OSX, or Windows
+
+
+Installation
+------------
+To use this clone the repo and run the script `./install.sh` in a Linux or OSX environment.  To use in a Windows environment run the script `install.cmd` (with powershell).  This does **NOT** backup your current `.emacs.d` directory in your home directory.  In my environment I don't modify these files directly so copying them over the top is desirable.
+
+
+Packages
+--------
 
 - [auto-complete](http://www.emacswiki.org/emacs/AutoComplete)
 - [autopair](http://www.emacswiki.org/emacs/AutoPairs)
@@ -50,5 +63,3 @@ It also contains two custom modes that I wrote:
 
 - [asciidoc-mode](https://github.com/jmquigley/asciidoc-mode)
 - [mmd-mode](https://github.com/jmquigley/mmd-mode) (multimarkdown mode, a derivative of markdown-mode)
-
-To use this clone the repo and run the script `./install.sh`.  This does **NOT** backup your current `.emacs.d` directory in your home directory.  In my environment I don't modify these files directly so copying them over the top is desirable.
