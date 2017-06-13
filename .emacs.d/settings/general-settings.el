@@ -65,6 +65,17 @@
                             (background-color . "black"))
 )
 
+(if (eq system-type 'darwin)
+(setq initial-frame-alist '(
+    (font . "Menlo-10")
+    (width . 135)
+    (height . 65)
+    (top . 30)
+    (left . 300)
+    (foreground-color . "white")
+    (background-color . "black"))
+))
+
 (require 'cl-lib)
 
 (require 'elib)
