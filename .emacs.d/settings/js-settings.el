@@ -1,5 +1,6 @@
 (require 'js2-mode)
 (require 'rjsx-mode)
+(require 'web-mode)
 
 (defun setup-tide-mode ()
     (interactive)
@@ -14,8 +15,7 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx$" . rjsx-mode))
 
-(add-to-list 'auto-mode-alist '("\\.ts$" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.tsx$" . rjsx-mode))
+(add-to-list 'auto-mode-alist '("\\.ts$" . typescript-mode))
 (add-to-list 'auto-mode-alist '("\\.d\\.ts$" . typescript-mode))
 
 (add-hook 'js2-mode-hook '(lambda()
