@@ -73,7 +73,7 @@
 (global-set-key (kbd "C-<f1>") 'show-file-name)
 (global-set-key (kbd "C-c b") 'show-file-name)
 (global-set-key (kbd "C-c m") 'markdown-preview-file)
-k(global-set-key (kbd "C-c w") 'whitespace-mode)
+(global-set-key (kbd "C-c w") 'whitespace-mode)
 (global-set-key (kbd "<backtab>") 'untab-region)
 (global-set-key (kbd "<tab>") 'tab-region)
 (global-set-key (kbd "C-<return>") 'end-line-semicolon)
