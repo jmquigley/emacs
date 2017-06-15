@@ -24,6 +24,7 @@ Packages
 - [cmake-mode](https://cmake.org/Wiki/CMake/Editors/Emacs)
 - [color-theme-solarized](https://github.com/sellout/emacs-color-theme-solarized)
 - [company](https://melpa.org/#/company)
+- [devdocs](https://melpa.org/#/devdocs)
 - [dictionary](https://github.com/myrkr/dictionary-el)
 - [electric-spacing](https://melpa.org/#/electric-spacing)
 - [expand-region](https://github.com/magnars/expand-region.el)

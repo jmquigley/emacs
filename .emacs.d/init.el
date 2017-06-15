@@ -16,6 +16,7 @@
 	cmake-mode
 	color-theme-solarized
     company
+	devdocs
 	dictionary
     electric-spacing
 	expand-region
