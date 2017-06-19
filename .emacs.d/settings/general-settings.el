@@ -47,6 +47,7 @@
       frame-title-format '((:eval default-directory))
       grep-find-template
           "find * <X> -type f <F> -exec grep <C> -nH -e <R> {} +"
+      tags-table-list '("~/.emacs.d")
       transient-mark-mode t
       tramp-default-method "ssh"
       tramp-use-ssh-controlmaster-options nil
