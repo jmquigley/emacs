@@ -1,10 +1,11 @@
 (require 'mmd-mode)
 (require 'centered-cursor-mode)
 
-(setq markdown-enable-math t
-      markdown-enable-itex t
-      markdown-command "mark"
-      markdown-open-command "mark")
+(setq-default markdown-enable-math t
+              markdown-enable-itex t
+              markdown-hide-urls nil
+              markdown-command "mark"
+              markdown-open-command "mark")
 
 (add-to-list 'auto-mode-alist '("\\.md\\'" . mmd-mode))
 (add-to-list 'auto-mode-alist '("\\.mdwn\\'" . mmd-mode))

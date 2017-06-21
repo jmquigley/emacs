@@ -11,7 +11,7 @@ Linux, OSX, or Windows
 
 Installation
 ------------
-To use this clone the repo and run the script `./install.sh` in a Linux or OSX environment.  To use in a Windows environment run the script `install.cmd` (with powershell).  This does **NOT** backup your current `.emacs.d` directory in your home directory; it performs a fresh install.
+To use this clone the repo and run the script `./install.sh` in a Linux or OSX environment.  To use in a Windows environment run the script `install.cmd` (with powershell).  This does **NOT** backup your current `.emacs.d` directory in your home directory; it performs a fresh install.  When Emacs starts for the first time on a fresh install there will be a delay (it will look like the app is frozen).  The initial install of the packages takes some time to download and install.
 
 
 Packages
