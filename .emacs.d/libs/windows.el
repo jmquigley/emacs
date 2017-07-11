@@ -52,7 +52,7 @@
 
     (split-window-horizontally)
     (switch-to-buffer "*Buffer List*")
-    (fix-horizontal-size 70)
+    (fix-horizontal-size 50)
     (split-window-vertically)
     (other-window 1)
     (switch-to-buffer "*Messages*")
@@ -60,7 +60,7 @@
     (switch-to-buffer "*Bookmark List*")
     (split-window-horizontally)
     (setq previous-window-number "3")
-    (fix-horizontal-size 125)
+    (fix-horizontal-size 115)
     (other-window 1)
     (switch-to-buffer "*scratch*")
     (other-window 3))
