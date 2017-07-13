@@ -103,8 +103,8 @@
 (global-set-key (kbd "M-<up>") 'backward-paragraph)
 (global-set-key (kbd "M-<right>") 'forward-word)
 (global-set-key (kbd "M-<left>") 'backward-word)
-(global-set-key (kbd "C-<down>") 'scroll-up-command)
-(global-set-key (kbd "C-<up>") 'scroll-down-command)
+;; (global-set-key (kbd "C-<down>") 'scroll-up-command)
+;; (global-set-key (kbd "C-<up>") 'scroll-down-command)
 
 (global-set-key (kbd "C-<right>") 'next-buffer)
 (global-set-key (kbd "C-<left>") 'previous-buffer)
@@ -142,10 +142,10 @@
         (define-key input-decode-map "\M-[B" [(meta next-buffer)])
         (global-set-key [(meta next-buffer)] 'next-buffer)
 
-        (define-key input-decode-map "\M-[C" [(meta scroll-down)])
-        (global-set-key [(meta scroll-down)] 'scroll-down-command)
-        (define-key input-decode-map "\M-[D" [(meta scroll-up)])
-        (global-set-key [(meta scroll-up)] 'scroll-up-command)
+        ;;(define-key input-decode-map "\M-[C" [(meta scroll-down)])
+        ;;(global-set-key [(meta scroll-down)] 'scroll-down-command)
+        ;;(define-key input-decode-map "\M-[D" [(meta scroll-up)])
+        ;;(global-set-key [(meta scroll-up)] 'scroll-up-command)
 
         ;; alt-F5
         (define-key input-decode-map "\M-[15~" [(meta compile-code)])
