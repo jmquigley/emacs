@@ -13,10 +13,6 @@
 )
 
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx$" . rjsx-mode))
-
-(add-to-list 'auto-mode-alist '("\\.ts$" . typescript-mode))
-(add-to-list 'auto-mode-alist '("\\.d\\.ts$" . typescript-mode))
 
 (add-hook 'js2-mode-hook '(lambda()
     (development-minor-mode-hooks)
@@ -26,16 +22,6 @@
 ))
 
 (add-hook 'js-mode-hook '(lambda()
-    (development-minor-mode-hooks)
-    (setq indent-tabs-mode t)
-))
-
-(add-hook 'rjsx-mode-hook '(lambda()
-    (development-minor-mode-hooks)
-    (setq indent-tabs-mode t)
-))
-
-(add-hook 'typescript-mode-hook '(lambda()
     (development-minor-mode-hooks)
     (setq indent-tabs-mode t)
 ))
