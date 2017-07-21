@@ -26,7 +26,6 @@ Packages
 - [company](https://melpa.org/#/company)
 - [devdocs](https://melpa.org/#/devdocs)
 - [dictionary](https://github.com/myrkr/dictionary-el)
-- [electric-spacing](https://melpa.org/#/electric-spacing)
 - [expand-region](https://github.com/magnars/expand-region.el)
 - [flycheck](https://flycheck.readthedocs.org/en/latest/)
 - [ggtags](https://github.com/leoliu/ggtags)

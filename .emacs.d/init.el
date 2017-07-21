@@ -18,7 +18,6 @@
     company
 	devdocs
 	dictionary
-    electric-spacing
 	expand-region
 	flycheck
 	ggtags
