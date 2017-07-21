@@ -145,7 +145,6 @@
 "A convenience function that is used to turn on minor modes
 in some of the major modes that I use"
     (setq-default fill-column 80)
-	(electric-spacing-mode 1)
     (delete-selection-mode 1)
     (visual-line-mode 1)
     (hl-line-mode 1)
@@ -154,6 +153,7 @@ in some of the major modes that I use"
 
 (defun development-minor-mode-hooks ()
 "Minor mode values that are related to development modes"
+    (electric-spacing-mode 1)
     (minor-mode-hooks)
     (rainbow-delimiters-mode t)
     (linum-mode 1)
