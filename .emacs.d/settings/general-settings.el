@@ -60,7 +60,7 @@
       virtualenv-workon "py27"
       virtualenv-default-directory "~/virtualenvs/py27"
       initial-frame-alist '((font . "PragmataPro-10")
-                            (width . 135)
+							(width . 135)
                             (height . 65)
                             (top . 30)
                             (left . 300)
