@@ -99,6 +99,7 @@
 (require 'cmake-mode-settings)
 (require 'whitespace-settings)
 (require 'buffer-settings)
+(require 'prettify-settings)
 
 (require 'keybindings)
 (load-theme 'monokai t)
