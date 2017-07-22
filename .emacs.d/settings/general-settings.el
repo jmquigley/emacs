@@ -59,13 +59,17 @@
       tab-stop-list (number-sequence 4 200 4)
       virtualenv-workon "py27"
       virtualenv-default-directory "~/virtualenvs/py27"
-      initial-frame-alist '((font . "PragmataPro-10")
-							(width . 135)
+      initial-frame-alist '((width . 135)
                             (height . 65)
                             (top . 30)
                             (left . 300)
                             (foreground-color . "white")
                             (background-color . "black"))
+)
+
+(if (string= system-type 'darwin)
+	(set-face-attribute 'default t :font "PragmataPro-11")
+	(set-face-attribute 'default t :font "PragmataPro-10")
 )
 
 (require 'cl-lib)
