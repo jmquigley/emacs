@@ -86,4 +86,20 @@
     (open-default-buffers)
     (switch-to-buffer "*Bookmark List*"))
 
+(defun setup-triple-windows()
+  "Editor function to setup three evenly spaced horizontal windows"
+  (interactive)
+  (open-default-buffers)
+
+  (split-window-horizontally)
+  (switch-to-buffer "*Bookmark List*")
+  (other-window 1)
+  (switch-to-buffer "*scratch*")
+  (split-window-horizontally)
+  (other-window 1)
+  (switch-to-buffer "*Messages*")
+  (other-window 2)
+  (balance-windows)
+)
+
 (provide 'windows)

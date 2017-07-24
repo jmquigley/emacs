@@ -90,7 +90,8 @@
 ;; Window configurations
 (global-set-key (kbd "M-1") 'setup-development-windows)
 (global-set-key (kbd "M-2") 'setup-editing-windows)
-(global-set-key (kbd "M-3") 'setup-simple-windows)
+(global-set-key (kbd "M-3") 'setup-triple-windows)
+(global-set-key (kbd "M-4") 'setup-simple-windows)
 
 (global-set-key (kbd "M-<delete>") 'whack-whitespace)
 
