@@ -19,6 +19,7 @@
 	devdocs
 	dictionary
 	expand-region
+	fill-column-indicator
 	flycheck
 	ggtags
 	git-blamed

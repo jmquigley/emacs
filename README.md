@@ -27,6 +27,7 @@ Packages
 - [devdocs](https://melpa.org/#/devdocs)
 - [dictionary](https://github.com/myrkr/dictionary-el)
 - [expand-region](https://github.com/magnars/expand-region.el)
+- [fill-column-indicator](https://melpa.org/#/fill-column-indicator)
 - [flycheck](https://flycheck.readthedocs.org/en/latest/)
 - [ggtags](https://github.com/leoliu/ggtags)
 - [git-blamed](https://melpa.org/#/git-blamed)
