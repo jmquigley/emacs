@@ -69,6 +69,7 @@
 		(package-install package)))
 
 (require 'general-settings)
+(require 'prettify-settings)
 (require 'smooth-scroll-settings)
 (require 'yasnippet-settings)
 (require 'abbrev-settings)
@@ -100,7 +101,6 @@
 (require 'cmake-mode-settings)
 (require 'whitespace-settings)
 (require 'buffer-settings)
-(require 'prettify-settings)
 
 (require 'keybindings)
 (load-theme 'monokai t)

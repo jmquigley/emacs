@@ -175,9 +175,14 @@
 	))
 )
 
-(add-hook 'prog-mode-hook
-          #'add-pretty-symbols)
-
-(global-prettify-symbols-mode +1)
+;; Only use font ligatures on the mac due to terminal restrictions
+(if (string= system-type 'darwin)
+	(progn
+		(set-face-attribute 'default t :font "PragmataPro-11")
+		(add-hook 'prog-mode-hook #'add-pretty-symbols)
+		(global-prettify-symbols-mode +1))
+	(progn
+		(set-face-attribute 'default t :font "PragmataPro-10"))
+)
 
 (provide 'prettify-settings)

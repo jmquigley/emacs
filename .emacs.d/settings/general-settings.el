@@ -67,11 +67,6 @@
                             (background-color . "black"))
 )
 
-(if (string= system-type 'darwin)
-	(set-face-attribute 'default t :font "PragmataPro-11")
-	(set-face-attribute 'default t :font "PragmataPro-10")
-)
-
 (require 'cl-lib)
 
 (require 'elib)
