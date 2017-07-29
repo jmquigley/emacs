@@ -175,8 +175,6 @@
 	))
 )
 
-(set-fontset-font "fontset-default" nil (font-spec :size 10 :name "Consolas"))
-
 ;; Only use font ligatures on the mac due to terminal restrictions
 (if (string= system-type 'darwin)
 	(progn

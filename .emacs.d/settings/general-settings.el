@@ -27,6 +27,7 @@
       initial-scratch-message nil
       initial-buffer-choice t
       ring-bell-function 'ignore
+      large-file-warning-threshold nil
       magit-auto-revert-mode nil
       magit-last-seen-setup-instructions "1.4.0"
       tags-table-list '("~/.emacs.d" "~/workspace")
