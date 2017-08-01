@@ -122,7 +122,6 @@ in some of the major modes that I use"
 "Minor mode values that are related to development modes"
     (minor-mode-hooks)
     (rainbow-delimiters-mode t)
-	(fci-mode)
     (linum-mode 1)
     (show-paren-mode t))
 
