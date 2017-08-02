@@ -22,7 +22,7 @@
 (global-set-key (kbd "<f3>") 'other-window)
 (global-set-key (kbd "<f4>") '(lambda() (interactive) (term (getenv "SHELL"))))
 (global-set-key (kbd "<f5>") 'recompile)
-(global-set-key (kbd "<f6>") 'open-ssh-term)
+(global-set-key (kbd "<f6>") 'neotree-toggle)
 (global-set-key (kbd "<f7>") 'replace-regexp)
 (global-set-key (kbd "<f8>") 'dictionary-lookup-definition)
 (global-set-key (kbd "<f9>") 'eval-buffer)

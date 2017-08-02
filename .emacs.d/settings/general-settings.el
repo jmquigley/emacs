@@ -22,50 +22,54 @@
 (add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
 
 ;; Global default variables
-(setq default-major-mode 'text-mode
-      inhibit-startup-message t
-      initial-scratch-message nil
-      initial-buffer-choice t
-      ring-bell-function 'ignore
-      large-file-warning-threshold nil
-      magit-auto-revert-mode nil
-      magit-last-seen-setup-instructions "1.4.0"
-      tags-table-list '("~/.emacs.d" "~/workspace")
-      visual-bell t
-      vc-follow-symlinks t
+(setq auto-save-list-file-prefix autosave-dir
+      auto-save-file-name-transforms `((".*" ,autosave-dir t))
       backup-by-copying t
       backup-directory-alist (list (cons ".*" backup-dir))
-      auto-save-list-file-prefix autosave-dir
-      auto-save-file-name-transforms `((".*" ,autosave-dir t))
+      compilation-scroll-output t
+      default-major-mode 'text-mode
       delete-old-versions t
-      kept-new-versions 6
-      kept-old-versions 2
-      version-control t
+      dired-directory root.dir
       display-time-day-and-date t
       display-time-24hr-format t
-      scroll-step 1
-      compilation-scroll-output t
-      pop-up-windows nil
-      require-final-newline nil
       frame-title-format '((:eval default-directory))
       grep-find-template
           "find * <X> -type f <F> -exec grep <C> -nH -e <R> {} +"
-      tags-table-list '("~/.emacs.d")
-      transient-mark-mode t
-      tramp-default-method "ssh"
-      tramp-use-ssh-controlmaster-options nil
-      linum-format "%4d\u2502"
-      show-paren-delay 0
-      dired-directory root.dir
-      tab-stop-list (number-sequence 4 200 4)
-      virtualenv-workon "py27"
-      virtualenv-default-directory "~/virtualenvs/py27"
+      inhibit-startup-message t
       initial-frame-alist '((width . 135)
                             (height . 65)
                             (top . 30)
                             (left . 300)
                             (foreground-color . "white")
                             (background-color . "black"))
+      initial-scratch-message nil
+      initial-buffer-choice t
+      kept-new-versions 6
+      kept-old-versions 2
+      large-file-warning-threshold nil
+      linum-format "%4d\u2502"
+      magit-auto-revert-mode nil
+      magit-last-seen-setup-instructions "1.4.0"
+      neo-smart-open t
+      neo-show-hidden-files t
+      neo-window-width 35
+      pop-up-windows nil
+      require-final-newline nil
+      ring-bell-function 'ignore
+      scroll-step 1
+      show-paren-delay 0
+      tab-stop-list (number-sequence 4 200 4)
+      tags-add-tables nil
+      tags-table-list '("~/.emacs.d" "~/workspace")
+      tags-table-list '("~/.emacs.d")
+      tramp-default-method "ssh"
+      tramp-use-ssh-controlmaster-options nil
+      transient-mark-mode t
+      vc-follow-symlinks t
+      version-control t
+      virtualenv-workon "py27"
+      virtualenv-default-directory "~/virtualenvs/py27"
+      visual-bell t
 )
 
 (require 'cl-lib)
@@ -87,6 +91,8 @@
 (require 'redo+)
 (require 'tidy)
 (require 'fill-column-indicator)
+(require 'neotree)
+(require 'projectile)
 
 ;; turn on the mouse wheel mode
 (require 'mwheel)
@@ -101,8 +107,8 @@
     (tooltip-mode 0))
 
 (menu-bar-mode -1)
-
 (fset 'yes-or-no-p 'y-or-n-p)
+(setq projectile-switch-project-action 'neotree-projectile-action)
 
 ;; Automatically tails *.log files in a buffer
 (add-to-list 'auto-mode-alist '("\\.log\\'" . auto-revert-tail-mode))
@@ -116,7 +122,8 @@ in some of the major modes that I use"
     (visual-line-mode 1)
     (hl-line-mode 1)
     (abbrev-mode 1)
-    (add-keywords))
+    (add-keywords)
+    (projectile-mode t))
 
 (defun development-minor-mode-hooks ()
 "Minor mode values that are related to development modes"

@@ -92,13 +92,11 @@
   (open-default-buffers)
 
   (split-window-horizontally)
-  (switch-to-buffer "*Bookmark List*")
+  (switch-to-buffer "*Buffer List*")
   (other-window 1)
   (switch-to-buffer "*scratch*")
-  (split-window-horizontally)
+  (neotree-toggle)
   (other-window 1)
-  (switch-to-buffer "*Messages*")
-  (other-window 2)
   (balance-windows)
 )
 
