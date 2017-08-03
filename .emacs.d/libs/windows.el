@@ -90,11 +90,10 @@
   "Editor function to setup three evenly spaced horizontal windows"
   (interactive)
   (open-default-buffers)
-
-  (split-window-horizontally)
-  (switch-to-buffer "*Buffer List*")
-  (other-window 1)
   (switch-to-buffer "*scratch*")
+  (split-window-horizontally)
+  (other-window 1)
+  (switch-to-buffer "*Buffer List*")
   (neotree-toggle)
   (other-window 1)
   (balance-windows)
