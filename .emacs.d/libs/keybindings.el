@@ -30,6 +30,10 @@
 (global-set-key (kbd "<f11>") 'eval-region)
 (global-set-key (kbd "<f12>") 'repeat)
 
+(global-set-key (kbd "C-<f5>") 'compile)
+(global-set-key (kbd "C-<f6>") 'open-ssh-buffer)
+(global-set-key (kbd "C-<f7>") 'rgrep)
+
 (global-set-key (kbd "C-c h") 'devdocs-search)
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-c g") 'goto-line)
@@ -109,11 +113,6 @@
 
 (global-set-key (kbd "C-<right>") 'next-buffer)
 (global-set-key (kbd "C-<left>") 'previous-buffer)
-
-(global-set-key (kbd "M-<f5>") 'compile)
-(global-set-key (kbd "M-<f6>") 'open-ssh-buffer)
-(global-set-key (kbd "M-<f7>") 'rgrep)
-
 
 (if (and (string= system-type 'darwin) (not window-system))
     (progn
