@@ -14,8 +14,8 @@
 	bookmark+
 	centered-cursor-mode
 	cmake-mode
-	color-theme-solarized
-    company
+	color-theme-sanityinc-tomorrow
+	company
 	devdocs
 	dictionary
 	expand-region
@@ -33,22 +33,21 @@
 	lorem-ipsum
 	magit
 	markdown-mode
-	monokai-theme
 	move-text
-    neotree
+	neotree
 	php-mode
-    projectile
+	projectile
 	pydoc-info
 	redo+
-    rainbow-delimiters
-    rjsx-mode
-    slime
+	rainbow-delimiters
+	rjsx-mode
+	slime
 	smooth-scrolling
-    tide
+	tide
 	tidy
 	typescript-mode
 	virtualenvwrapper
-    web-mode
+	web-mode
 	window-number
 	ws-butler
 	yaml-mode
@@ -105,7 +104,6 @@
 (require 'buffer-settings)
 
 (require 'keybindings)
-(load-theme 'monokai t)
 
 (load
 	(setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
