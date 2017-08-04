@@ -23,7 +23,7 @@
     (set-face-background 'default "black")
 
     ;; Cursor
-    (set-face-background 'cursor "cyan")
+    (set-face-background 'cursor "white")
 
     ;; Highlight line
     (set-face-background 'hl-line "#00005f")
@@ -41,8 +41,7 @@
 	(set-face-foreground 'mode-line-buffer-id "yellow")
 
     ;; Parentheses Highlighter
-    (set-face-background 'show-paren-match (face-attribute 'default :background))
-    (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
+    (set-face-attribute 'show-paren-match nil :foreground nil :background "yellow" :weight 'extra-bold)
 
     ;; Window numbering
     (set-face-background 'window-number-face nil)

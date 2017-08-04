@@ -47,6 +47,7 @@ Packages
 - [projectile](https://melpa.org/#/projectile)
 - [pydoc-info](https://melpa.org/#/pydoc-info)
 - [python-mode](https://launchpad.net/python-mode)
+- [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters)
 - [redo+](http://www.emacswiki.org/RedoPlus)
 - [rjsx-mode](https://github.com/felipeochoa/rjsx-mode)
 - [slime](https://melpa.org/#/slime)
