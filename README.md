@@ -22,7 +22,6 @@ Packages
 - [bookmark+](http://www.emacswiki.org/BookmarkPlus)
 - [centered-cursor-mode](http://www.emacswiki.org/emacs/centered-cursor-mode.el)
 - [cmake-mode](https://cmake.org/Wiki/CMake/Editors/Emacs)
-- [color-theme-sanityinc-tomorrow-bright](https://github.com/purcell/color-theme-sanityinc-tomorrow)
 - [company](https://melpa.org/#/company)
 - [devdocs](https://melpa.org/#/devdocs)
 - [dictionary](https://github.com/myrkr/dictionary-el)

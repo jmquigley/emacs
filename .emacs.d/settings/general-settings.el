@@ -15,10 +15,6 @@
 (setq-default tab-width 4)
 (setq tab-stop-list (number-sequence 4 200 4))
 
-(setq browse-url-generic-program
-    (executable-find (getenv "BROWSER"))
-     browse-url-browser-function 'browse-url-generic)
-
 (add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
 
 ;; Global default variables
@@ -26,6 +22,7 @@
       auto-save-file-name-transforms `((".*" ,autosave-dir t))
       backup-by-copying t
       backup-directory-alist (list (cons ".*" backup-dir))
+      browser (getenv "BROWSER")
       compilation-scroll-output t
       default-major-mode 'text-mode
       delete-old-versions t
@@ -39,9 +36,7 @@
       initial-frame-alist '((width . 135)
                             (height . 65)
                             (top . 30)
-                            (left . 300)
-                            (foreground-color . "white")
-                            (background-color . "black"))
+                            (left . 300))
       initial-scratch-message nil
       initial-buffer-choice t
       kept-new-versions 6
@@ -79,7 +74,6 @@
 (require 'asciidoc-mode)
 (require 'mmd-mode)
 (require 'development)
-(require 'theme)
 (require 'ssh-terminals)
 (require 'search)
 (require 'move-text)
@@ -151,5 +145,16 @@ in some of the major modes that I use"
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
+
+;; Set what browser will be used to follow links if defined
+(if (boundp 'browser)
+    (progn
+      (message "Using browser @ %s" browser)
+      (setq browse-url-generic-program
+          (executable-find browser)
+          browse-url-browser-function 'browse-url-generic)
+     )
+  (message "BROWSER undefined in environment")
+)
 
 (provide 'general-settings)

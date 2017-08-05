@@ -14,7 +14,6 @@
 	bookmark+
 	centered-cursor-mode
 	cmake-mode
-	color-theme-sanityinc-tomorrow
 	company
 	devdocs
 	dictionary
@@ -69,6 +68,7 @@
 	(unless (package-installed-p package)
 		(package-install package)))
 
+(require 'theme)
 (require 'general-settings)
 (require 'prettify-settings)
 (require 'smooth-scroll-settings)
