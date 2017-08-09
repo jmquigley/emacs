@@ -23,6 +23,7 @@
       backup-by-copying t
       backup-directory-alist (list (cons ".*" backup-dir))
       browser (getenv "BROWSER")
+      ccm-recenter-at-end-of-file t
       compilation-scroll-output t
       default-major-mode 'text-mode
       delete-old-versions t
