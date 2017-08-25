@@ -31,8 +31,6 @@
       display-time-day-and-date t
       display-time-24hr-format t
       frame-title-format '((:eval default-directory))
-      grep-find-template
-          "find * <X> -type f <F> -exec grep <C> -nH -e <R> {} +"
       inhibit-startup-message t
       initial-frame-alist '((width . 135)
                             (height . 65)
