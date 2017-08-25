@@ -124,6 +124,7 @@ in some of the major modes that I use"
 (defun development-minor-mode-hooks ()
 "Minor mode values that are related to development modes"
     (minor-mode-hooks)
+    (yas-minor-mode t)
 	(centered-cursor-mode t)
     (rainbow-delimiters-mode t)
     (linum-mode 1)
