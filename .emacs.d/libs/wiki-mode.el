@@ -282,6 +282,7 @@ a string that represents the reference"
           (progn
               (assoc ".html" wiki-mode-applications))
           (progn
+			  (message "from file: %s" filename)
               (setq extension (file-name-extension filename t))
               (assoc extension wiki-mode-applications))
         )

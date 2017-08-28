@@ -34,6 +34,7 @@
 	markdown-mode
 	move-text
 	neotree
+	openwith
 	php-mode
 	projectile
 	pydoc-info
@@ -102,6 +103,7 @@
 (require 'cmake-mode-settings)
 (require 'whitespace-settings)
 (require 'buffer-settings)
+(require 'openwith-settings)
 
 (require 'keybindings)
 
