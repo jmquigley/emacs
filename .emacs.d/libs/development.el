@@ -239,7 +239,7 @@ Asciidoc is the main mode, but org is used to edit tables."
 "run Marked on the current file and revert the buffer"
     (interactive)
     (shell-command
-       (format "open -a /Applications/Marked.app %s"
+       (format "open -a /Applications/MacDown.app %s"
            (shell-quote-argument (buffer-file-name)))))
 
 (defun indent-region-custom(numSpaces)
