@@ -62,7 +62,6 @@
 
     (set-face-foreground 'markdown-italic-face "#af00ff")
     (set-face-foreground 'markdown-bold-face "#005fd7")
-    (set-face-foreground 'markdown-inline-code-face "#767676")
     (set-face-foreground 'markdown-pre-face "#5fd7ff")
     (set-face-foreground 'markdown-list-face "#af8700")
     (set-face-foreground 'markdown-metadata-key-face "#2e8b57")
@@ -70,6 +69,8 @@
     (set-face-foreground 'markdown-header-face "#585858")
     (set-face-foreground 'markdown-header-delimiter-face "#ffaf00")
     (set-face-foreground 'markdown-header-rule-face "#ffaf00")
+    (set-face-attribute 'markdown-inline-code-face nil :foreground "#5fd7ff" :background "#585858")
+    (set-face-attribute 'markdown-pre-face nil :foreground "#5fd7ff" :background "#585858")
 
     (set-face-foreground 'markdown-link-face "#4169e1")
     (set-face-foreground 'markdown-url-face "#9acd32")

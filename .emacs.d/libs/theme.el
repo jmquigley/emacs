@@ -82,8 +82,6 @@
 (set-face-foreground 'markdown-header-face-6 "#ff0000")
 (set-face-foreground 'markdown-italic-face "#af00ff")
 (set-face-foreground 'markdown-bold-face "#005fd7")
-(set-face-foreground 'markdown-inline-code-face "#767676")
-(set-face-foreground 'markdown-pre-face "#5fd7ff")
 (set-face-foreground 'markdown-list-face "#af8700")
 (set-face-foreground 'markdown-metadata-key-face "#2e8b57")
 (set-face-foreground 'markdown-metadata-value-face "#87ffaf")
@@ -96,10 +94,17 @@
 (set-face-foreground 'markdown-reference-face "goldenrod")
 (set-face-foreground 'markdown-footnote-face "goldenrod")
 (set-face-foreground 'markdown-math-face "magenta")
+(set-face-background 'markdown-markup-face background)
+(set-face-background 'markdown-language-keyword-face background)
+(set-face-background 'markdown-code-face background)
+
 (set-face-foreground 'markdown-language-keyword-face
     (face-attribute 'font-lock-keyword-face :foreground))
 (set-face-foreground 'markdown-comment-face
     (face-attribute 'font-lock-comment-face :foreground))
+
+(set-face-attribute 'markdown-inline-code-face nil :foreground "#5fd7ff" :background "#585858")
+(set-face-attribute 'markdown-pre-face nil :foreground "#5fd7ff" :background "#585858")
 
 ;; Org mode
 (set-face-foreground 'org-table "#00d7ff")
