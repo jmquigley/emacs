@@ -68,7 +68,6 @@
 (global-set-key (kbd "C-c DEL") 'delete-trailing-whitespace)
 (global-set-key (kbd "C-l") 'select-current-line)
 (global-set-key (kbd "C-x C-x") 'exchange-point-an-mark-no-transient)
-(global-set-key (kbd "%") 'goto-match-paren)
 (global-set-key (kbd "\C-c O") 'vi-open-line-above)
 (global-set-key (kbd "\C-c o") 'vi-open-line-below)
 (global-set-key (kbd "\C-c RET") 'vi-open-line-below)
