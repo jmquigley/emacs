@@ -43,7 +43,6 @@
 	rjsx-mode
 	slime
 	smooth-scrolling
-	tide
 	tidy
 	typescript-mode
 	virtualenvwrapper

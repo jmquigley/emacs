@@ -1,16 +1,4 @@
 (require 'js2-mode)
-(require 'rjsx-mode)
-(require 'web-mode)
-
-(defun setup-tide-mode ()
-    (interactive)
-    (tide-setup)
-    (flycheck-mode +1)
-    (setq flycheck-check-syntax-automatically '(save mode-enabled))
-    (eldoc-mode +1)
-    (tide-hl-identifier-mode +1)
-    (company-mode +1)
-)
 
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
@@ -18,7 +6,7 @@
     (development-minor-mode-hooks)
     (setq js2-basic-offset 4)
     (setq indent-tabs-mode t)
-    (setq j2-bounce-indent-p t)
+    (setq js2-bounce-indent-p t)
 ))
 
 (add-hook 'js-mode-hook '(lambda()

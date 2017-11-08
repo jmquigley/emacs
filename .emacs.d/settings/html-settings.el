@@ -25,10 +25,12 @@
     (development-minor-mode-hooks)
     (setq indent-tabs-mode t)
 	(setq web-mode-enable-auto-indentation nil)
+    (setq web-mode-enable-auto-closing nil)
+    (setq web-mode-enable-auto-opening nil)
+    (setq web-mode-enable-auto-quoting nil)
     (setq web-mode-markup-indent-offset 4)
     (setq web-mode-css-indent-offset 4)
     (setq web-mode-code-indent-offset 4)
-    (setq web-mode-enable-auto-quoting nil)
 ))
 
 (add-hook 'json-mode-hook '(lambda()

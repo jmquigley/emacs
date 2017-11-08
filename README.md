@@ -51,7 +51,6 @@ Packages
 - [rjsx-mode](https://github.com/felipeochoa/rjsx-mode)
 - [slime](https://melpa.org/#/slime)
 - [smooth-scrolling](http://www.emacswiki.org/emacs/SmoothScrolling)
-- [tide](https://melpa.org/#/tide)
 - [tidy](http://www.emacswiki.org/emacs/tidy.el)
 - [typescript-mode](https://melpa.org/#/typescript-mode)
 - [virtualenvwrapper](https://bitbucket.org/dhellmann/virtualenvwrapper/)

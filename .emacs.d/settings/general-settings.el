@@ -52,6 +52,7 @@
       ring-bell-function 'ignore
       scroll-step 1
       show-paren-delay 0
+      tab-always-indent nil
       tab-stop-list (number-sequence 4 200 4)
       tags-add-tables nil
       tags-table-list '("~/.emacs.d" "~/workspace")
