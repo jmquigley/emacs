@@ -7,6 +7,7 @@
     (setq js2-basic-offset 4)
     (setq indent-tabs-mode t)
     (setq js2-bounce-indent-p t)
+	(tabify (point-min) (point-max))
 ))
 
 (add-hook 'js-mode-hook '(lambda()

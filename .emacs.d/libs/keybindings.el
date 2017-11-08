@@ -79,8 +79,6 @@
 (global-set-key (kbd "C-c b") 'show-file-name)
 (global-set-key (kbd "C-c m") 'markdown-preview-file)
 (global-set-key (kbd "C-c w") 'whitespace-mode)
-(global-set-key (kbd "<backtab>") 'untab-region)
-(global-set-key (kbd "<tab>") 'tab-region)
 (global-set-key (kbd "S-<return>") 'end-line-semicolon)
 (global-set-key (kbd "C-<return>") 'move-end-of-line)
 (global-set-key (kbd "C-c t") 'org-insert-todo-heading)

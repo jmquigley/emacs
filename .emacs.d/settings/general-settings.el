@@ -11,7 +11,7 @@
 (set-terminal-coding-system 'utf-8-unix)
 (set-keyboard-coding-system 'utf-8-unix)
 
-(setq-default indent-tabs-mode t)
+(setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (setq tab-stop-list (number-sequence 4 200 4))
 
@@ -53,7 +53,6 @@
       scroll-step 1
       show-paren-delay 0
       tab-always-indent nil
-      tab-stop-list (number-sequence 4 200 4)
       tags-add-tables nil
       tags-table-list '("~/.emacs.d" "~/workspace")
       tags-table-list '("~/.emacs.d")
