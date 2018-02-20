@@ -97,6 +97,7 @@
 (global-set-key (kbd "M-4") 'setup-simple-windows)
 
 (global-set-key (kbd "M-<delete>") 'whack-whitespace)
+(global-set-key (kbd "ESC <deletechar>") 'delete-horizontal-space)
 
 (global-set-key (kbd "S-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "S-<right>") 'enlarge-window-horizontally)
