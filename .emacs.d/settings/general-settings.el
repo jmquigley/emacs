@@ -81,7 +81,7 @@
 (require 'dictionary)
 (require 'expand-region)
 (require 'git-blamed)
-(require 'redo+)
+(require 'undo-tree)
 (require 'tidy)
 (require 'fill-column-indicator)
 (require 'neotree)
@@ -142,6 +142,9 @@ in some of the major modes that I use"
 ;; autopair mode
 (require 'autopair)
 (autopair-global-mode)
+
+;; undo tree mode
+(global-undo-tree-mode)
 
 ;; Enable the n00b disabled items
 (put 'upcase-region 'disabled nil)

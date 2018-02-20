@@ -16,6 +16,7 @@
 	company
 	devdocs
 	dictionary
+    elpy
 	expand-region
 	fill-column-indicator
 	flycheck
@@ -41,6 +42,7 @@
 	slime
 	smooth-scrolling
 	typescript-mode
+    undo-tree
 	virtualenvwrapper
 	web-mode
 	window-number
@@ -50,7 +52,6 @@
 	))
 
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(add-to-list 'package-archives '("elpy" . "http://jorgenschaefer.github.io/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 
 (package-initialize)

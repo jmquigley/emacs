@@ -13,6 +13,7 @@
 (require 'windows)
 (require 'development)
 (require 'search)
+(require 'undo-tree)
 
 (global-unset-key "\C-z")
 (global-set-key (kbd "C-z") 'keyboard-quit)
@@ -55,8 +56,8 @@
 (global-set-key (kbd "M-8") 'er/expand-region)
 (global-set-key (kbd "M-\\") 'er/expand-region)
 (global-set-key (kbd "<Scroll_Lock>") 'scroll-lock-mode)
-(global-set-key (kbd "M--") 'undo)
-(global-set-key (kbd "M-=") 'redo)
+(global-set-key (kbd "M--") 'undo-tree-undo)
+(global-set-key (kbd "M-=") 'undo-tree-redo)
 (global-set-key (kbd "M-s") 'replace-string)
 (global-set-key (kbd "C-x C-c") 'safe-kill-emacs)
 (global-set-key (kbd "C-c <up>") 'move-text-up)
