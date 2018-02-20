@@ -16,7 +16,8 @@
 	company
 	devdocs
 	dictionary
-    elpy
+    dockerfile-mode
+	elpy
 	expand-region
 	fill-column-indicator
 	flycheck
@@ -42,7 +43,7 @@
 	slime
 	smooth-scrolling
 	typescript-mode
-    undo-tree
+	undo-tree
 	virtualenvwrapper
 	web-mode
 	window-number
@@ -58,7 +59,7 @@
 
 ; fetch the list of packages available
 (when (not package-archive-contents)
-      (package-refresh-contents))
+	  (package-refresh-contents))
 
 ; install the missing packages
 (dolist (package package-list)

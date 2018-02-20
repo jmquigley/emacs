@@ -25,6 +25,7 @@ Packages
 - [company](https://melpa.org/#/company)
 - [devdocs](https://melpa.org/#/devdocs)
 - [dictionary](https://melpa.org/#/dictionary)
+- [dockerfile-mode](https://melpa.org/#/dockerfile-mode)
 - [elpy](https://melpa.org/#/elpy)
 - [expand-region](https://melpa.org/#/expand-region)
 - [fill-column-indicator](https://melpa.org/#/fill-column-indicator)
