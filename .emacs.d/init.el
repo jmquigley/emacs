@@ -11,7 +11,6 @@
 (setq package-list '(
 	auto-complete
 	autopair
-	bookmark+
 	centered-cursor-mode
 	cmake-mode
 	company
@@ -25,7 +24,6 @@
 	google-c-style
 	groovy-mode
 	haml-mode
-	hl-line+
 	jedi
 	js2-mode
 	json-mode
@@ -38,12 +36,10 @@
 	php-mode
 	projectile
 	pydoc-info
-	redo+
 	rainbow-delimiters
 	rjsx-mode
 	slime
 	smooth-scrolling
-	tidy
 	typescript-mode
 	virtualenvwrapper
 	web-mode
