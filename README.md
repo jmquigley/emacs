@@ -49,6 +49,7 @@ Packages
 - [pydoc-info](https://melpa.org/#/pydoc-info)
 - [python-mode](https://melpa.org/#/python-mode)
 - [rainbow-delimiters](https://melpa.org/#/rainbow-delimiters)
+- [realgud](https://github.com/realgud/realgud)
 - [rjsx-mode](https://melpa.org/#/rjsx-mode)
 - [slime](https://melpa.org/#/slime)
 - [smooth-scrolling](https://melpa.org/#/smooth-scrolling)

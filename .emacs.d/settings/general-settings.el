@@ -87,6 +87,7 @@
 (require 'neotree)
 (require 'projectile)
 (require 'centered-cursor-mode)
+(require 'realgud)
 
 ;; turn on the mouse wheel mode
 (require 'mwheel)

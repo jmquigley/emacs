@@ -16,7 +16,7 @@
 	company
 	devdocs
 	dictionary
-    dockerfile-mode
+	dockerfile-mode
 	elpy
 	expand-region
 	fill-column-indicator
@@ -39,6 +39,7 @@
 	projectile
 	pydoc-info
 	rainbow-delimiters
+	realgud
 	rjsx-mode
 	slime
 	smooth-scrolling
