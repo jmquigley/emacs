@@ -32,6 +32,7 @@
 	lorem-ipsum
 	magit
 	markdown-mode
+	mediawiki
 	move-text
 	neotree
 	openwith

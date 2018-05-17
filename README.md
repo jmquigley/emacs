@@ -42,6 +42,7 @@ Packages
 - [lorem-ipsum](https://melpa.org/#/lorem-ipsum)
 - [magit](https://melpa.org/#/magit)
 - [markdown-mode](https://melpa.org/#/markdown-mode)
+- [mediawiki](https://melpa.org/#/mediawiki)
 - [move-text](https://melpa.org/#/move-text)
 - [neotree](https://melpa.org/#/neotree)
 - [php-mode](https://melpa.org/#/php-mode)
