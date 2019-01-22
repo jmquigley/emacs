@@ -1,11 +1,11 @@
 Emacs
 =====
-My Emacs configuration.  This is a reorganization of my current setup.  It was inspired by [jhamrick's layout](https://github.com/jhamrick/emacs), which has a nice, organized layout.  This setup uses the built in [package](https://www.emacswiki.org/emacs/InstallingPackages) facility.
+My Emacs configuration.  This is a reorganization of my current setup.  This setup uses the built in [package](https://www.emacswiki.org/emacs/InstallingPackages) facility.
 
 
 Requirements
 ------------
-Emacs 25.2+
+Emacs 26.x+
 Linux, OSX, or Windows
 
 
@@ -20,7 +20,6 @@ Packages
 - [auto-complete](https://melpa.org/#/auto-complete)
 - [autopair](https://melpa.org/#/autopair)
 - [bookmark+](https://www.emacswiki.org/emacs/BookmarkPlus)
-- [centered-cursor-mode](https://melpa.org/#/centered-cursor-mode)
 - [cmake-mode](https://melpa.org/#/cmake-mode)
 - [company](https://melpa.org/#/company)
 - [devdocs](https://melpa.org/#/devdocs)
@@ -42,18 +41,13 @@ Packages
 - [lorem-ipsum](https://melpa.org/#/lorem-ipsum)
 - [magit](https://melpa.org/#/magit)
 - [markdown-mode](https://melpa.org/#/markdown-mode)
-- [mediawiki](https://melpa.org/#/mediawiki)
 - [move-text](https://melpa.org/#/move-text)
-- [neotree](https://melpa.org/#/neotree)
 - [php-mode](https://melpa.org/#/php-mode)
-- [projectile](https://melpa.org/#/projectile)
 - [pydoc-info](https://melpa.org/#/pydoc-info)
 - [python-mode](https://melpa.org/#/python-mode)
 - [rainbow-delimiters](https://melpa.org/#/rainbow-delimiters)
 - [realgud](https://github.com/realgud/realgud)
-- [rjsx-mode](https://melpa.org/#/rjsx-mode)
 - [slime](https://melpa.org/#/slime)
-- [smooth-scrolling](https://melpa.org/#/smooth-scrolling)
 - [tidy](https://www.emacswiki.org/emacs/tidy.el)
 - [typescript-mode](https://melpa.org/#/typescript-mode)
 - [undo-tree](https://melpa.org/#/undo-tree)

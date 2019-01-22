@@ -11,7 +11,6 @@
 (setq package-list '(
 	auto-complete
 	autopair
-	centered-cursor-mode
 	cmake-mode
 	company
 	devdocs
@@ -32,18 +31,13 @@
 	lorem-ipsum
 	magit
 	markdown-mode
-	mediawiki
 	move-text
-	neotree
 	openwith
 	php-mode
-	projectile
 	pydoc-info
 	rainbow-delimiters
 	realgud
-	rjsx-mode
 	slime
-	smooth-scrolling
 	typescript-mode
 	undo-tree
 	virtualenvwrapper
@@ -71,7 +65,6 @@
 (require 'theme)
 (require 'general-settings)
 (require 'prettify-settings)
-(require 'smooth-scroll-settings)
 (require 'yasnippet-settings)
 (require 'abbrev-settings)
 (require 'magit-settings)

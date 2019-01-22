@@ -1,5 +1,4 @@
 (require 'mmd-mode)
-(require 'centered-cursor-mode)
 
 (setq-default markdown-enable-math t
               markdown-enable-itex t

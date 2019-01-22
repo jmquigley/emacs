@@ -23,7 +23,6 @@
       backup-by-copying t
       backup-directory-alist (list (cons ".*" backup-dir))
       browser (getenv "BROWSER")
-      ccm-recenter-at-end-of-file t
       compilation-scroll-output t
       default-major-mode 'text-mode
       delete-old-versions t
@@ -44,9 +43,6 @@
       linum-format "%4d\u2502"
       magit-auto-revert-mode nil
       magit-last-seen-setup-instructions "1.4.0"
-      neo-smart-open t
-      neo-show-hidden-files t
-      neo-window-width 35
       pop-up-windows nil
       require-final-newline nil
       ring-bell-function 'ignore
@@ -61,8 +57,8 @@
       transient-mark-mode t
       vc-follow-symlinks t
       version-control t
-      virtualenv-workon "py27"
-      virtualenv-default-directory "~/virtualenvs/py27"
+      virtualenv-workon "py3"
+      virtualenv-default-directory "~/virtualenvs/py3"
       visual-bell t
 )
 
@@ -84,9 +80,6 @@
 (require 'undo-tree)
 (require 'tidy)
 (require 'fill-column-indicator)
-(require 'neotree)
-(require 'projectile)
-(require 'centered-cursor-mode)
 (require 'realgud)
 
 ;; turn on the mouse wheel mode
@@ -103,7 +96,6 @@
 
 (menu-bar-mode -1)
 (fset 'yes-or-no-p 'y-or-n-p)
-(setq projectile-switch-project-action 'neotree-projectile-action)
 
 ;; Automatically tails *.log files in a buffer
 (add-to-list 'auto-mode-alist '("\\.log\\'" . auto-revert-tail-mode))
@@ -117,14 +109,12 @@ in some of the major modes that I use"
     (visual-line-mode 1)
     (hl-line-mode 1)
     (abbrev-mode 1)
-    (add-keywords)
-    (projectile-mode t))
+    (add-keywords))
 
 (defun development-minor-mode-hooks ()
 "Minor mode values that are related to development modes"
     (minor-mode-hooks)
     (yas-minor-mode t)
-	(centered-cursor-mode t)
     (rainbow-delimiters-mode t)
     (linum-mode 1)
     (show-paren-mode t))
