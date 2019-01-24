@@ -14,6 +14,7 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (setq tab-stop-list (number-sequence 4 200 4))
+(setq-default cursor-type 'box)
 
 (add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
 
