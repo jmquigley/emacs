@@ -43,6 +43,7 @@ Packages
 - [markdown-mode](https://melpa.org/#/markdown-mode)
 - [move-text](https://melpa.org/#/move-text)
 - [php-mode](https://melpa.org/#/php-mode)
+- [prettier-js](https://melpa.org/#/prettier-js)
 - [pydoc-info](https://melpa.org/#/pydoc-info)
 - [python-mode](https://melpa.org/#/python-mode)
 - [rainbow-delimiters](https://melpa.org/#/rainbow-delimiters)

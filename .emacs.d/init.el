@@ -34,6 +34,7 @@
 	move-text
 	openwith
 	php-mode
+	prettier-js
 	pydoc-info
 	rainbow-delimiters
 	realgud
