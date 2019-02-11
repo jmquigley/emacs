@@ -6,7 +6,7 @@
     "--arrow-parens" "always"
     "--no-bracket-spacing"
     "--end-of-line" "lf"
-    "--jsx-bracket-same-line" "true"
+    "--jsx-single-quote"
     "--tab-width" "4"
     "--use-tabs" "true"
 ))
@@ -18,7 +18,6 @@
     (setq js2-basic-offset 4)
     (setq indent-tabs-mode t)
     (setq js2-bounce-indent-p t)
-    (tabify (point-min) (point-max))
     (prettier-js-mode 1)
 ))
 
@@ -27,13 +26,16 @@
     (setq js2-basic-offset 4)
     (setq indent-tabs-mode t)
     (setq js2-bounce-indent-p t)
-    (tabify (point-min) (point-max))
     (prettier-js-mode 1)
 ))
 
 (add-hook 'js-mode-hook '(lambda()
     (development-minor-mode-hooks)
     (setq indent-tabs-mode t)
+))
+
+(add-hook 'json-mode-hook '(lambda()
+    (prettier-js-mode 1)
 ))
 
 (provide 'js-settings)
