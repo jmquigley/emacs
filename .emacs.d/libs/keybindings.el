@@ -23,7 +23,7 @@
 (global-set-key (kbd "<f3>") 'other-window)
 (global-set-key (kbd "<f4>") '(lambda() (interactive) (term (getenv "SHELL"))))
 (global-set-key (kbd "<f5>") 'recompile)
-(global-set-key (kbd "<f6>") 'neotree-toggle)
+(global-set-key (kbd "<f6>") 'devdocs-search)
 (global-set-key (kbd "<f7>") 'replace-regexp)
 (global-set-key (kbd "<f8>") 'dictionary-lookup-definition)
 (global-set-key (kbd "<f9>") 'eval-buffer)
@@ -35,7 +35,6 @@
 (global-set-key (kbd "C-<f6>") 'open-ssh-buffer)
 (global-set-key (kbd "C-<f7>") 'rgrep)
 
-(global-set-key (kbd "C-c h") 'devdocs-search)
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-c g") 'goto-line)
 (global-set-key (kbd "C-c n") 'new-buffer-frame)
@@ -85,6 +84,7 @@
 (global-set-key (kbd "C-c t") 'org-insert-todo-heading)
 
 (global-set-key (kbd "C-c c") 'yas-expand)
+(global-set-key (kbd "C-c C-c") 'yas-expand)
 
 (global-unset-key "\M-.")
 (global-set-key (kbd "M-.") 'xref-find-definitions)

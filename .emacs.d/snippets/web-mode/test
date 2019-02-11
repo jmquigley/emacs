@@ -1,7 +1,7 @@
-# name: create ava test for javascript
+# name: create jest test for javascript
 # key: test
 # contributor: jmq
 # --
-test('${1}', t => {
+test("${1}", () => {
 	$0
 });

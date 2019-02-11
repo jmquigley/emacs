@@ -10,7 +10,9 @@
   ("term" . "terminal")
   ("terminal" . "terminal")
 
-  ("opsys"          . "jmquigley@192.168.1.42")
+  ("devhaus" . "jmquigley@devhaus.local")
+  ("buildhaus" . "jmquigley@buildhaus.local")
+  ("devstack" . "jmquigley@openstack.local")
 )
 
 "The list of all current ssh terminals that I can log into.  The first column

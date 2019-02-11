@@ -2,6 +2,6 @@
 # key: test
 # contributor: jmq
 # --
-test('${1}', t => {
+test("${1}", () => {
 	$0
 });
