@@ -40,6 +40,7 @@
 (global-set-key (kbd "C-c n") 'new-buffer-frame)
 (global-set-key (kbd "C-c d") 'duplicate-line)
 (global-set-key (kbd "C-c j") 'join-line)
+(global-set-key (kbd "C-c /") 'indent-region)
 (global-set-key (kbd "C-x C-k") 'kill-compilation)
 (global-set-key (kbd "C-c C-k") 'kill-region)
 (global-set-key (kbd "<select>") 'move-end-of-line)
