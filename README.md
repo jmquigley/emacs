@@ -17,6 +17,7 @@ To use this clone the repo and run the script `./install.sh` in a Linux or OSX e
 Packages
 --------
 
+- [auctex](https://elpa.gnu.org/packages/auctex.html)
 - [auto-complete](https://melpa.org/#/auto-complete)
 - [autopair](https://melpa.org/#/autopair)
 - [bookmark+](https://www.emacswiki.org/emacs/BookmarkPlus)

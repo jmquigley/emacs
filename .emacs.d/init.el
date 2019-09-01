@@ -6,9 +6,13 @@
 (defvar conf.dir (concat user-emacs-directory "settings/"))
 ;; (toggle-debug-on-error)
 
+;; temporary workaround for package install
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+
 (require 'package)
 
 (setq package-list '(
+    auctex
 	auto-complete
 	autopair
 	cmake-mode
@@ -49,8 +53,8 @@
 	yasnippet
 	))
 
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
 
 (package-initialize)
 
