@@ -101,6 +101,7 @@
 (require 'whitespace-settings)
 (require 'buffer-settings)
 (require 'openwith-settings)
+(require 'antlr-settings)
 
 (require 'keybindings)
 
