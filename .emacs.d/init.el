@@ -27,6 +27,7 @@
 	ggtags
 	git-blamed
 	google-c-style
+	go-mode
 	groovy-mode
 	haml-mode
 	jedi
@@ -102,6 +103,7 @@
 (require 'buffer-settings)
 (require 'openwith-settings)
 (require 'antlr-settings)
+(require 'go-settings)
 
 (require 'keybindings)
 

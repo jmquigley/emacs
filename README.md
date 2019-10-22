@@ -32,6 +32,7 @@ Packages
 - [flycheck](https://melpa.org/#/flycheck)
 - [ggtags](https://melpa.org/#/ggtags)
 - [git-blamed](https://melpa.org/#/git-blamed)
+- [go-mode](https://melpa.org/#/go-mode)
 - [google-c-style](https://melpa.org/#/google-c-style)
 - [groovy-mode](https://melpa.org/#/groovy-mode)
 - [haml-mode](https://melpa.org/#/haml-mode)
