@@ -5,6 +5,12 @@
 (add-to-list 'auto-mode-alist '("\\.bash_profile" . sh-mode))
 (add-to-list 'auto-mode-alist '("\\.functions$" . sh-mode))
 (add-to-list 'auto-mode-alist '("\\.path" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.zsh$" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.zlogin$" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.zlogout$" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.zshenv$" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.zshrc$" . sh-mode))
+
 
 (add-hook 'sh-mode-hook '(lambda()
     (development-minor-mode-hooks)

@@ -7,6 +7,7 @@
     "--no-bracket-spacing"
     "--end-of-line" "lf"
     "--jsx-single-quote"
+    "--quote-props" "consistent"
     "--tab-width" "4"
     "--use-tabs" "true"
 ))
