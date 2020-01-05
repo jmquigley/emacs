@@ -7,7 +7,6 @@
 ;; (toggle-debug-on-error)
 
 ;; temporary workaround for package install
-(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
 (require 'package)
 
@@ -56,6 +55,7 @@
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
 
 (package-initialize)
 
