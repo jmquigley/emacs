@@ -6,8 +6,6 @@
 (defvar conf.dir (concat user-emacs-directory "settings/"))
 ;; (toggle-debug-on-error)
 
-;; temporary workaround for package install
-
 (require 'package)
 
 (setq package-list '(
@@ -44,7 +42,7 @@
 	realgud
 	slime
 	typescript-mode
-	undo-tree
+	;; undo-tree
 	virtualenvwrapper
 	web-mode
 	window-number
