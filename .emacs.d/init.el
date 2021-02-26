@@ -37,12 +37,11 @@
 	openwith
 	php-mode
 	prettier-js
-	pydoc-info
 	rainbow-delimiters
 	realgud
 	slime
 	typescript-mode
-	;; undo-tree
+	undo-tree
 	virtualenvwrapper
 	web-mode
 	window-number
