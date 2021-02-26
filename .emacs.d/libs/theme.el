@@ -92,7 +92,6 @@
 (set-face-foreground 'markdown-url-face "#9acd32")
 (set-face-foreground 'markdown-link-title-face "#878700")
 (set-face-foreground 'markdown-reference-face "goldenrod")
-(set-face-foreground 'markdown-footnote-face "goldenrod")
 (set-face-foreground 'markdown-math-face "magenta")
 (set-face-background 'markdown-markup-face background)
 (set-face-background 'markdown-language-keyword-face background)

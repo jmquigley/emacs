@@ -77,7 +77,6 @@
     (set-face-foreground 'markdown-link-title-face "#878700")
 
     (set-face-foreground 'markdown-reference-face "goldenrod")
-    (set-face-foreground 'markdown-footnote-face "goldenrod")
 
     (set-face-foreground 'markdown-math-face "#d787d7")
     
