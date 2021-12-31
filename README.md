@@ -5,8 +5,10 @@ My Emacs configuration.  This is a reorganization of my current setup.  This set
 
 Requirements
 ------------
-Emacs 26.x+
+Emacs 27.x+
 Linux, OSX, or Windows
+
+This repo no longer works with versions of Emacs <27.  It can be made to work with it if the devdocs package is excluded.
 
 
 Installation
