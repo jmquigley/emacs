@@ -6,12 +6,13 @@
 (defvar conf.dir (concat user-emacs-directory "settings/"))
 ;; (toggle-debug-on-error)
 
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+
 (require 'package)
 
 (setq package-list '(
     auctex
 	auto-complete
-	autopair
 	cmake-mode
 	company
 	devdocs

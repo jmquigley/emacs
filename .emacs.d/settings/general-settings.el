@@ -74,7 +74,6 @@
 (require 'search)
 (require 'move-text)
 
-(require 'autopair)
 (require 'dictionary)
 (require 'expand-region)
 (require 'git-blamed)
@@ -130,10 +129,6 @@ in some of the major modes that I use"
 (require 'window-number)
 (column-number-mode t)
 (window-number-mode 1)
-
-;; autopair mode
-(require 'autopair)
-(autopair-global-mode)
 
 ;; undo tree mode
 (global-undo-tree-mode)

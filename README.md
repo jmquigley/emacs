@@ -19,7 +19,6 @@ Packages
 
 - [auctex](https://elpa.gnu.org/packages/auctex.html)
 - [auto-complete](https://melpa.org/#/auto-complete)
-- [autopair](https://melpa.org/#/autopair)
 - [bookmark+](https://www.emacswiki.org/emacs/BookmarkPlus)
 - [cmake-mode](https://melpa.org/#/cmake-mode)
 - [company](https://melpa.org/#/company)
