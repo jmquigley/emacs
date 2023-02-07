@@ -47,6 +47,7 @@ Packages
 - [move-text](https://melpa.org/#/move-text)
 - [php-mode](https://melpa.org/#/php-mode)
 - [prettier-js](https://melpa.org/#/prettier-js)
+- [powershell](https://melpa.org/#/powershell)
 - [pydoc-info](https://www.emacswiki.org/emacs/pydoc-info.el)
 - [python-mode](https://melpa.org/#/python-mode)
 - [rainbow-delimiters](https://melpa.org/#/rainbow-delimiters)

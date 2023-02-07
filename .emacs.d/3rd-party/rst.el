@@ -48,10 +48,10 @@
 ;; the contents of this package and how to use it.
 ;;
 ;; For more information about reStructuredText, see
-;; http://docutils.sourceforge.net/rst.html
+;; https://docutils.sourceforge.io/rst.html
 ;;
 ;; For full details on how to use the contents of this file, see
-;; http://docutils.sourceforge.net/docs/user/emacs.html
+;; https://docutils.sourceforge.io/docs/user/emacs.html
 ;;
 ;; There are a number of convenient key bindings provided by rst-mode.  For the
 ;; bindings, try C-c C-h when in rst-mode.  There are also many variables that
@@ -81,7 +81,7 @@
 ;;   (require 'rst)
 ;;
 ;; If you are using `.txt' as a standard extension for reST files as
-;; http://docutils.sourceforge.net/FAQ.html#what-s-the-standard-filename-extension-for-a-restructuredtext-file
+;; https://docutils.sourceforge.io/FAQ.html#what-s-the-standard-filename-extension-for-a-restructuredtext-file
 ;; suggests you may use one of the `Local Variables in Files' mechanism Emacs
 ;; provides to set the major mode automatically.  For instance you may use::
 ;;
@@ -258,12 +258,12 @@ and before TAIL-RE and DELIM-RE in VAR or DEFAULT for no match."
 ;; Use LastChanged... to really get information from SVN.
 (defconst rst-svn-rev
   (rst-extract-version "\\$" "LastChangedRevision: " "[0-9]+" " "
-		       "$LastChangedRevision: 8015 $")
+		       "$LastChangedRevision$")
   "The SVN revision of this file.
 SVN revision is the upstream (docutils) revision.")
 (defconst rst-svn-timestamp
   (rst-extract-version "\\$" "LastChangedDate: " ".+?+" " "
-		       "$LastChangedDate: 2017-01-08 09:54:35 +0000 (Sun, 08 Jan 2017) $")
+		       "$LastChangedDate$")
   "The SVN time stamp of this file.")
 
 ;; Maintained by the release process.
@@ -273,7 +273,7 @@ SVN revision is the upstream (docutils) revision.")
   "Official version of the package.")
 (defconst rst-official-cvs-rev
   (rst-extract-version "[%$]" "Revision: " "[0-9]+\\(?:\\.[0-9]+\\)+" " "
-		       "$Revision: 8015 $")
+		       "$Revision$")
   "CVS revision of this file in the official version.")
 
 (defconst rst-version
@@ -315,7 +315,7 @@ in parentheses follows the development revision and the time stamp.")
 (defgroup rst nil "Support for reStructuredText documents."
   :group 'text
   :version "23.1"
-  :link '(url-link "http://docutils.sourceforge.net/rst.html"))
+  :link '(url-link "https://docutils.sourceforge.io/rst.html"))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -1006,7 +1006,7 @@ BEG-UND are the starting points of the overline or underline,
 respectively.  They may be nil if the respective thing is missing.
 BEG-TXT is the beginning of the title line or the transition and
 must be given.  The end of the line is used as the end point.  TXT
-is the title text or nil.  If TXT is given the indendation of the
+is the title text or nil.  If TXT is given the indentation of the
 line containing BEG-TXT is used as indentation.  Match group 0 is
 derived from the remaining information."
   (cl-check-type beg-txt integer-or-marker)
@@ -3863,7 +3863,7 @@ of your own."
 
 (defvar rst-font-lock-keywords
   ;; The reST-links in the comments below all relate to sections in
-  ;; http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html.
+  ;; https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html.
   `(;; FIXME: Block markup is not recognized in blocks after explicit markup
     ;;        start.
 

@@ -38,6 +38,7 @@
 	openwith
 	php-mode
 	prettier-js
+    powershell
 	rainbow-delimiters
 	realgud
 	slime
@@ -102,6 +103,7 @@
 (require 'openwith-settings)
 (require 'antlr-settings)
 (require 'go-settings)
+(require 'powershell-settings)
 
 (require 'keybindings)
 
