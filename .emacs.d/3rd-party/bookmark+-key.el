@@ -108,7 +108,7 @@
      (require 'bookmark+-mac)))         ; Require, so can load separately if not on `load-path'.
 ;; bmkp-menu-bar-make-toggle
 
-(eval-when-compile (require 'cl)) ;; case
+(eval-when-compile (require 'cl-lib)) ;; case
 
 ;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -126,7 +126,7 @@
   "Set prefix key option SYMBOL to key-sequence VALUE."
   (set pref-keys-option keys)
   (let* ((g-map     (current-global-map))
-         (b-map     (case pref-keys-option
+         (b-map     (cl-case pref-keys-option
                       (bmkp-bookmark-map-prefix-keys          'bookmark-map)
                       (bmkp-jump-map-prefix-keys              'bmkp-jump-map)
                       (bmkp-jump-other-window-map-prefix-keys 'bmkp-jump-other-window-map))))
@@ -217,7 +217,7 @@ there are such bookmarks can take a little time."
 (defvar w3m-mode-map)                   ; In `w3m.el'.
 (defvar woman-menu)                     ; In `woman.el'.
 (defvar woman-mode-map)                 ; In `woman.el'.
- 
+
 ;;(@* "Keymaps")
 ;;; Keymaps ----------------------------------------------------------
 
@@ -1119,7 +1119,7 @@ Menu for bookmarks that target this file or buffer.")
   "Set a bookmark, prompting for the name."
   (interactive)
   (call-interactively #'bmkp-bookmark-set-confirm-overwrite))
-  
+
 (define-key bmkp-set-bookmark-menu [bmkp-make-function-bookmark]
   '(menu-item "Function Bookmark..." bmkp-make-function-bookmark
     :help "Create a bookmark that will invoke a function when \"jumped\" to"))

@@ -804,7 +804,7 @@
 (unless (fboundp 'file-remote-p) (require 'ffap)) ;; ffap-file-remote-p
 (eval-when-compile (require 'gnus)) ;; mail-header-id (really in `nnheader.el')
 (eval-when-compile (require 'gnus-sum)) ;; gnus-summary-article-header
-(eval-when-compile (require 'cl)) ;; case, multiple-value-bind, typecase (plus, for Emacs 20: dolist, push)
+(eval-when-compile (require 'cl-lib)) ;; case, multiple-value-bind, typecase (plus, for Emacs 20: dolist, push)
 
 (when (and (require 'thingatpt+ nil t) ;; (no error if not found):
            (fboundp 'tap-put-thing-at-point-props)) ; >= 2012-08-21
@@ -1192,7 +1192,7 @@ of the following, if available:
 ;;;###autoload (autoload 'bmkp-default-handlers-for-file-types "bookmark+")
 (defcustom bmkp-default-handlers-for-file-types
   (and (require 'dired-x)               ; It in turn requires `dired-aux.el'
-       (eval-when-compile (when (< emacs-major-version 21) (require 'cl))) ;; `dolist', for Emacs 20
+       (eval-when-compile (when (< emacs-major-version 21) (require 'cl-lib))) ;; `dolist', for Emacs 20
        (let ((assns  ()))
          (dolist (shell-assn  dired-guess-shell-alist-user)
            (push (cons (car shell-assn)
@@ -6476,7 +6476,7 @@ and return only the tags for the currently loaded bookmarks."
         bmk-tags)
     (when (or (eq opt-tags 'current)  current-only-p)  (setq opt-tags '(current)))
     (dolist (entry  opt-tags)
-      (typecase entry
+      (cl-typecase entry
         (cons                           ; A bookmark file
          (when (eq 'bmkfile (car entry))
            (setq entry  (cdr entry)
@@ -7247,10 +7247,10 @@ Optional arg TEST is the test function.  If nil, test with `equal'.
 See `make-hash-table' for possible values of TEST."
       (setq test  (or test  #'equal))
       (let ((htable  (make-hash-table :test test)))
-        (loop for elt in sequence
+        (cl-loop for elt in sequence
               unless (gethash elt htable)
               do     (puthash elt elt htable)
-              finally return (loop for i being the hash-values in htable collect i))))
+              finally return (cl-loop for i being the hash-values in htable collect i))))
 
   (defun bmkp-remove-dups (list &optional use-eq)
     "Copy of LIST with duplicate elements removed.
@@ -7507,7 +7507,7 @@ predicate."
 ;;; modifies your existing `bookmark-default-file' (`~/.emacs.bmk'), after
 ;;; backing up that file (suffixing the name with \"_saveNUMBER\")."
 ;;;   (interactive)
-;;;   (require 'cl)                         ; For `gensym'
+;;;   (require 'cl-lib)                         ; For `gensym'
 ;;;   (if (not (yes-or-no-p
 ;;;              "This will modify your bookmark file, after backing it up.  OK? "))
 ;;;       (message "OK, nothing done")
@@ -10984,7 +10984,7 @@ BOOKMARK is a bookmark name or a bookmark record."
   (let* ((man-args           (bookmark-prop-get bookmark 'man-args))
          ;; `Man-notify-method' binding needs to be in effect during the calls to both
          ;; `Man-getpage-in-background' and `accept-process-output'.
-         (Man-notify-method  (case bmkp-jump-display-function
+         (Man-notify-method  (cl-case bmkp-jump-display-function
                                ((nil display-buffer)             'quiet)
                                (bmkp--pop-to-buffer-same-window  'pushy)
                                ((bmkp-select-buffer-other-window
@@ -11053,7 +11053,7 @@ BOOKMARK is a bookmark name or a bookmark record."
         (switches     (bookmark-prop-get bookmark 'dired-switches))
         (subdirs      (bookmark-prop-get bookmark 'dired-subdirs))
         (hidden-dirs  (bookmark-prop-get bookmark 'dired-hidden-dirs)))
-    (case bmkp-jump-display-function
+    (cl-case bmkp-jump-display-function
       ((nil bmkp--pop-to-buffer-same-window display-buffer)
        (dired dir switches))
       ((bmkp-select-buffer-other-window pop-to-buffer switch-to-buffer-other-window)
@@ -13904,7 +13904,7 @@ The first arg is a cons as returned by `bmkp-get-external-annotation'.
 I MSG-P is non-nil then echo the annotation type."
   (let ((ann   (car annotation.type))
         (type  (cdr annotation.type)))
-    (case type
+    (cl-case type
       (FILE       (find-file-other-window     ann))
       (URL        (browse-url                 ann))
       (BOOKMARK   (bookmark-jump-other-window ann))

@@ -62,7 +62,7 @@
 ;;
 ;;    (The commentary links in #1 and #3 work only if you have library
 ;;    `bookmark+-doc.el' in your `load-path'.)
- 
+
 ;;(@> "Index")
 ;;
 ;;  Index
@@ -83,7 +83,7 @@
 ;;    (@> "Menu-List (`*-bmenu-*') Commands")
 ;;    (@> "General Highlight Commands")
 ;;    (@> "Other Functions")
- 
+
 ;;(@* "Things Defined Here")
 ;;
 ;;  Things Defined Here
@@ -186,7 +186,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;
 
-(eval-when-compile (require 'cl)) ;; case (plus, for Emacs 20: push)
+(eval-when-compile (require 'cl-lib)) ;; case (plus, for Emacs 20: push)
 
 (require 'bookmark)
 ;; bookmark-alist, bookmark-bmenu-bookmark, bookmark-completing-read, bmkp-get-bookmark,
@@ -252,7 +252,7 @@
 (defvar bmkp-this-file/buffer-cycle-sort-comparer) ; In `bookmark+-1.el'.
 (defvar fringe-bitmaps)                 ; Built-in for Emacs 22+.
 
- 
+
 ;;(@* "Faces (Customizable)")
 ;;; Faces (Customizable) ---------------------------------------------
 
@@ -308,7 +308,7 @@ This face must be combinable with face `bmkp-t-mark'."
 ;;      :family     "Courier"))
 ;;   "Face for mouseover tooltip content for highlighted bookmarks."
 ;;   :group 'bookmark-plus :group 'faces :group 'tooltip)
- 
+
 ;;(@* "User Options (Customizable)")
 ;;; User Options (Customizable) --------------------------------------
 
@@ -444,7 +444,7 @@ annotation if there is one, or the full description if not.
 To prevent showing any tooltip you can use a function, such as
 `ignore', that returns nil."
   :type 'function :group 'bookmark-plus :group 'tooltip)
- 
+
 ;;(@* "Internal Variables")
 ;;; Internal Variables -----------------------------------------------
 
@@ -453,7 +453,7 @@ To prevent showing any tooltip you can use a function, such as
 
 (defvar bmkp-non-autonamed-overlays nil
   "Overlays used to highlight non-autonamed bookmarks.")
- 
+
 ;;(@* "Functions")
 ;;; Functions --------------------------------------------------------
 
@@ -594,7 +594,7 @@ Non-interactively, non-nil MSGP means echo a status message."
                       (if bmkp-auto-light-when-jump
                           (upcase (symbol-name bmkp-auto-light-when-jump))
                         "OFF"))))
-                                        
+
 ;;;###autoload (autoload 'bmkp-lighted-jump "bookmark+")
 (defun bmkp-lighted-jump (bookmark-name &optional flip-use-region-p) ; `C-x j h'
   "Jump to a highlighted bookmark.
@@ -798,7 +798,7 @@ When called from Lisp, non-nil MSGP means echo the new status."
                       (if bmkp-auto-light-when-set
                           (upcase (symbol-name bmkp-auto-light-when-set))
                         "OFF"))))
-                                        
+
 ;;;###autoload (autoload 'bmkp-set-lighting-for-bookmark "bookmark+")
 (defun bmkp-set-lighting-for-bookmark (bookmark-name style face when &optional msgp light-now-p) ; Not bound
   "Set the `lighting' entry for bookmark BOOKMARK-NAME.
@@ -1523,7 +1523,7 @@ If STYLE is `none' then:
     (when (and (< emacs-major-version 22)  (not (rassq style bmkp-light-styles-alist)))
       (message "Fringe styles not supported before Emacs 22 - changing to `line' style")
       (setq style 'line))
-    (case style
+    (cl-case style
       (region        (and (bmkp-region-bookmark-p bookmark)
                           (let ((end  (bmkp-get-end-position bookmark)))
                             (if (not ov)

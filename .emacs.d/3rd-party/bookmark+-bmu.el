@@ -70,7 +70,7 @@
 ;;
 ;;    (The commentary links in #1 and #3 work only if you have library
 ;;    `bookmark+-doc.el' in your `load-path'.)
- 
+
 ;;(@> "Index")
 ;;
 ;;  Index
@@ -100,7 +100,7 @@
 ;;    (@> "Sorting - Commands")
 ;;    (@> "Other Bookmark+ Functions (`bmkp-*')")
 ;;  (@> "Keymaps")
- 
+
 ;;(@* "Things Defined Here")
 ;;
 ;;  Things Defined Here
@@ -361,7 +361,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;
 
-(eval-when-compile (require 'cl)) ;; case (plus, for Emacs 20: dolist, push)
+(eval-when-compile (require 'cl-lib)) ;; case (plus, for Emacs 20: dolist, push)
 (eval-when-compile (require 'easymenu)) ;; easy-menu-create-menu
 (eval-when-compile (require 'org nil t)) ;; org-add-link-type
 
@@ -495,7 +495,7 @@ Elements of ALIST that are not conses are ignored."
 (defvar minibuffer-prompt-properties)   ; Emacs 22+.
 (defvar tramp-file-name-regexp)         ; In `tramp.el'.
 
- 
+
 ;;(@* "Utility Functions")
 ;;; Utility Functions ------------------------------------------------
 
@@ -526,7 +526,7 @@ whatever OLD is bound to in MAP, or in OLDMAP, if provided."
 (if (fboundp 'pop-to-buffer-same-window)
     (defalias 'bmkp--pop-to-buffer-same-window 'pop-to-buffer-same-window)
   (defalias 'bmkp--pop-to-buffer-same-window 'switch-to-buffer))
- 
+
 ;;(@* "Faces (Customizable)")
 ;;; Faces (Customizable) ---------------------------------------------
 
@@ -698,7 +698,7 @@ whatever OLD is bound to in MAP, or in OLDMAP, if provided."
                         (t (:foreground "Blue")))
   "*Face used to highlight the headings in various Bookmark+ buffers."
   :group 'bookmark-plus :version "22.1" :group 'faces)
- 
+
 ;;(@* "User Options (Customizable)")
 ;;; User Options (Customizable) --------------------------------------
 
@@ -879,7 +879,7 @@ unreadable by Emacs 20.  To convert the file to be usable with Emacs
 20 you must, in Emacs 21 or later, set this to nil and then do `M-x
 bookmark-save'."
   :type 'boolean :group 'bookmark-plus)
- 
+
 ;;(@* "Internal Variables")
 ;;; Internal Variables -----------------------------------------------
 
@@ -923,7 +923,7 @@ This includes possibly omitted bookmarks, that is, bookmarks listed in
 
 ;; This is a general variable.  It is in this file because it is used only in the bmenu code.
 (defvar bmkp-last-bmenu-bookmark nil "The name of the last bookmark current in the bookmark list.")
- 
+
 ;;(@* "Compatibility Code for Older Emacs Versions")
 ;;; Compatibility Code for Older Emacs Versions ----------------------
 
@@ -944,7 +944,7 @@ prompting with completion for the new path."
           (thispoint  (point)))
       (when bmk (bookmark-relocate bmk))
       (goto-char thispoint))))
- 
+
 ;;(@* "Menu List Replacements (`bookmark-bmenu-*')")
 ;;; Menu List Replacements (`bookmark-bmenu-*') ----------------------
 
@@ -2239,7 +2239,7 @@ for confirmation."
   (bmkp-bmenu-barf-if-not-in-menu-list)
   (bookmark-bmenu-ensure-position)
   (let ((newname  (bookmark-rename (bookmark-bmenu-bookmark)))) (bmkp-bmenu-goto-bookmark-named newname)))
- 
+
 ;;(@* "Bookmark+ Functions (`bmkp-*')")
 ;;; Bookmark+ Functions (`bmkp-*') -----------------------------------
 
@@ -2606,7 +2606,7 @@ From Lisp, non-nil optional arg MSG-P means show progress messages."
                            (error (throw 'bmkp-bmenu-read-filter-input nil)))
                     (unless (or (not (fboundp 'characterp))  (characterp char)) ; E.g. `M-x', `M-:'
                       (throw 'bmkp-bmenu-read-filter-input nil))
-                    (case char
+                    (cl-case char
                       ((?\e ?\r)  (throw 'bmkp-bmenu-read-filter-input nil)) ; Break and exit.
                       (?\C-g      (setq inhibit-quit  nil)
                                   (throw 'bmkp-bmenu-read-filter-input 'QUIT)) ; Quit.
@@ -3811,7 +3811,7 @@ Non-interactively, non-nil MSG-P means display messages."
    (let ((tgs  ())
          (all  (and current-prefix-arg  (>= (prefix-numeric-value current-prefix-arg) 0)))
          (omt  (and current-prefix-arg  (<  (prefix-numeric-value current-prefix-arg) 0))))
-           
+
      (dolist (bmk  (bmkp-bmenu-marked-or-this-or-all all omt))
        (setq tgs  (bmkp-set-union tgs (bmkp-get-tags bmk))))
      (unless tgs (error "No tags to remove"))
@@ -4521,7 +4521,7 @@ Save the command definition in `bmkp-bmenu-commands-file'."
             (print-level            nil)
             (print-circle           bmkp-propertize-bookmark-names-flag)
             (print-gensym           bmkp-propertize-bookmark-names-flag)
-            (version-control        (case bookmark-version-control
+            (version-control        (cl-case bookmark-version-control
                                       ((nil)      nil)
                                       (never      'never)
                                       (nospecial  version-control)
@@ -4552,7 +4552,7 @@ Use the command at any time to restore them."
          (_IGNORE  (when (fboundp fn)
                      (if (y-or-n-p (format "`%s' already defined.  Redfine? " fn))
                          (fmakunbound fn)
-                       (error "OK, canceled"))))  
+                       (error "OK, canceled"))))
          (def      `(defun ,fn ()
                       (interactive)
                       (setq
@@ -4586,7 +4586,7 @@ Use the command at any time to restore them."
             (print-level            nil)
             (print-circle           bmkp-propertize-bookmark-names-flag)
             (print-gensym           bmkp-propertize-bookmark-names-flag)
-            (version-control        (case bookmark-version-control
+            (version-control        (cl-case bookmark-version-control
                                       ((nil)      nil)
                                       (never      'never)
                                       (nospecial  version-control)
@@ -4688,7 +4688,7 @@ the omit list and the sort & filter information."
             (print-level            nil)
             (print-circle           bmkp-propertize-bookmark-names-flag)
             (print-gensym           bmkp-propertize-bookmark-names-flag)
-            (version-control        (case bookmark-version-control
+            (version-control        (cl-case bookmark-version-control
                                       ((nil)      nil)
                                       (never      'never)
                                       (nospecial  version-control)
@@ -4815,7 +4815,7 @@ If you use this function non-interactively, be sure to load library
             (print-level            nil)
             (print-circle           bmkp-propertize-bookmark-names-flag)
             (print-gensym           bmkp-propertize-bookmark-names-flag)
-            (version-control        (case bookmark-version-control
+            (version-control        (cl-case bookmark-version-control
                                       ((nil)      nil)
                                       (never      'never)
                                       (nospecial  version-control)
@@ -5616,7 +5616,7 @@ are marked or ALLP is non-nil."
             (bmkp-marked-bookmarks-only)
           (bmkp-remove-if #'bmkp-omitted-bookmark-p (bmkp-marked-bookmarks-only)))
         (and (bookmark-bmenu-bookmark)  (list (bmkp-get-bookmark (bookmark-bmenu-bookmark)))))))
- 
+
 ;;(@* "Keymaps")
 ;;; Keymaps ----------------------------------------------------------
 
