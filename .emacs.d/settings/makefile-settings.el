@@ -1,4 +1,4 @@
-(add-hook 'makefile-mode-hook '(lambda()
+(add-hook 'makefile-mode-hook #'(lambda()
     (development-minor-mode-hooks)
 ))
 

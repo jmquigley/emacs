@@ -14,7 +14,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
-(add-hook 'js2-mode-hook '(lambda()
+(add-hook 'js2-mode-hook #'(lambda()
     (development-minor-mode-hooks)
     (setq js2-basic-offset 4)
     (setq indent-tabs-mode t)
@@ -22,7 +22,7 @@
     (prettier-js-mode 1)
 ))
 
-(add-hook 'web-mode-hook '(lambda()
+(add-hook 'web-mode-hook #'(lambda()
     (development-minor-mode-hooks)
     (setq js2-basic-offset 4)
     (setq indent-tabs-mode t)
@@ -30,12 +30,12 @@
     (prettier-js-mode 1)
 ))
 
-(add-hook 'js-mode-hook '(lambda()
+(add-hook 'js-mode-hook #'(lambda()
     (development-minor-mode-hooks)
     (setq indent-tabs-mode t)
 ))
 
-(add-hook 'json-mode-hook '(lambda()
+(add-hook 'json-mode-hook #'(lambda()
     (prettier-js-mode 1)
 ))
 

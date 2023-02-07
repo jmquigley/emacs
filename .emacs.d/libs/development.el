@@ -5,7 +5,7 @@
 (require 'elib)
 (require 'window-number)
 (require 'ssh-terminals)
-(with-no-warnings (require 'cl))
+(with-no-warnings (require 'cl-lib))
 
 (defun capitalize-letter ()
 "Attempts to capitalize the current letter under the current point and then

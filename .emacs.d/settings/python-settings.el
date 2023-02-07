@@ -5,7 +5,7 @@
 (add-to-list 'auto-mode-alist '("SConscript" . python-mode))
 
 (add-hook 'python-mode-hook 'jedi:ac-setup)
-(add-hook 'python-mode-hook '(lambda()
+(add-hook 'python-mode-hook #'(lambda()
     (message "Loading python mode customizations")
     (development-minor-mode-hooks)
 

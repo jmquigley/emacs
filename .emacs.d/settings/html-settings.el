@@ -13,15 +13,15 @@
 (setq web-mode-content-types-alist
       '(("jsx" . ".*\\.tsx?")))
 
-(add-hook 'html-mode-hook '(lambda()
+(add-hook 'html-mode-hook #'(lambda()
     (development-minor-mode-hooks)
 ))
 
-(add-hook 'css-mode-hook '(lambda()
+(add-hook 'css-mode-hook #'(lambda()
     (development-minor-mode-hooks)
 ))
 
-(add-hook 'web-mode-hook '(lambda ()
+(add-hook 'web-mode-hook #'(lambda ()
     (development-minor-mode-hooks)
     (setq indent-tabs-mode t)
 	(setq web-mode-enable-auto-indentation nil)
@@ -33,13 +33,13 @@
     (setq web-mode-code-indent-offset 4)
 ))
 
-(add-hook 'json-mode-hook '(lambda()
+(add-hook 'json-mode-hook #'(lambda()
     (development-minor-mode-hooks)
 	(setq indent-tabs-mode t)
     (setq tab-width 2)
 ))
 
-(add-hook 'typescript-mode-hook '(lambda()
+(add-hook 'typescript-mode-hook #'(lambda()
     (development-minor-mode-hooks)
     (setq indent-tabs-mode t)
 ))

@@ -1,4 +1,4 @@
-(add-hook 'c-mode-common-hook '(lambda()
+(add-hook 'c-mode-common-hook #'(lambda()
     (development-minor-mode-hooks)
     (c-set-offset 'substatement-open 0)
 
@@ -11,10 +11,10 @@
     (ggtags-mode 1)
 ))
 
-(add-hook 'c++-mode-hook '(lambda()
+(add-hook 'c++-mode-hook #'(lambda()
 ))
 
-(add-hook 'objc-mode-hook '(lambda()
+(add-hook 'objc-mode-hook #'(lambda()
 ))
 
 (provide 'cmode-settings)

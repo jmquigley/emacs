@@ -119,7 +119,7 @@ in some of the major modes that I use"
     (linum-mode 1)
     (show-paren-mode t))
 
-(add-hook 'dired-mode-hook '(lambda() (hl-line-mode t)))
+(add-hook 'dired-mode-hook #'(lambda() (hl-line-mode t)))
 (add-hook 'text-mode-hook 'minor-mode-hooks)
 
 ;; Puts the date/time in the status bar

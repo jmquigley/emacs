@@ -12,7 +12,7 @@
 (add-to-list 'auto-mode-alist '("\\.zshrc$" . sh-mode))
 
 
-(add-hook 'sh-mode-hook '(lambda()
+(add-hook 'sh-mode-hook #'(lambda()
     (development-minor-mode-hooks)
 ))
 

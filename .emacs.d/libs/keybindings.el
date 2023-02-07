@@ -19,9 +19,9 @@
 (global-set-key (kbd "C-z") 'keyboard-quit)
 
 (global-set-key (kbd "<f1>") 'execute-extended-command)
-(global-set-key (kbd "<f2>") '(lambda() (interactive) (other-window -1)))
+(global-set-key (kbd "<f2>") #'(lambda() (interactive) (other-window -1)))
 (global-set-key (kbd "<f3>") 'other-window)
-(global-set-key (kbd "<f4>") '(lambda() (interactive) (term (getenv "SHELL"))))
+(global-set-key (kbd "<f4>") #'(lambda() (interactive) (term (getenv "SHELL"))))
 (global-set-key (kbd "<f5>") 'recompile)
 (global-set-key (kbd "<f6>") 'devdocs-search)
 (global-set-key (kbd "<f7>") 'replace-regexp)
@@ -51,7 +51,7 @@
 (global-set-key (kbd "M-?") 'recenter-top-bottom)
 (global-set-key (kbd "C-^") 'completion-accept)
 (global-set-key (kbd "C-h C-f") 'find-function)
-(global-set-key (kbd "C-]") '(lambda() (interactive) (find-file (concat user-emacs-directory "init.el"))))
+(global-set-key (kbd "C-]") #'(lambda() (interactive) (find-file (concat user-emacs-directory "init.el"))))
 (global-set-key (kbd "C-c e") 'expand-abbrev)
 (global-set-key (kbd "M-8") 'er/expand-region)
 (global-set-key (kbd "M-\\") 'er/expand-region)
@@ -177,7 +177,7 @@
 )
 
 (add-hook 'markdown-mode-hook
-    '(lambda ()
+    #'(lambda ()
        (local-unset-key (kbd "M-["))
        (local-unset-key (kbd "M-]"))
        (local-unset-key (kbd "M-<right>"))

@@ -5,7 +5,7 @@ My Emacs configuration.  This is a reorganization of my current setup.  This set
 
 Requirements
 ------------
-Emacs 27.x+
+Emacs 28.x+
 Linux, OSX, or Windows
 
 This repo no longer works with versions of Emacs <27.  It can be made to work with it if the devdocs package is excluded.
@@ -21,7 +21,7 @@ Packages
 
 - [auctex](https://elpa.gnu.org/packages/auctex.html)
 - [auto-complete](https://melpa.org/#/auto-complete)
-- [bookmark+](https://www.emacswiki.org/emacs/BookmarkPlus)
+- [bookmark+](https://github.com/emacsmirror/bookmark-plus)
 - [cmake-mode](https://melpa.org/#/cmake-mode)
 - [company](https://melpa.org/#/company)
 - [devdocs](https://melpa.org/#/devdocs)

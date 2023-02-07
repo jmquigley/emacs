@@ -1,6 +1,6 @@
 (require 'rst)
 
-(add-hook 'rst-mode-hook '(lambda()
+(add-hook 'rst-mode-hook #'(lambda()
     (minor-mode-hooks)
 ))
 (eval-after-load "rst"

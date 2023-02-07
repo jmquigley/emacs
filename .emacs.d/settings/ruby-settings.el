@@ -1,6 +1,6 @@
 (require 'ruby-mode)
 
-(add-hook 'ruby-mode-hook '(lambda()
+(add-hook 'ruby-mode-hook #'(lambda()
     (development-minor-mode-hooks)
 ))
 

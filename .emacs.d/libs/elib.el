@@ -1,18 +1,18 @@
 ;; Reusable common library functions.
 ;;
-(with-no-warnings (require 'cl))
+(with-no-warnings (require 'cl-lib))
 
 ;;;###autoload
-(defun safe-kill-emacs () 
-"save some buffers, then exit unconditionally" 
-    (interactive) 
-    (save-some-buffers nil t) 
-    (kill-emacs)) 
+(defun safe-kill-emacs ()
+"save some buffers, then exit unconditionally"
+    (interactive)
+    (save-some-buffers nil t)
+    (kill-emacs))
 
 ;;;###autoload
-(defun trim-string (str) 
+(defun trim-string (str)
 "Removes whitespace from the front and end of a string"
-    (replace-regexp-in-string "\\`[ \t\n]*" "" 
+    (replace-regexp-in-string "\\`[ \t\n]*" ""
     (replace-regexp-in-string "[ \t\n]*\\'" "" str)))
 
 ;;;###autoload
@@ -35,7 +35,7 @@ first before checking.  If it is bank, then it returns true, else nil"
 "Draws an 80 character horizontal line in the current buffer from the
 current position"
     (interactive)
-    (loop repeat 65 do (insert "-"))
+    (cl-loop repeat 65 do (insert "-"))
     (insert "\n"))
 
 ;;;###autoload
@@ -44,7 +44,7 @@ current position"
      (interactive)
      (save-buffer)
      (message "touching file %s" (buffer-file-name))
-     (shell-command (concat "touch " 
+     (shell-command (concat "touch "
          (shell-quote-argument (buffer-file-name))))
      (clear-visited-file-modtime))
 
@@ -66,7 +66,7 @@ current position"
 
 ;;;###autoload
 (defun local-replace-string (from to)
-"Performs a string replacement in the current buffer using a from regex and 
+"Performs a string replacement in the current buffer using a from regex and
 a replacement string"
     (save-excursion
        (goto-char (point-min))
@@ -98,7 +98,7 @@ a replacement string"
   refresh the list manually.  This ensures that files are added to the list
   as they are opened."
       (interactive)
-          (or 
+          (or
               (when (setq buffer (get-buffer-window "*Buffer List*"))
                   (with-selected-window buffer
                       (revert-buffer)))
