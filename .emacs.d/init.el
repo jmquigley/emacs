@@ -15,6 +15,7 @@
 	auto-complete
 	cmake-mode
 	company
+    company-jedi
 	devdocs
 	dictionary
 	dockerfile-mode
@@ -28,7 +29,7 @@
 	go-mode
 	groovy-mode
 	haml-mode
-	jedi
+    jedi-core
 	js2-mode
 	json-mode
 	lorem-ipsum
@@ -104,6 +105,7 @@
 (require 'antlr-settings)
 (require 'go-settings)
 (require 'powershell-settings)
+(require 'company-settings)
 
 (require 'keybindings)
 

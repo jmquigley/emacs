@@ -56,6 +56,7 @@
       tramp-default-method "ssh"
       tramp-use-ssh-controlmaster-options nil
       transient-mark-mode t
+	  undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo"))
       vc-follow-symlinks t
       version-control t
       virtualenv-workon "py3"

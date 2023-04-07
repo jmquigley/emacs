@@ -24,6 +24,7 @@ Packages
 - [bookmark+](https://github.com/emacsmirror/bookmark-plus)
 - [cmake-mode](https://melpa.org/#/cmake-mode)
 - [company](https://melpa.org/#/company)
+- [company-jedi](https://melpa.org/#/company-jedi)
 - [devdocs](https://melpa.org/#/devdocs)
 - [dictionary](https://melpa.org/#/dictionary)
 - [dockerfile-mode](https://melpa.org/#/dockerfile-mode)
