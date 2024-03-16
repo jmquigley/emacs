@@ -33,7 +33,7 @@
 	js2-mode
 	json-mode
 	lorem-ipsum
-	magit
+	;; magit
 	markdown-mode
 	move-text
 	openwith
@@ -108,6 +108,8 @@
 (require 'company-settings)
 
 (require 'keybindings)
+
+(ido-everywhere 1)
 
 (load
 	(setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
