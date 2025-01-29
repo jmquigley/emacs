@@ -33,7 +33,7 @@
 	js2-mode
 	json-mode
 	lorem-ipsum
-	;; magit
+	magit
 	markdown-mode
 	move-text
 	openwith
