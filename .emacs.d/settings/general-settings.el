@@ -41,7 +41,6 @@
       kept-new-versions 6
       kept-old-versions 2
       large-file-warning-threshold nil
-      linum-format "%4d\u2502"
       magit-auto-revert-mode nil
       magit-last-seen-setup-instructions "1.4.0"
       pop-up-windows nil
@@ -117,7 +116,7 @@ in some of the major modes that I use"
     (minor-mode-hooks)
     (yas-minor-mode t)
     (rainbow-delimiters-mode t)
-    (linum-mode 1)
+    (display-line-numbers-mode t)
     (show-paren-mode t))
 
 (add-hook 'dired-mode-hook #'(lambda() (hl-line-mode t)))

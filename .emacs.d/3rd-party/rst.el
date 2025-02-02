@@ -258,12 +258,12 @@ and before TAIL-RE and DELIM-RE in VAR or DEFAULT for no match."
 ;; Use LastChanged... to really get information from SVN.
 (defconst rst-svn-rev
   (rst-extract-version "\\$" "LastChangedRevision: " "[0-9]+" " "
-		       "$LastChangedRevision$")
+		       "$LastChangedRevision: 8956 $")
   "The SVN revision of this file.
 SVN revision is the upstream (docutils) revision.")
 (defconst rst-svn-timestamp
   (rst-extract-version "\\$" "LastChangedDate: " ".+?+" " "
-		       "$LastChangedDate$")
+		       "$LastChangedDate: 2022-01-20 11:11:44 +0100 (Do, 20. Jän 2022) $")
   "The SVN time stamp of this file.")
 
 ;; Maintained by the release process.
@@ -273,7 +273,7 @@ SVN revision is the upstream (docutils) revision.")
   "Official version of the package.")
 (defconst rst-official-cvs-rev
   (rst-extract-version "[%$]" "Revision: " "[0-9]+\\(?:\\.[0-9]+\\)+" " "
-		       "$Revision$")
+		       "$Revision: 8956 $")
   "CVS revision of this file in the official version.")
 
 (defconst rst-version

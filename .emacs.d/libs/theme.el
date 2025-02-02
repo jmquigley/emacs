@@ -3,7 +3,6 @@
 ;; M-x list-colors-display
 ;;
 (require 'hl-line)
-(require 'linum)
 (require 'yasnippet)
 (require 'paren)
 (require 'rst)
@@ -67,12 +66,6 @@
 (set-face-attribute 'ido-indicator nil :foreground red :background background)
 (set-face-attribute 'ido-virtual nil :foreground comment)
 
-;; Linum mode
-(set-face-background 'linum "#262626")
-(set-face-foreground 'linum "#5f8700")
-(set-face-font 'linum (face-attribute 'default :font))
-(set-face-attribute 'linum nil :height 80)
-
 ;; Markdown mode
 (set-face-foreground 'markdown-header-face-1 "#ffff00")
 (set-face-foreground 'markdown-header-face-2 "#ffd700")
@@ -119,7 +112,7 @@
 (set-face-foreground 'org-level-5 "#00ff5f")
 
 ;; Parentheses Highlighter
-(set-face-attribute 'show-paren-match nil :foreground nil :background "yellow" :weight 'extra-bold)
+(set-face-attribute 'show-paren-match nil :foreground 'unspecified :background "yellow" :weight 'extra-bold)
 
 ;; Programming
 (set-face-foreground 'font-lock-builtin-face aqua)
@@ -198,14 +191,14 @@
 (set-face-background 'window-number-face nil)
 
 ;; Whitespace mode
-(set-face-attribute 'whitespace-space nil :foreground "firebrick" :background nil)
+(set-face-attribute 'whitespace-space nil :foreground "firebrick" :background 'unspecified)
 (set-face-attribute 'whitespace-hspace nil :foreground "lightgray" :background "blue")
 (set-face-attribute 'whitespace-empty nil :foreground "SlateGray1" :background "firebrick")
 (set-face-attribute 'whitespace-line nil :foreground "black" :background "red")
-(set-face-attribute 'whitespace-newline nil :foreground "firebrick" :background nil)
-(set-face-attribute 'whitespace-tab nil :foreground "firebrick" :background nil)
-(set-face-attribute 'whitespace-indentation nil :foreground "firebrick" :background nil)
-(set-face-attribute 'whitespace-trailing nil :foreground "firebrick" :background nil)
+(set-face-attribute 'whitespace-newline nil :foreground "firebrick" :background 'unspecified)
+(set-face-attribute 'whitespace-tab nil :foreground "firebrick" :background 'unspecified)
+(set-face-attribute 'whitespace-indentation nil :foreground "firebrick" :background 'unspecified)
+(set-face-attribute 'whitespace-trailing nil :foreground "firebrick" :background 'unspecified)
 (set-face-attribute 'whitespace-space-after-tab nil :foreground "black" :background "green")
 (set-face-attribute 'whitespace-space-before-tab nil :foreground "black" :background "DarkOrange")
 
