@@ -1,0 +1,7 @@
+# name : creates a function header
+# key: header
+# contributor : jmq
+# --
+/**
+ * $0
+ */

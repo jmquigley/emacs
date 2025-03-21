@@ -1,4 +1,5 @@
-(add-hook 'c-mode-common-hook #'(lambda()
+(defun base-c-hook ()
+"Common code for all cmode initializations"
     (development-minor-mode-hooks)
     (c-set-offset 'substatement-open 0)
 
@@ -9,12 +10,18 @@
     (setq indent-tabs-mode nil)
 
     (ggtags-mode 1)
+)
+
+(add-hook 'c-mode-common-hook #'(lambda()
+    (base-c-hook)
 ))
 
 (add-hook 'c++-mode-hook #'(lambda()
+    (base-c-hook)
 ))
 
 (add-hook 'objc-mode-hook #'(lambda()
+    (base-c-hook)
 ))
 
 (provide 'cmode-settings)

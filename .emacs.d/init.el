@@ -16,6 +16,7 @@
 	cmake-mode
 	company
     company-jedi
+    dash
 	devdocs
 	dictionary
 	dockerfile-mode
@@ -42,6 +43,7 @@
     powershell
 	rainbow-delimiters
 	realgud
+    s
 	slime
 	typescript-mode
 	undo-tree

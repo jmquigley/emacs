@@ -1,0 +1,7 @@
+# name : creates a comment string
+# key: c
+# contributor : jmq
+# --
+/**
+ * $0
+ */
