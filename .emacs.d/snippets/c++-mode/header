@@ -3,5 +3,15 @@
 # contributor : jmq
 # --
 /**
- * $0
+ * \brief $0
+ * \details
+ * {description}
+ *
+ * \usage
+ * {example}
+ *
+ * \arg x {description}
+ * \arg y {description}
+ *
+ * \return {description}
  */
