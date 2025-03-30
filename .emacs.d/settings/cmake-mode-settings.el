@@ -2,6 +2,7 @@
       (append
        '(("CMakeLists\\.txt\\'" . cmake-mode))
        '(("CMakeLists\\.requirements\\.txt\\'" . cmake-mode))
+       '(("CMakeLists\\.testing\\.txt\\'" . cmake-mode))
        '(("\\.cmake\\'" . cmake-mode))
        auto-mode-alist))
 
