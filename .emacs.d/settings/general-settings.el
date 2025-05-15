@@ -25,6 +25,7 @@
       backup-directory-alist (list (cons ".*" backup-dir))
       browser (getenv "BROWSER")
       compilation-scroll-output t
+	  compile-command (concat "cd " (getenv "PROJECT_ROOT") " && ./build.sh")
       default-major-mode 'text-mode
       delete-old-versions t
       dired-directory root.dir
@@ -61,6 +62,7 @@
       virtualenv-workon "py3"
       virtualenv-default-directory "~/virtualenvs/py3"
       visual-bell t
+      warning-minimum-level :emergency
 )
 
 (require 'cl-lib)
