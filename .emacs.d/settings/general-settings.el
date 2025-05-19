@@ -32,6 +32,8 @@
       display-time-day-and-date t
       display-time-24hr-format t
       frame-title-format '((:eval default-directory))
+      gdb-many-windows t
+      gdb-restore-window-configuration-after-quit t
       inhibit-startup-message t
       initial-frame-alist '((width . 135)
                             (height . 65)

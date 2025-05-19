@@ -14,6 +14,7 @@
     auctex
 	auto-complete
 	cmake-mode
+    clang-format
 	company
     company-jedi
     dash
@@ -40,6 +41,7 @@
 	openwith
 	php-mode
 	prettier-js
+    projectile
     powershell
 	rainbow-delimiters
 	realgud
