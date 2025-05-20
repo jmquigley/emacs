@@ -13,8 +13,9 @@
 (setq package-list '(
     auctex
 	auto-complete
-	cmake-mode
+    citre
     clang-format
+	cmake-mode
 	company
     company-jedi
     dash
@@ -25,7 +26,6 @@
 	expand-region
 	fill-column-indicator
 	flycheck
-	ggtags
 	git-blamed
 	google-c-style
 	go-mode

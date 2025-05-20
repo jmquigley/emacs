@@ -54,7 +54,6 @@
       tab-always-indent nil
       tags-add-tables nil
       tags-table-list '("~/.emacs.d" "~/workspace")
-      tags-table-list '("~/.emacs.d")
       tramp-default-method "ssh"
       tramp-use-ssh-controlmaster-options nil
       transient-mark-mode t

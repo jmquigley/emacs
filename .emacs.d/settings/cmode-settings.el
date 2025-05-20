@@ -10,6 +10,7 @@
     (setq indent-tabs-mode nil)
 
     (ggtags-mode 1)
+    (clang-format-on-save-mode)
 )
 
 (add-hook 'c-mode-common-hook #'(lambda()
