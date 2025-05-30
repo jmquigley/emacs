@@ -31,6 +31,7 @@
 (global-set-key (kbd "<f11>") 'eval-region)
 (global-set-key (kbd "<f12>") 'repeat)
 
+(global-set-key (kbd "C-<f3>") 'switch-to-minibuffer-window)
 (global-set-key (kbd "C-<f5>") 'compile)
 (global-set-key (kbd "C-<f6>") 'open-ssh-buffer)
 (global-set-key (kbd "C-<f7>") 'rgrep)

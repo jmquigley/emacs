@@ -288,4 +288,10 @@ Asciidoc is the main mode, but org is used to edit tables."
     (insert ";\n")
     (indent-according-to-mode))
 
+(defun switch-to-minibuffer-window ()
+  "switch to minibuffer window (if active)"
+  (interactive)
+  (when (active-minibuffer-window)
+    (select-window (active-minibuffer-window))))
+
 (provide 'development)
