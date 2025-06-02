@@ -27,8 +27,9 @@
 	fill-column-indicator
 	flycheck
 	git-blamed
-	google-c-style
 	go-mode
+	google-c-style
+    gptel
 	groovy-mode
 	haml-mode
     jedi-core
@@ -110,6 +111,7 @@
 (require 'go-settings)
 (require 'powershell-settings)
 (require 'company-settings)
+(require 'ai-settings)
 
 (require 'keybindings)
 

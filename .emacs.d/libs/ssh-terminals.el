@@ -1,4 +1,3 @@
-
 ;; Contains the definitions for all of my remote sessions based on the
 ;; name of the location.
 ;;
@@ -10,9 +9,7 @@
   ("term" . "terminal")
   ("terminal" . "terminal")
 
-  ("devhaus" . "jmquigley@devhaus.local")
-  ("buildhaus" . "jmquigley@buildhaus.local")
-  ("devstack" . "jmquigley@openstack.local")
+  ("appserver" . "root@appserver.local")
 )
 
 "The list of all current ssh terminals that I can log into.  The first column

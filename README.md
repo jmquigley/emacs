@@ -5,7 +5,7 @@ My Emacs configuration.  This is a reorganization of my current setup.  This set
 
 Requirements
 ------------
-Emacs 28.x+
+Emacs 29.x+
 Linux, OSX, or Windows
 
 This repo no longer works with versions of Emacs <27.  It can be made to work with it if the devdocs package is excluded.
@@ -21,10 +21,12 @@ Packages
 
 - [auctex](https://elpa.gnu.org/packages/auctex.html)
 - [auto-complete](https://melpa.org/#/auto-complete)
-- [bookmark+](https://github.com/emacsmirror/bookmark-plus)
+- [citre](https://melpa.org/#/citre)
+- [clang-format](https://melpa.org/#/clang-format)
 - [cmake-mode](https://melpa.org/#/cmake-mode)
 - [company](https://melpa.org/#/company)
 - [company-jedi](https://melpa.org/#/company-jedi)
+- [dash](https://melpa.org/#/dash)
 - [devdocs](https://melpa.org/#/devdocs)
 - [dictionary](https://melpa.org/#/dictionary)
 - [dockerfile-mode](https://melpa.org/#/dockerfile-mode)
@@ -32,29 +34,28 @@ Packages
 - [expand-region](https://melpa.org/#/expand-region)
 - [fill-column-indicator](https://melpa.org/#/fill-column-indicator)
 - [flycheck](https://melpa.org/#/flycheck)
-- [ggtags](https://melpa.org/#/ggtags)
 - [git-blamed](https://melpa.org/#/git-blamed)
 - [go-mode](https://melpa.org/#/go-mode)
 - [google-c-style](https://melpa.org/#/google-c-style)
+- [gptel](https://melpa.org/#/gptel)
 - [groovy-mode](https://melpa.org/#/groovy-mode)
 - [haml-mode](https://melpa.org/#/haml-mode)
-- [hl-line+](https://www.emacswiki.org/emacs/hl-line%2b.el)
-- [jedi](https://melpa.org/#/jedi)
+- [jedi-core](https://melpa.org/#/jedi-core)
 - [js2-mode](https://melpa.org/#/js2-mode)
 - [json-mode](https://melpa.org/#/json-mode)
 - [lorem-ipsum](https://melpa.org/#/lorem-ipsum)
 - [magit](https://melpa.org/#/magit)
 - [markdown-mode](https://melpa.org/#/markdown-mode)
 - [move-text](https://melpa.org/#/move-text)
+- [openwith](https://melpa.org/#/openwith)
 - [php-mode](https://melpa.org/#/php-mode)
 - [prettier-js](https://melpa.org/#/prettier-js)
 - [powershell](https://melpa.org/#/powershell)
-- [pydoc-info](https://www.emacswiki.org/emacs/pydoc-info.el)
-- [python-mode](https://melpa.org/#/python-mode)
+- [projectile](https://melpa.org/#/projectile)
 - [rainbow-delimiters](https://melpa.org/#/rainbow-delimiters)
 - [realgud](https://github.com/realgud/realgud)
+- [s](https://melpa.org/#/s)
 - [slime](https://melpa.org/#/slime)
-- [tidy](https://www.emacswiki.org/emacs/tidy.el)
 - [typescript-mode](https://melpa.org/#/typescript-mode)
 - [undo-tree](https://melpa.org/#/undo-tree)
 - [virtualenvwrapper](https://melpa.org/#/virtualenvwrapper)
