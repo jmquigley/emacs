@@ -1,11 +1,10 @@
-;; After installation add the key value.  Don't check in the key
+(gptel-make-anthropic "Claude"          ;Any name you want
+  :stream t                             ;Streaming responses
+  :key (getenv "AI_API_KEY"))
 
-;; (gptel-make-gemini "Gemini" :key "{KEY}" :stream t)
-
-;; (setq
-;; gptel-model 'gemini-2.5-flash-preview-05-20
-;; gptel-backend (gptel-make-gemini "Gemini"
-;;                 :key "{KEY}"
-;;                 :stream t))
+(setq
+ gptel-model 'claude-3-sonnet-20241022 ;  "claude-3-opus-20240229" also available
+ gptel-backend (gptel-make-anthropic "Claude"
+                 :stream t :key (getenv "AI_API_KEY")))
 
 (provide 'ai-settings)

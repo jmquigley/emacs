@@ -46,6 +46,7 @@
     powershell
 	rainbow-delimiters
 	realgud
+	revert-buffer-all
     s
 	slime
 	typescript-mode

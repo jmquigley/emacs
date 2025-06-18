@@ -54,6 +54,7 @@ Packages
 - [projectile](https://melpa.org/#/projectile)
 - [rainbow-delimiters](https://melpa.org/#/rainbow-delimiters)
 - [realgud](https://github.com/realgud/realgud)
+  [revert-buffer-all](https://melpa.org/#/revert-buffer-all)
 - [s](https://melpa.org/#/s)
 - [slime](https://melpa.org/#/slime)
 - [typescript-mode](https://melpa.org/#/typescript-mode)
