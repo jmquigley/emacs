@@ -56,6 +56,9 @@
 ;; Cursor
 (set-face-background 'cursor "white")
 
+;; Fill Column
+(set-face-attribute 'fill-column-indicator nil :foreground "#1b1818")
+
 ;; Highlight line
 (set-face-background 'hl-line "#00005f")
 

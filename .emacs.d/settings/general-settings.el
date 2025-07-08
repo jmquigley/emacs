@@ -29,6 +29,7 @@
       default-major-mode 'text-mode
       delete-old-versions t
       dired-directory root.dir
+      display-fill-column-indicator-column 80
       display-time-day-and-date t
       display-time-24hr-format t
       frame-title-format '((:eval default-directory))
@@ -120,6 +121,7 @@ in some of the major modes that I use"
     (yas-minor-mode t)
     (rainbow-delimiters-mode t)
     (display-line-numbers-mode t)
+    (display-fill-column-indicator-mode t)
     (show-paren-mode t))
 
 (add-hook 'dired-mode-hook #'(lambda() (hl-line-mode t)))
