@@ -1,0 +1,5 @@
+# name : creates an if statement block
+# key: if
+# contributor : jmq
+# --
+if ($1) `yas-selected-text`$0;

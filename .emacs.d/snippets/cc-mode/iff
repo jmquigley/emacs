@@ -1,0 +1,8 @@
+# name : creates an if/else block
+# key: iff
+# contributor : jmq
+# --
+if ($1) {
+    `yas-selected-text`$0
+} else {
+}

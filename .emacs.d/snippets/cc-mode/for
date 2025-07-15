@@ -1,0 +1,7 @@
+# name : creates a basic for loop
+# key: for
+# contributor : jmq
+# --
+for ($1;$2;$3) {
+  `yas-selected-text`$0
+}

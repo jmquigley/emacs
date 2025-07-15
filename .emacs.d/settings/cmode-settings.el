@@ -9,7 +9,6 @@
     (setq c-basic-indent 4)
     (setq indent-tabs-mode nil)
 
-    (ggtags-mode 1)
     (clang-format-on-save-mode)
 )
 

@@ -1,0 +1,21 @@
+# name : creates a funtion template
+# key: fun
+# contributor : jmq
+# --
+/**
+ * @brief $3
+ *
+ * {description}
+ *
+ * Example:
+ * @code
+ *
+ * @endcode
+ *
+ * @param
+ * @returns
+ * @exception
+ */
+$1 $2() {
+    `yas-selected-text`$0
+}

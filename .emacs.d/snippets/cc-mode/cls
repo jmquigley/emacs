@@ -1,0 +1,24 @@
+# name : creates a new class with header
+# key: cls
+# contributor : jmq
+# --
+/**
+ * @class $1
+ * @brief $3
+ *
+ * `yas-selected-text`$0;
+ *
+ * Example:
+ * @code
+ *
+ * @endcode
+ *
+ * @tparam
+ */
+template<typename T>
+class $1 {
+public:
+
+    $1() {}
+    virtual ~$1() {}
+};

@@ -65,6 +65,7 @@ Packages
 - [ws-butler](https://melpa.org/#/ws-butler)
 - [yaml-mode](https://melpa.org/#/yaml-mode)
 - [yasnippet](https://melpa.org/#/yasnippet)
+- [yasnippet-snippets](https://github.com/AndreaCrotti/yasnippet-snippets)
 
 It also contains two custom modes that I wrote:
 
