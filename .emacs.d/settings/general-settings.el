@@ -33,6 +33,7 @@
       display-time-day-and-date t
       display-time-24hr-format t
       frame-title-format '((:eval default-directory))
+      gdb-debuginfod-enable-setting "off"
       gdb-many-windows t
       gdb-restore-window-configuration-after-quit t
       inhibit-startup-message t
