@@ -56,7 +56,7 @@ Packages
 - [projectile](https://melpa.org/#/projectile)
 - [rainbow-delimiters](https://melpa.org/#/rainbow-delimiters)
 - [realgud](https://github.com/realgud/realgud)
-  [revert-buffer-all](https://melpa.org/#/revert-buffer-all)
+-  [revert-buffer-all](https://melpa.org/#/revert-buffer-all)
 - [s](https://melpa.org/#/s)
 - [slime](https://melpa.org/#/slime)
 - [typescript-mode](https://melpa.org/#/typescript-mode)
@@ -73,6 +73,3 @@ It also contains two custom modes that I wrote:
 
 - [asciidoc-mode](https://github.com/jmquigley/asciidoc-mode)
 - [mmd-mode](https://github.com/jmquigley/mmd-mode) (multimarkdown mode, a derivative of markdown-mode)
-
-LSP Server Modes
-----------------
