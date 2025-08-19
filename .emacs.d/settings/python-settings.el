@@ -12,7 +12,6 @@
 
     (setq python-indent 4)
     (setq python-indent-offset 4)
-    (auto-complete-mode t)
 	(untabify (point-min) (point-max))
 ))
 

@@ -18,6 +18,8 @@
 
 (add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
 
+(use-package lsp-jedi :ensure t)
+
 ;; Global default variables
 (setq auto-save-list-file-prefix autosave-dir
       auto-save-file-name-transforms `((".*" ,autosave-dir t))
@@ -46,6 +48,7 @@
       kept-new-versions 6
       kept-old-versions 2
       large-file-warning-threshold nil
+      lsp-warn-no-matched-clients nil
       magit-auto-revert-mode nil
       magit-last-seen-setup-instructions "1.4.0"
       pop-up-windows nil

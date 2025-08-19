@@ -12,7 +12,6 @@
 
 (setq package-list '(
     auctex
-	auto-complete
     citre
     clang-format
 	cmake-mode
@@ -36,6 +35,9 @@
 	js2-mode
 	json-mode
 	lorem-ipsum
+    lsp-docker
+    lsp-java
+    lsp-jedi
 	magit
 	markdown-mode
 	move-text
@@ -91,7 +93,6 @@
 (require 'restructuredtext-settings)
 (require 'predictive-settings)
 (require 'info-settings)
-(require 'autocomplete-settings)
 (require 'cdet-settings)
 (require 'python-settings)
 (require 'cperl-settings)

@@ -20,7 +20,6 @@ Packages
 --------
 
 - [auctex](https://elpa.gnu.org/packages/auctex.html)
-- [auto-complete](https://melpa.org/#/auto-complete)
 - [citre](https://melpa.org/#/citre)
 - [clang-format](https://melpa.org/#/clang-format)
 - [cmake-mode](https://melpa.org/#/cmake-mode)
@@ -44,13 +43,16 @@ Packages
 - [js2-mode](https://melpa.org/#/js2-mode)
 - [json-mode](https://melpa.org/#/json-mode)
 - [lorem-ipsum](https://melpa.org/#/lorem-ipsum)
+- [lsp-docker](https://melpa.org/#/lsp-docker)
+- [lsp-java](https://melpa.org/#/lsp-java)
+- [lsp-jedi](https://melpa.org/#/lsp-jedi)
 - [magit](https://melpa.org/#/magit)
 - [markdown-mode](https://melpa.org/#/markdown-mode)
 - [move-text](https://melpa.org/#/move-text)
 - [openwith](https://melpa.org/#/openwith)
 - [php-mode](https://melpa.org/#/php-mode)
-- [prettier-js](https://melpa.org/#/prettier-js)
 - [powershell](https://melpa.org/#/powershell)
+- [prettier-js](https://melpa.org/#/prettier-js)
 - [projectile](https://melpa.org/#/projectile)
 - [rainbow-delimiters](https://melpa.org/#/rainbow-delimiters)
 - [realgud](https://github.com/realgud/realgud)
@@ -71,3 +73,6 @@ It also contains two custom modes that I wrote:
 
 - [asciidoc-mode](https://github.com/jmquigley/asciidoc-mode)
 - [mmd-mode](https://github.com/jmquigley/mmd-mode) (multimarkdown mode, a derivative of markdown-mode)
+
+LSP Server Modes
+----------------

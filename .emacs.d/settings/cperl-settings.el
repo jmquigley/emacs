@@ -4,7 +4,6 @@
 
 (add-hook 'cperl-mode-hook #'(lambda()
     (development-minor-mode-hooks)
-    (auto-complete-mode 0)
     (setq cperl-indent-level 4)
     (cperl-toggle-abbrev)
 ))
