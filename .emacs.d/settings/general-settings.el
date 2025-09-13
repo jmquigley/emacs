@@ -18,6 +18,10 @@
 
 (add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
 
+;; make the compilation buffer use ansi color
+(use-package ansi-color
+  :hook (compilation-filter . ansi-color-compilation-filter))
+
 (use-package lsp-jedi :ensure t)
 
 ;; Global default variables
@@ -48,7 +52,8 @@
       kept-new-versions 6
       kept-old-versions 2
       large-file-warning-threshold nil
-      lsp-clangd-binary-path "/usr/bin/clangd-21"
+      lsp-clangd-binary-path "/usr/bin/clangd-22"
+      lsp-enable-suggest-server-download nil
       lsp-warn-no-matched-clients nil
       magit-auto-revert-mode nil
       magit-last-seen-setup-instructions "1.4.0"
