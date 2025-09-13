@@ -17,6 +17,7 @@
 	cmake-mode
 	company
     company-jedi
+    conda
     dash
 	devdocs
 	dictionary
@@ -79,6 +80,7 @@
 
 (require 'theme)
 (require 'general-settings)
+(require 'conda-settings)
 (require 'prettify-settings)
 (require 'yasnippet-settings)
 (require 'abbrev-settings)

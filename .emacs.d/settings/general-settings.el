@@ -48,6 +48,7 @@
       kept-new-versions 6
       kept-old-versions 2
       large-file-warning-threshold nil
+      lsp-clangd-binary-path "/usr/bin/clangd-21"
       lsp-warn-no-matched-clients nil
       magit-auto-revert-mode nil
       magit-last-seen-setup-instructions "1.4.0"
